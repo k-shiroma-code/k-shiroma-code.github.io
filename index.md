@@ -10,5 +10,3 @@ layout: default
   </p>
 </div>
 
-
-<img src="assets/img/IMG_1582.jpg" alt="Description of your image">
