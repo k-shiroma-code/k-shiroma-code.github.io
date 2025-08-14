@@ -1,19 +1,7 @@
 # Site settings
 title: Kyle Shiroma Portfolio
-description: Data Science portfolio showcasing projects, experience, and academic achievements.
-theme: jekyll-theme-cayman
-show_downloads: true
-
-# Contact info
-email: kyleshiroma77@gmail.com
+theme: jekyll-theme-minimal
 github: https://github.com/k-shiroma-code
 linkedin: https://www.linkedin.com/in/k-shiroma
-
-# About Me
-about_me: >
-  I’m a data science enthusiast currently pursuing a B.S. in Data Science at UC San Diego.
-  I have hands-on experience in machine learning, data analysis, and building production-ready pipelines.
-  My passion lies in transforming raw data into actionable insights, optimizing predictive models, 
-  and creating interactive visualizations. I’ve led teams in hackathons, completed data science 
-  research internships, and enjoy tackling real-world problems with Python, SQL, and modern 
-  data engineering tools.
+email: kyleshiroma77@gmail.com
+show_downloads: true
