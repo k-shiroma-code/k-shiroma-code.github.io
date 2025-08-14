@@ -60,8 +60,8 @@ Created an ML pipeline using the **UCI Heart Disease dataset** to predict patien
 Developed predictive models using **decision trees**, **random forests**, **XGBoost**, and **ELO-based features** to forecast match outcomes. Evaluated results using precision, recall, and F1-score metrics.
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/your_image_filename.jpg" 
-       alt="Project Screenshot" 
+  <img src="{{ site.baseurl }}/assets/img/CSUF_DS.png" 
+       alt="CSUF Data Science Project Screenshot" 
        style="border-radius:12px; width:400px;">
 </p>
 
