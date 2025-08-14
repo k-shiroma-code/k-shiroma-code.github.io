@@ -2,6 +2,10 @@
 **[kyleshiroma77@gmail.com](mailto:kyleshiroma77@gmail.com) • 909-378-0684 • [GitHub](https://github.com/k-shiroma-code) • [LinkedIn](https://www.linkedin.com/in/k-shiroma)**
 
 ---
+## About Me
+I’m a data science enthusiast currently pursuing a B.S. in Data Science at UC San Diego. I have hands-on experience in machine learning, data analysis, and building production-ready pipelines. My passion lies in transforming raw data into actionable insights, optimizing predictive models, and creating interactive visualizations. I’ve led teams in hackathons, completed data science research internships, and enjoy tackling real-world problems with Python, SQL, and modern data engineering tools.
+
+---
 
 ## Education
 **University of California, San Diego** – B.S. in Data Science  
