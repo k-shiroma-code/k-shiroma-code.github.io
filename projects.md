@@ -43,7 +43,7 @@ Analyzed **500K+ retail transactions** using **SQL** + **Tableau**. Applied RFM 
 Created an ML pipeline using the **UCI Heart Disease dataset** to predict patient risk. Applied **SMOTE** + **Logistic Regression**, improving minority-class recall by **20%**.
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/Matrix_Confusion.jpg" 
+  <img src="{{ site.baseurl }}/assets/img/IMG_1668  .jpg" 
        alt="First Screenshot" 
        style="border-radius:12px; width:400px; margin-right:10px;">
   <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" 
