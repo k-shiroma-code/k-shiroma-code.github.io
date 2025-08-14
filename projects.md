@@ -27,6 +27,8 @@ Built an AI tool condensing **18 months of patient data** into actionable insigh
 ## Customer Segmentation with RFM Analysis
 Analyzed **500K+ retail transactions** using **SQL** + **Tableau**. Applied RFM segmentation to classify customers into behavioral groups and uncover key sales trends.
 
+https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link
+
 [GitHub ↗](https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis)
 
 ---
