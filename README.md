@@ -30,7 +30,7 @@
 ---
 
 ## Machine Learning Intrusion Detection
-**Jul 2025 – Aug 2025**  
+**Jul 2025 – Ongoing**  
 - Built a machine learning system detecting 3 out of 4 cyber attacks while eliminating false positives that cause analyst burnout.  
 - Used Random Forest to achieve **88.6% accuracy**, a 54% improvement over baseline methods.  
 - Deployed as a production-ready threat detection system for security operations centers.  
