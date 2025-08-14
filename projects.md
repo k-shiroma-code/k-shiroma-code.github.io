@@ -7,10 +7,23 @@ permalink: /projects/
 # Projects
 
 ## Machine Learning Intrusion Detection
-A production-ready cybersecurity threat detection system built with **Random Forest** algorithms. Successfully identifies 3 out of 4 major cyberattack types with 88.6% accuracy, demonstrating robust performance in real-world security scenarios.
 
-**Technologies:** Python, Scikit-learn, Random Forest, Cybersecurity Analytics  
-[View on GitHub ↗](https://github.com/k-shiroma-code/cybersecurity-ml-detection)
+<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
+  <div style="flex: 1; min-width: 300px;">
+    <p>A production-ready cybersecurity threat detection system built with <strong>Random Forest</strong> algorithms. Successfully identifies 3 out of 4 major cyberattack types with 88.6% accuracy, demonstrating robust performance in real-world security scenarios.</p>
+    
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>88.6% accuracy across multiple attack types</li>
+      <li>Production-ready deployment architecture</li>
+      <li>Real-time threat detection capabilities</li>
+      <li>Scalable machine learning pipeline</li>
+    </ul>
+    
+    <p><strong>Technologies:</strong> Python, Scikit-learn, Random Forest, Cybersecurity Analytics<br>
+    <a href="https://github.com/k-shiroma-code/cybersecurity-ml-detection">View on GitHub ↗</a></p>
+  </div>
+</div>
 
 ---
 
@@ -42,22 +55,32 @@ A production-ready cybersecurity threat detection system built with **Random For
 ---
 
 ## Customer Segmentation Analytics
-Comprehensive retail analytics project analyzing 500K+ transactions to identify customer behavioral patterns. Implemented RFM (Recency, Frequency, Monetary) analysis to segment customers and drive targeted marketing strategies.
 
-**Key Insights:**
-- Identified 5 distinct customer segments
-- Revealed seasonal purchasing patterns
-- Optimized marketing spend allocation by 25%
-
-<iframe 
-    src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
-    width="100%" 
-    height="600" 
-    style="border: none; border-radius: 8px;">
-</iframe>
-
-**Technologies:** SQL, Tableau, Python, RFM Analysis, Data Visualization  
-[View on GitHub ↗](https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis)
+<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0; flex-direction: column;">
+  <div style="flex: 1;">
+    <p>Comprehensive retail analytics project analyzing 500K+ transactions to identify customer behavioral patterns. Implemented RFM (Recency, Frequency, Monetary) analysis to segment customers and drive targeted marketing strategies.</p>
+    
+    <p><strong>Key Insights:</strong></p>
+    <ul>
+      <li>Identified 5 distinct customer segments</li>
+      <li>Revealed seasonal purchasing patterns</li>
+      <li>Optimized marketing spend allocation by 25%</li>
+      <li>Analyzed 500K+ retail transactions</li>
+    </ul>
+    
+    <p><strong>Technologies:</strong> SQL, Tableau, Python, RFM Analysis, Data Visualization<br>
+    <a href="https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis">View on GitHub ↗</a></p>
+  </div>
+  
+  <div style="width: 100%;">
+    <iframe 
+        src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
+        width="100%" 
+        height="600" 
+        style="border: none; border-radius: 8px;">
+    </iframe>
+  </div>
+</div>
 
 ---
 
