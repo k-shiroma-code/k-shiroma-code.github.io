@@ -38,25 +38,3 @@ permalink: /projects/
   </div>
 </div>
 
-<section class="projects">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            
-            <div class="project-card">
-                <img src="assets/img/IMG_1582.jpg" alt="Project screenshot">
-                <div class="project-info">
-                    <h3>Project Title</h3>
-                    <p>Brief description of your project and what technologies you used.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank">Live Demo</a>
-                        <a href="#" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add more project cards here -->
-            
-        </div>
-    </div>
-</section>
