@@ -16,6 +16,12 @@ permalink: /projects/
   <div class="section" style="background-color:#FFF3E0;">
     <h3>Pulsepanion – AI Hackathon Winner</h3>
     <p>AI tool condensing 18 months of patient data into actionable insights using OpenAI NLP + R Shiny. Included PDF exports and a lightweight de-identification system.</p>
+    
+    <!-- Added image -->
+    <p align="center">
+      <img src="/assets/img/IMG_1582.jpg" alt="Pulsepanion Project Screenshot" width="400" style="border-radius:12px;">
+    </p>
+
     <a href="https://github.com/k-shiroma-code/NCHacks-Pulsepanion">GitHub Link</a>
   </div>
 
@@ -37,4 +43,3 @@ permalink: /projects/
     <a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">GitHub Link</a>
   </div>
 </div>
-
