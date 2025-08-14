@@ -1,5 +1,5 @@
 # Kyle Shiroma
-[kyleshiroma77@gmail.com](mailto:kyleshiroma77@gmail.com) • 909-378-0684 • [GitHub](https://github.com/k-shiroma-code) • [LinkedIn](https://www.linkedin.com/in/k-shiroma)**
+**[kyleshiroma77@gmail.com](mailto:kyleshiroma77@gmail.com) • 909-378-0684 • [GitHub](https://github.com/k-shiroma-code) • [LinkedIn](https://www.linkedin.com/in/k-shiroma)**
 
 ---
 
