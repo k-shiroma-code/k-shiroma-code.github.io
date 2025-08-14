@@ -10,10 +10,5 @@ layout: default
   </p>
 </div>
 
-<div class="section">
-  <h2>Quick Links</h2>
-  <a href="/projects/">Projects</a>
-  <a href="/experience/">Experience</a>
-  <a href="/academics/">Academics</a>
-</div>
+
 
