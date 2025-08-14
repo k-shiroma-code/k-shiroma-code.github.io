@@ -42,6 +42,16 @@ Analyzed **500K+ retail transactions** using **SQL** + **Tableau**. Applied RFM 
 ## Heart Disease Prediction Pipeline
 Created an ML pipeline using the **UCI Heart Disease dataset** to predict patient risk. Applied **SMOTE** + **Logistic Regression**, improving minority-class recall by **20%**.
 
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/Matrix_Confusion.jpg" 
+       alt="First Screenshot" 
+       style="border-radius:12px; width:400px; margin-right:10px;">
+  <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" 
+       alt="Second Screenshot" 
+       style="border-radius:12px; width:400px; margin-left:10px;">
+</p>
+
+
 [GitHub ↗](https://github.com/k-shiroma-code/Heart-Disease-ML-Project)
 
 ---
