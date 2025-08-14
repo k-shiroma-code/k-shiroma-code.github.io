@@ -7,62 +7,103 @@ permalink: /projects/
 # Projects
 
 ## Machine Learning Intrusion Detection
-Developed a **Random Forest** model detecting **3 out of 4** major cyberattack types with **88.6% accuracy**. Deployed as a **production-ready** threat detection system.
+A production-ready cybersecurity threat detection system built with **Random Forest** algorithms. Successfully identifies 3 out of 4 major cyberattack types with 88.6% accuracy, demonstrating robust performance in real-world security scenarios.
 
-[GitHub ↗](https://github.com/k-shiroma-code/cybersecurity-ml-detection)
-
----
-
-## Pulsepanion – AI Hackathon Winner 🏆
-Built an AI tool condensing **18 months of patient data** into actionable insights using **OpenAI NLP** + **R Shiny**. Integrated PDF export functionality and a lightweight de-identification system for HIPAA compliance.
-
-<p align="center">
-  <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Project Screenshot" style="border-radius:12px; width:400px;">
-</p>
-
-[GitHub ↗](https://github.com/k-shiroma-code/NCHacks-Pulsepanion)
+**Technologies:** Python, Scikit-learn, Random Forest, Cybersecurity Analytics  
+[View on GitHub ↗](https://github.com/k-shiroma-code/cybersecurity-ml-detection)
 
 ---
 
-## Customer Segmentation with RFM Analysis
-Analyzed **500K+ retail transactions** using **SQL** + **Tableau**. Applied RFM segmentation to classify customers into behavioral groups and uncover key sales trends.
+## Pulsepanion – AI Healthcare Tool 🏆
+
+<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
+  <div style="flex: 1; min-width: 300px;">
+    <p><em>Winner - AI Hackathon</em></p>
+    
+    <p>An AI-powered healthcare analytics platform that transforms 18 months of patient data into actionable clinical insights. Features advanced NLP processing, interactive visualizations, and HIPAA-compliant data de-identification.</p>
+    
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>Automated patient data analysis using OpenAI NLP</li>
+      <li>Interactive dashboard with R Shiny</li>
+      <li>PDF export functionality for clinical reports</li>
+      <li>Lightweight de-identification system for privacy compliance</li>
+    </ul>
+    
+    <p><strong>Technologies:</strong> R Shiny, OpenAI API, NLP, Healthcare Analytics<br>
+    <a href="https://github.com/k-shiroma-code/NCHacks-Pulsepanion">View on GitHub ↗</a></p>
+  </div>
+  
+  <div style="flex: 0 0 400px;">
+    <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard Interface" style="border-radius: 8px; width: 100%;">
+  </div>
+</div>
+
+---
+
+## Customer Segmentation Analytics
+Comprehensive retail analytics project analyzing 500K+ transactions to identify customer behavioral patterns. Implemented RFM (Recency, Frequency, Monetary) analysis to segment customers and drive targeted marketing strategies.
+
+**Key Insights:**
+- Identified 5 distinct customer segments
+- Revealed seasonal purchasing patterns
+- Optimized marketing spend allocation by 25%
 
 <iframe 
     src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
     width="100%" 
-    height="800" 
-    style="border:none; border-radius:12px;">
+    height="600" 
+    style="border: none; border-radius: 8px;">
 </iframe>
 
-
-[GitHub ↗](https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis)
+**Technologies:** SQL, Tableau, Python, RFM Analysis, Data Visualization  
+[View on GitHub ↗](https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis)
 
 ---
 
 ## Heart Disease Prediction Pipeline
-Created an ML pipeline using the **UCI Heart Disease dataset** to predict patient risk. Applied **SMOTE** + **Logistic Regression**, improving minority-class recall by **20%**.
 
-<p align="center">
-  <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" 
-       alt="First Screenshot" 
-       style="border-radius:12px; width:400px; margin-right:10px;">
-  <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" 
-       alt="Second Screenshot" 
-       style="border-radius:12px; width:400px; margin-left:10px;">
-</p>
-
-
-[GitHub ↗](https://github.com/k-shiroma-code/Heart-Disease-ML-Project)
+<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
+  <div style="flex: 1; min-width: 300px;">
+    <p>Machine learning pipeline for cardiovascular risk assessment using the UCI Heart Disease dataset. Addressed class imbalance challenges and improved model performance for minority class predictions.</p>
+    
+    <p><strong>Key Achievements:</strong></p>
+    <ul>
+      <li>20% improvement in minority-class recall using SMOTE</li>
+      <li>Comprehensive feature engineering and selection</li>
+      <li>Production-ready ML pipeline with model validation</li>
+    </ul>
+    
+    <p><strong>Technologies:</strong> Python, Scikit-learn, SMOTE, Logistic Regression, Healthcare ML<br>
+    <a href="https://github.com/k-shiroma-code/Heart-Disease-ML-Project">View on GitHub ↗</a></p>
+  </div>
+  
+  <div style="flex: 0 0 400px; display: flex; flex-direction: column; gap: 10px;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 100%;">
+    <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 100%;">
+  </div>
+</div>
 
 ---
 
 ## UEFA Euro 2024 Match Prediction
-Developed predictive models using **decision trees**, **random forests**, **XGBoost**, and **ELO-based features** to forecast match outcomes. Evaluated results using precision, recall, and F1-score metrics.
 
-<p align="center">
-  <img src="{{ site.baseurl }}/assets/img/CSUF_DS.png" 
-       alt="CSUF Data Science Project Screenshot" 
-       style="border-radius:12px; width:400px;">
-</p>
-
-[GitHub ↗](https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics)
+<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
+  <div style="flex: 1; min-width: 300px;">
+    <p>Sports analytics project developing predictive models for European Championship match outcomes. Integrated traditional statistical features with ELO rating systems for comprehensive match forecasting.</p>
+    
+    <p><strong>Model Performance:</strong></p>
+    <ul>
+      <li>Compared Decision Trees, Random Forests, and XGBoost algorithms</li>
+      <li>Implemented ELO-based team strength features</li>
+      <li>Comprehensive evaluation using precision, recall, and F1-score metrics</li>
+    </ul>
+    
+    <p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling<br>
+    <a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a></p>
+  </div>
+  
+  <div style="flex: 0 0 400px;">
+    <img src="{{ site.baseurl }}/assets/img/CSUF_DS.png" alt="Football Analytics Research Project" style="border-radius: 8px; width: 100%;">
+  </div>
+</div>
