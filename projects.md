@@ -19,6 +19,7 @@ Built an AI tool that condenses **18 months of patient data** into actionable in
 ![Pulsepanion Project Screenshot]({{ site.baseurl }}/assets/img/IMG_1582.jpg){: style="display:block; margin:auto; border-radius:12px; width:400px;" }
 
 
+
 [GitHub ↗](https://github.com/k-shiroma-code/NCHacks-Pulsepanion)
 
 ---
