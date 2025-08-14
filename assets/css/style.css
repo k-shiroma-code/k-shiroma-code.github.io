@@ -1,1 +1,52 @@
+/* General */
+body {
+  background-color: #FAF9F6;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+}
 
+/* Headings */
+h1, h2, h3 {
+  color: #FF7F50; /* Warm coral */
+}
+
+/* Links */
+a {
+  color: #4DB6AC; /* Soft teal */
+  text-decoration: none;
+}
+a:hover {
+  color: #FF7F50;
+}
+
+/* Navigation Links / Buttons */
+.nav-links a {
+  background-color: #FDD835; /* Warm gold */
+  color: #333333;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin: 5px;
+  display: inline-block;
+}
+.nav-links a:hover {
+  background-color: #FF7F50;
+  color: white;
+}
+
+/* Section Cards */
+.section {
+  background-color: #FFF3E0;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+}
