@@ -7,38 +7,36 @@ permalink: /projects/
 # Projects
 
 ## Machine Learning Intrusion Detection
-Developed a Random Forest model that detected **3 out of 4** major cyberattack types with **88.6% accuracy**. Designed and deployed as a production-ready threat detection system.
+Developed a **Random Forest** model detecting **3 out of 4** major cyberattack types with **88.6% accuracy**. Designed and deployed as a **production-ready** threat detection system.
 
 [GitHub ↗](https://github.com/k-shiroma-code/cybersecurity-ml-detection)
 
 ---
 
 ## Pulsepanion – AI Hackathon Winner 🏆
-Built an AI tool that condenses **18 months of patient data** into actionable insights using **OpenAI NLP** + **R Shiny**. Implemented PDF exports and a lightweight de-identification system for HIPAA compliance.
+Built an AI tool condensing **18 months of patient data** into actionable insights using **OpenAI NLP** + **R Shiny**. Integrated PDF export functionality and a lightweight de-identification system for HIPAA compliance.
 
 ![Pulsepanion Project Screenshot]({{ site.baseurl }}/assets/img/IMG_1582.jpg){: style="display:block; margin:auto; border-radius:12px; width:400px;" }
-
-
 
 [GitHub ↗](https://github.com/k-shiroma-code/NCHacks-Pulsepanion)
 
 ---
 
 ## Customer Segmentation with RFM Analysis
-Analyzed **500K+ retail transactions** with **SQL** + **Tableau**. Applied RFM segmentation to group customers by behavior and reveal hidden sales trends.
+Analyzed **500K+ retail transactions** using **SQL** + **Tableau**. Applied RFM segmentation to classify customers into behavioral groups and uncover sales trends.
 
 [GitHub ↗](https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis)
 
 ---
 
 ## Heart Disease Prediction Pipeline
-Created an ML pipeline using the UCI dataset to predict heart disease risk. Leveraged **SMOTE** and **Logistic Regression**, improving minority-class recall by **20%**.
+Created an ML pipeline using the **UCI dataset** to predict heart disease risk. Applied **SMOTE** + **Logistic Regression**, improving minority-class recall by **20%**.
 
 [GitHub ↗](https://github.com/k-shiroma-code/Heart-Disease-ML-Project)
 
 ---
 
 ## UEFA Euro 2024 Match Prediction
-Developed predictive models using **decision trees**, **random forests**, **XGBoost**, and **ELO-based features** to forecast match outcomes. Evaluated performance with key classification metrics.
+Developed predictive models with **decision trees**, **random forests**, **XGBoost**, and **ELO-based features** to forecast match outcomes. Evaluated performance with precision, recall, and F1-score metrics.
 
 [GitHub ↗](https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics)
