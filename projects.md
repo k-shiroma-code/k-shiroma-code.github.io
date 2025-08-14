@@ -59,4 +59,10 @@ Created an ML pipeline using the **UCI Heart Disease dataset** to predict patien
 ## UEFA Euro 2024 Match Prediction
 Developed predictive models using **decision trees**, **random forests**, **XGBoost**, and **ELO-based features** to forecast match outcomes. Evaluated results using precision, recall, and F1-score metrics.
 
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/your_image_filename.jpg" 
+       alt="Project Screenshot" 
+       style="border-radius:12px; width:400px;">
+</p>
+
 [GitHub ↗](https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics)
