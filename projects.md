@@ -16,9 +16,8 @@ Developed a Random Forest model that detected **3 out of 4** major cyberattack t
 ## Pulsepanion – AI Hackathon Winner 🏆
 Built an AI tool that condenses **18 months of patient data** into actionable insights using **OpenAI NLP** + **R Shiny**. Implemented PDF exports and a lightweight de-identification system for HIPAA compliance.
 
-<p align="center">
-  <img src="/assets/img/IMG_1582.jpg" alt="Pulsepanion Project Screenshot" width="400" style="border-radius:12px;">
-</p>
+![Pulsepanion Project Screenshot]({{ site.baseurl }}/assets/img/IMG_1582.jpg){: style="display:block; margin:auto; border-radius:12px; width:400px;" }
+
 
 [GitHub ↗](https://github.com/k-shiroma-code/NCHacks-Pulsepanion)
 
