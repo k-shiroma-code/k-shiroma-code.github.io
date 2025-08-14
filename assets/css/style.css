@@ -1,52 +1,236 @@
-/* General */
-body {
-  background-color: #FAF9F6;
-  color: #333333;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0 20px;
+/* Minimal Sophistication Theme Implementation */
+/* Add this to your _sass/main.scss or assets/css/style.scss */
+
+:root {
+  /* Color Variables */
+  --primary-color: #2c2c2c;
+  --secondary-color: #4a4a4a;
+  --accent-color: #007acc;
+  --background-color: #fafafa;
+  --card-background: #ffffff;
+  --text-color: #1a1a1a;
+  --text-light: #666666;
+  --border-color: #e0e0e0;
+  --hover-color: #f5f5f5;
 }
 
-/* Headings */
-h1, h2, h3 {
-  color: #FF7F50; /* Warm coral */
+/* Global Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
 }
 
 /* Links */
 a {
-  color: #4DB6AC; /* Soft teal */
+  color: var(--accent-color);
   text-decoration: none;
-}
-a:hover {
-  color: #FF7F50;
+  transition: all 0.3s ease;
 }
 
-/* Navigation Links / Buttons */
-.nav-links a {
-  background-color: #FDD835; /* Warm gold */
-  color: #333333;
-  padding: 10px 18px;
-  border-radius: 8px;
-  margin: 5px;
-  display: inline-block;
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
 }
-.nav-links a:hover {
-  background-color: #FF7F50;
+
+/* Navigation (if applicable) */
+.site-nav, nav {
+  background-color: var(--card-background);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--accent-color);
+}
+
+/* Content Cards/Sections */
+.project-card, .content-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn, button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-color);
   color: white;
 }
 
-/* Section Cards */
-.section {
-  background-color: #FFF3E0;
-  padding: 20px;
-  border-radius: 12px;
-  margin: 20px auto;
-  max-width: 800px;
+/* Code Blocks */
+pre, code {
+  background-color: var(--hover-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.9em;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Lists */
+ul, ol {
+  color: var(--text-color);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  background-color: var(--hover-color);
+  padding: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
 }
 
 /* Footer */
-footer {
-  margin-top: 40px;
-  font-size: 0.9em;
+.site-footer, footer {
+  background-color: var(--primary-color);
+  color: white;
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+
+.site-footer a, footer a {
+  color: white;
+  opacity: 0.8;
+}
+
+.site-footer a:hover, footer a:hover {
+  opacity: 1;
+  color: var(--accent-color);
+}
+
+/* Project-specific styles */
+.project-meta {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  background-color: var(--hover-color);
+  color: var(--secondary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .project-card {
+    padding: 1.5rem;
+  }
 }
