@@ -27,8 +27,6 @@ Built an AI tool condensing **18 months of patient data** into actionable insigh
 ## Customer Segmentation with RFM Analysis
 Analyzed **500K+ retail transactions** using **SQL** + **Tableau**. Applied RFM segmentation to classify customers into behavioral groups and uncover key sales trends.
 
-## Customer Segmentation Dashboard (Interactive)
-
 <iframe 
     src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
     width="100%" 
