@@ -7,7 +7,7 @@ permalink: /projects/
 # Projects
 
 ## Machine Learning Intrusion Detection
-Developed a **Random Forest** model detecting **3 out of 4** major cyberattack types with **88.6% accuracy**. Designed and deployed as a **production-ready** threat detection system.
+Developed a **Random Forest** model detecting **3 out of 4** major cyberattack types with **88.6% accuracy**. Deployed as a **production-ready** threat detection system.
 
 [GitHub ↗](https://github.com/k-shiroma-code/cybersecurity-ml-detection)
 
@@ -25,20 +25,20 @@ Built an AI tool condensing **18 months of patient data** into actionable insigh
 ---
 
 ## Customer Segmentation with RFM Analysis
-Analyzed **500K+ retail transactions** using **SQL** + **Tableau**. Applied RFM segmentation to classify customers into behavioral groups and uncover sales trends.
+Analyzed **500K+ retail transactions** using **SQL** + **Tableau**. Applied RFM segmentation to classify customers into behavioral groups and uncover key sales trends.
 
 [GitHub ↗](https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis)
 
 ---
 
 ## Heart Disease Prediction Pipeline
-Created an ML pipeline using the **UCI dataset** to predict heart disease risk. Applied **SMOTE** + **Logistic Regression**, improving minority-class recall by **20%**.
+Created an ML pipeline using the **UCI Heart Disease dataset** to predict patient risk. Applied **SMOTE** + **Logistic Regression**, improving minority-class recall by **20%**.
 
 [GitHub ↗](https://github.com/k-shiroma-code/Heart-Disease-ML-Project)
 
 ---
 
 ## UEFA Euro 2024 Match Prediction
-Developed predictive models with **decision trees**, **random forests**, **XGBoost**, and **ELO-based features** to forecast match outcomes. Evaluated performance with precision, recall, and F1-score metrics.
+Developed predictive models using **decision trees**, **random forests**, **XGBoost**, and **ELO-based features** to forecast match outcomes. Evaluated results using precision, recall, and F1-score metrics.
 
 [GitHub ↗](https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics)
