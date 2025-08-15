@@ -91,7 +91,7 @@ header nav.nav-center a.button {
   gap: 0.4rem;
   background-color: var(--accent);
   color: #fff;
-  font-weight: 600;
+  font-weight: normal;
   border-radius: 6px;
   padding: 0.5rem 1rem;
   transition: all 0.2s ease;
