@@ -33,25 +33,34 @@ permalink: /projects/
 </div>
 
 ---
-## Customer Segmentation Analytics
+<!-- Customer Segmentation Analytics -->
 <div style="display: flex; flex-wrap: wrap; gap: 30px; margin: 20px 0; align-items: flex-start;">
+
   <!-- Text column -->
   <div style="flex: 1; min-width: 300px; max-width: 500px;">
-    <p>This project delivers a comprehensive analysis of over 500,000 retail transactions to uncover behavioral patterns in customer activity. Using RFM (Recency, Frequency, Monetary) analysis, the study identified five distinct customer segments, revealed seasonal purchasing trends, and optimized marketing spend allocation by 25%. Developed with SQL, Tableau, and Python, the analytics pipeline converts raw sales data into clear insights for strategic business decisions.</p>
-    <p><strong>Technologies:</strong> SQL, Tableau, Python, RFM Analysis, Data Visualization<br>
-    <a href="https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis">View on GitHub ↗</a></p>
+    <p>
+      This project delivers a comprehensive analysis of over 500,000 retail transactions to uncover behavioral patterns in customer activity. 
+      Using RFM (Recency, Frequency, Monetary) analysis, the study identified five distinct customer segments, revealed seasonal purchasing trends, 
+      and optimized marketing spend allocation by 25%. Developed with SQL, Tableau, and Python, the analytics pipeline converts raw sales data into clear insights for strategic business decisions.
+    </p>
+    <p>
+      <strong>Technologies:</strong> SQL, Tableau, Python, RFM Analysis, Data Visualization<br>
+      <a href="https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis">View on GitHub ↗</a>
+    </p>
   </div>
-  
+
   <!-- Dashboard column -->
-  <div style="flex: 1; min-width: 350px; max-width: 700px;">
-    <iframe 
+  <div style="flex: 2; min-width: 400px;">
+    <div style="position: relative; width: 100%; padding-bottom: 65%; height: 0;">
+      <iframe 
         src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
-        width="100%" 
-        height="550" 
-        style="border: none; border-radius: 8px; display: block;">
-    </iframe>
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;">
+      </iframe>
+    </div>
   </div>
+
 </div>
+
 
 ---
 
