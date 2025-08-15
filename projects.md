@@ -94,8 +94,8 @@ permalink: /projects/
 
 ## Heart Disease Prediction Pipeline
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin: 20px 0;">
-  <div style="flex: 1; min-width: 300px;">
+<div style="margin: 20px 0;">
+  <div style="min-width: 300px; margin-bottom: 20px;">
     <p>ML pipeline for cardiovascular risk assessment using the UCI Heart Disease dataset. Improved minority-class predictions with SMOTE.</p>
     
     <p><strong>Key Achievements:</strong></p>
@@ -109,11 +109,12 @@ permalink: /projects/
     <a href="https://github.com/k-shiroma-code/Heart-Disease-ML-Project">View on GitHub ↗</a></p>
   </div>
   
-  <div style="display: flex; flex-direction: column; gap: 15px; width: 100%; max-width: 600px;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 100%; height: auto;">
-    <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 100%; height: auto;">
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 48%; max-width: 300px; height: auto;">
+    <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 48%; max-width: 300px; height: auto;">
   </div>
 </div>
+
 
 ---
 
