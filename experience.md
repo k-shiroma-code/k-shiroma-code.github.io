@@ -14,7 +14,7 @@ permalink: /experience/
   
   <!-- Image column -->
   <div style="flex: 0 0 300px; max-width: 100%;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1673.jpg" alt="CRLA Tutoring Certificate" style="border-radius:12px; width:100%; height:100%; object-fit:cover;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1673.jpg" alt="CRLA Tutoring Certificate" style="border-radius:12px; width:100%; height:auto;">
   </div>
 </div>
 
@@ -23,13 +23,13 @@ permalink: /experience/
 <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; margin: 1.5rem 0;">
   <!-- Image column (left) -->
   <div style="flex: 0 0 300px; max-width: 100%;">
-    <img src="{{ site.baseurl }}/assets/img/CSUF_DS.png" alt="CSUF Data Science Intern Project" style="border-radius:12px; width:100%; height:100%; object-fit:cover;">
+    <img src="{{ site.baseurl }}/assets/img/CSUF_DS.png" alt="CSUF Data Science Intern Project" style="border-radius:12px; width:100%; height:auto;">
   </div>
 
   <!-- Text column -->
   <div style="flex: 1; min-width: 400px;">
     <h3>CIC Summer Research Program – Data Science Intern</h3>
     <p style="text-align: center;"><em>May – July 2024</em></p>
-    <p>Worked on European football match datasets, cleaning and structuring 5,903 match records. Engineered Elo-based ratings and built predictive models using Logistic Regression and XGBoost, achieving 61% accuracy, and enhanced minority-class recall by 20% using SMOTE and undersampling. Developed end-to-end data pipelines and applied feature engineering to improve model performance, presenting results and insights in a clear, actionable format for research and team discussions.</p>
+    <p>Worked on European football match datasets, cleaning and structuring 5,903 match records. Engineered Elo-based ratings and built predictive models using Logistic Regression and XGBoost, achieving 61% accuracy and enhancing minority-class recall by 20% using SMOTE and undersampling. Developed end-to-end data pipelines and applied feature engineering to improve model performance, presenting results and insights in a clear, actionable format for research and team discussions.</p>
   </div>
 </div>
