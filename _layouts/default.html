@@ -18,6 +18,72 @@
   <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
   <meta property="og:description" content="Data Scientist & Machine Learning Engineer Portfolio">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+  <!-- Inline Styles for Header Buttons -->
+  <style>
+    /* Navigation Buttons */
+    .main-navigation a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #1a1a1a;
+      border-radius: 6px;
+      transition: background-color 0.2s, color 0.2s, transform 0.2s;
+    }
+
+    .main-navigation a:hover,
+    .main-navigation a:focus {
+      background-color: #007acc;
+      color: #fff;
+      outline: none;
+      transform: translateY(-2px);
+    }
+
+    .main-navigation a[aria-current="page"] {
+      background-color: #007acc;
+      color: #fff;
+    }
+
+    /* Resume Button */
+    .resume-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: #007acc;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .resume-button:hover,
+    .resume-button:focus {
+      background-color: #005fa3;
+      transform: translateY(-2px);
+    }
+
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+      background: none;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .hamburger-line {
+      width: 25px;
+      height: 3px;
+      background-color: #1a1a1a;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
 
 <body>
@@ -30,9 +96,9 @@
         </h1>
         
         <nav role="navigation" class="main-navigation" aria-label="Main navigation">
-          <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
-          <a href="{{ '/academics/' | relative_url }}" {% if page.url == '/academics/' %}aria-current="page"{% endif %}>Academics</a>
-          <a href="{{ '/experience/' | relative_url }}" {% if page.url == '/experience/' %}aria-current="page"{% endif %}>Experience</a>
+          <a href="{{ '/projects/' | relative_url }}" class="nav-button" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+          <a href="{{ '/academics/' | relative_url }}" class="nav-button" {% if page.url == '/academics/' %}aria-current="page"{% endif %}>Academics</a>
+          <a href="{{ '/experience/' | relative_url }}" class="nav-button" {% if page.url == '/experience/' %}aria-current="page"{% endif %}>Experience</a>
           <a class="resume-button" 
              href="{{ '/assets/pdf/Kyle_Shiroma_Resume_2025_Github.pdf' | relative_url }}" 
              target="_blank" 
@@ -72,7 +138,6 @@
         </p>
         
         <div class="social-links" aria-label="Social media links">
-          <!-- Add your social links here -->
           <a href="https://github.com/k-shiroma-code" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
