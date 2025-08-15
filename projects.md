@@ -36,10 +36,10 @@ permalink: /projects/
 
 ## Customer Segmentation Analytics
 
-<div style="display: flex; flex-wrap: wrap; gap: 30px; margin: 20px 0; align-items: center;">
-
+<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 30px; margin: 20px 0; align-items: center;">
+  
   <!-- Text column -->
-  <div style="flex: 1; min-width: 300px; max-width: 500px; display: flex; flex-direction: column; justify-content: center;">
+  <div style="min-width: 300px; max-width: 500px; display: flex; flex-direction: column; justify-content: center; height: 100%;">
     <p>
       This project delivers a <strong>comprehensive analysis of over 500,000 retail transactions</strong> to uncover <strong>behavioral patterns</strong> in customer activity. Using <strong>RFM (Recency, Frequency, Monetary) analysis</strong>, the study identified <strong>five distinct customer segments</strong>, revealed <strong>seasonal purchasing trends</strong>, and optimized <strong>marketing spend allocation by 25%</strong>. Developed with <strong>SQL, Tableau, and Python</strong>, the analytics pipeline converts raw sales data into <strong>clear insights for strategic business decisions</strong>.
     </p>
@@ -50,7 +50,7 @@ permalink: /projects/
   </div>
 
   <!-- Dashboard column -->
-  <div style="flex: 2; min-width: 400px;">
+  <div style="min-width: 400px;">
     <div style="position: relative; width: 100%; padding-bottom: 65%; height: 0;">
       <iframe 
         src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
