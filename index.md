@@ -27,8 +27,8 @@ permalink: /
   </div>
 
   <!-- Image column -->
-  <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 20px; align-items: center;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_0482.jpg" alt="Additional Image" style="max-width: 100%; border-radius: 8px; height: auto;">
+  <div style="flex: 1; min-width: 280px; display: flex; justify-content: center; align-items: center;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_0482.jpg" alt="Additional Image" style="width: 100%; max-width: 400px; border-radius: 12px; height: auto; object-fit: cover;">
   </div>
 
 </div>
