@@ -19,6 +19,7 @@ permalink: /projects/
 </div>
 
 ---
+
 ## Pulsepanion – AI Healthcare Tool
 
 <p>Pulsepanion is an AI-powered healthcare analytics platform that transforms eighteen months of patient data into actionable clinical insights. It integrates advanced natural language processing with HIPAA-compliant data de-identification, an interactive dashboard built in R Shiny, and PDF export functionality for clinical reporting. The tool streamlines healthcare data analysis, enabling practitioners to quickly extract insights from raw patient records.</p>
@@ -27,14 +28,13 @@ permalink: /projects/
 
 <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
   <!-- Image -->
-  <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard" style="border-radius: 8px; width: 48%; min-width: 200px;">
-  
+  <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard" style="border-radius: 8px; width: 250px; height: auto;">
+
   <!-- Video -->
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; width: 48%; min-width: 200px; border-radius: 8px; overflow: hidden;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; width: 250px; border-radius: 8px; overflow: hidden;">
     <iframe src="https://www.youtube.com/embed/tEJoXKLzVH4" title="Pulsepanion Demo" style="position: absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
-
 
 ---
 
@@ -69,7 +69,6 @@ permalink: /projects/
   <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 50%;">
   <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 50%;">
 </div>
-
 
 ---
 
