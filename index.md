@@ -21,7 +21,7 @@ permalink: /
       I recently completed <strong>Udemy’s "Master Apache Airflow"</strong>, covering <strong>AWS, Kubernetes, Docker</strong>, DAG scaling, monitoring, and secure workflow orchestration.
     </p>
     <p>
-      Outside coding, I enjoy <strong>soccer</strong>, <strong>outdoors</strong>, and making data tell stories.
+      Outside coding, I enjoy <strong>soccer</strong>, <strong>outdoors</strong>, and diet coke.
     </p>
   </div>
 
