@@ -13,5 +13,3 @@ permalink: /academics/
 ## Certifications & Learning
 - **Apache Airflow: The Hands-On Guide (Udemy)** – Building scalable pipelines with Airflow, Docker, AWS S3.
 
-## Here is my official resume
-[📄 Download My Resume]({{ site.baseurl }}/assets/pdf/Kyle_Shiroma_Resume_2025 (2).pdf)
