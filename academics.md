@@ -25,7 +25,3 @@ permalink: /academics/
 - Explored **scaling Airflow** using Local, Celery, and Kubernetes executors, including a **3-node Kubernetes cluster** with Rancher.  
 - Implemented **monitoring and security practices**, including Elasticsearch + Grafana dashboards, RBAC, authentication, and data encryption.  
 - Completed hands-on exercises and quizzes to reinforce **best practices for production-ready pipelines**.
-
----
-
-© 2025 Kyle Shiroma. All rights reserved.
