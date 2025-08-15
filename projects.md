@@ -36,16 +36,16 @@ permalink: /projects/
 
 ## Customer Segmentation Analytics
 
-<div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 30px; margin: 20px 0;">
+<div style="display: flex; flex-wrap: wrap; gap: 30px; margin: 20px 0; align-items: flex-start;">
   <!-- Text column -->
-  <div style="flex: 1; min-width: 300px;">
+  <div style="flex: 1; min-width: 300px; max-width: 500px;">
     <p>This project delivers a comprehensive analysis of over 500,000 retail transactions to uncover behavioral patterns in customer activity. Using RFM (Recency, Frequency, Monetary) analysis, the study identified five distinct customer segments, revealed seasonal purchasing trends, and optimized marketing spend allocation by 25%. Developed with SQL, Tableau, and Python, the analytics pipeline converts raw sales data into clear insights for strategic business decisions.</p>
     <p><strong>Technologies:</strong> SQL, Tableau, Python, RFM Analysis, Data Visualization<br>
     <a href="https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis">View on GitHub ↗</a></p>
   </div>
   
   <!-- Dashboard column -->
-  <div style="flex: 1; min-width: 300px; display: flex; align-items: center;">
+  <div style="flex: 0 0 400px; max-width: 100%;">
     <iframe 
         src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
         width="100%" 
@@ -54,6 +54,7 @@ permalink: /projects/
     </iframe>
   </div>
 </div>
+
 
 
 ---
