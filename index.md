@@ -22,7 +22,7 @@ permalink: /
       that lead to <strong>actionable insights</strong>.
     </p>
     <p>
-      I recently completed the <strong>Udemy course: "Master Apache Airflow from A to Z"</strong>, a hands-on program covering 
+      I recently completed the <strong>Udemy course: "Master Apache Airflow"</strong>, a hands-on program covering 
       <strong>Airflow with AWS, Kubernetes, Docker</strong>, and more. The course included <strong>11 hours of practical videos</strong>, 
       <strong>103 lectures</strong>, and taught advanced concepts like <strong>scaling DAGs, monitoring with Elasticsearch and Grafana</strong>, 
       and <strong>securing Airflow with RBAC and authentication</strong>. This experience strengthened my skills in 
