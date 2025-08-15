@@ -48,7 +48,7 @@ permalink: /projects/
         src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
         width="100%" 
         height="500" 
-        style="border: none; border-radius: 8px; min-height: 500px; max-height: none;">
+        style="border: none; border-radius: 8px; min-height: 300px; max-height: none;">
     </iframe>
   </div>
 </div>
