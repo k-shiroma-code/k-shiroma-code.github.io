@@ -52,6 +52,17 @@ permalink: /projects/
   </div>
 </div>
 
+<p align="center">
+  <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/tEJoXKLzVH4" 
+          title="Pulsepanion Demo" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+</p>
+
+
 ---
 
 ## Customer Segmentation Analytics
