@@ -6,6 +6,8 @@ permalink: /academics/
 
 # Academics
 
+---
+
 ## Education
 
 **University of California, San Diego – B.S. in Data Science**  
