@@ -26,12 +26,12 @@ permalink: /projects/
 <p><strong>Technologies:</strong> R Shiny, OpenAI API, NLP, Healthcare Analytics<br>
 <a href="#">View on GitHub ↗</a></p>
 
-<div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+<div style="display: flex; gap: 10px; margin-top: 10px;">
   <!-- Image -->
-  <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard" style="border-radius: 8px; width: 250px; height: auto;">
+  <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard" style="border-radius: 8px; width: 50%;">
 
   <!-- Video -->
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; width: 250px; border-radius: 8px; overflow: hidden;">
+  <div style="position: relative; padding-bottom: 28.125%; height: 0; width: 50%; border-radius: 8px; overflow: hidden;">
     <iframe src="https://www.youtube.com/embed/tEJoXKLzVH4" title="Pulsepanion Demo" style="position: absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
