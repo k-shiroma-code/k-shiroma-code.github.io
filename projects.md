@@ -8,7 +8,7 @@ permalink: /projects/
 
 <div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
   <div style="flex: 1; min-width: 300px;">
-    <p>This production-ready cybersecurity threat detection system was built with Random Forest algorithms and achieves 88.6% accuracy in identifying three out of four major cyberattack types. It is designed for real-time detection, offering robust performance in live environments. The deployment architecture supports scalability, ensuring the machine learning pipeline can be extended for future threat models. Developed using Python and Scikit-learn, this project demonstrates expertise in both cybersecurity analytics and model optimization for production.</p>
+    <p>This <strong>production-ready cybersecurity threat detection system</strong> was built with <strong>Random Forest algorithms</strong> and achieves <strong>88.6% accuracy</strong> in identifying three out of four major cyberattack types. It is designed for <strong>real-time detection</strong>, offering robust performance in live environments. The deployment architecture supports <strong>scalability</strong>, ensuring the <strong>machine learning pipeline</strong> can be extended for future threat models. Developed using <strong>Python</strong> and <strong>Scikit-learn</strong>, this project demonstrates expertise in both <strong>cybersecurity analytics</strong> and <strong>model optimization for production</strong>.</p>
     <p><strong>Technologies:</strong> Python, Scikit-learn, Random Forest, Cybersecurity Analytics<br>
     <a href="https://github.com/k-shiroma-code/cybersecurity-ml-detection">View on GitHub ↗</a></p>
   </div>
@@ -18,7 +18,7 @@ permalink: /projects/
 
 ## Pulsepanion – AI Healthcare Tool
 
-<p>Pulsepanion is an AI-powered healthcare analytics platform that transforms eighteen months of patient data into actionable clinical insights. It integrates advanced natural language processing with HIPAA-compliant data de-identification, an interactive dashboard built in R Shiny, and PDF export functionality for clinical reporting. The tool streamlines healthcare data analysis, enabling practitioners to quickly extract insights from raw patient records.</p>
+<p><strong>Pulsepanion</strong> is an <strong>AI-powered healthcare analytics platform</strong> that transforms eighteen months of patient data into <strong>actionable clinical insights</strong>. It integrates <strong>advanced NLP</strong> with <strong>HIPAA-compliant data de-identification</strong>, an <strong>interactive R Shiny dashboard</strong>, and <strong>PDF export functionality</strong> for clinical reporting. The tool streamlines healthcare data analysis, enabling practitioners to quickly extract insights from raw patient records.</p>
 <p><strong>Technologies:</strong> R Shiny, OpenAI API, NLP, Healthcare Analytics<br>
 <a href="#">View on GitHub ↗</a></p>
 
@@ -35,15 +35,13 @@ permalink: /projects/
 ---
 
 ## Customer Segmentation Analytics
-<!-- Customer Segmentation Analytics -->
+
 <div style="display: flex; flex-wrap: wrap; gap: 30px; margin: 20px 0; align-items: flex-start;">
 
   <!-- Text column -->
   <div style="flex: 1; min-width: 300px; max-width: 500px;">
     <p>
-      This project delivers a comprehensive analysis of over 500,000 retail transactions to uncover behavioral patterns in customer activity. 
-      Using RFM (Recency, Frequency, Monetary) analysis, the study identified five distinct customer segments, revealed seasonal purchasing trends, 
-      and optimized marketing spend allocation by 25%. Developed with SQL, Tableau, and Python, the analytics pipeline converts raw sales data into clear insights for strategic business decisions.
+      This project delivers a <strong>comprehensive analysis of over 500,000 retail transactions</strong> to uncover <strong>behavioral patterns</strong> in customer activity. Using <strong>RFM (Recency, Frequency, Monetary) analysis</strong>, the study identified <strong>five distinct customer segments</strong>, revealed <strong>seasonal purchasing trends</strong>, and optimized <strong>marketing spend allocation by 25%</strong>. Developed with <strong>SQL, Tableau, and Python</strong>, the analytics pipeline converts raw sales data into <strong>clear insights for strategic business decisions</strong>.
     </p>
     <p>
       <strong>Technologies:</strong> SQL, Tableau, Python, RFM Analysis, Data Visualization<br>
@@ -63,12 +61,11 @@ permalink: /projects/
 
 </div>
 
-
 ---
 
 ## Heart Disease Prediction Pipeline
 
-<p>This machine learning pipeline predicts cardiovascular risk using the UCI Heart Disease dataset. By addressing class imbalance with SMOTE and applying logistic regression, it achieved a 20% improvement in minority-class recall. Feature engineering and selection ensured optimal model performance, and the final pipeline is designed for production deployment in healthcare analytics contexts.</p>
+<p>This <strong>machine learning pipeline</strong> predicts <strong>cardiovascular risk</strong> using the <strong>UCI Heart Disease dataset</strong>. By addressing <strong>class imbalance with SMOTE</strong> and applying <strong>logistic regression</strong>, it achieved a <strong>20% improvement in minority-class recall</strong>. <strong>Feature engineering and selection</strong> ensured <strong>optimal model performance</strong>, and the final pipeline is designed for <strong>production deployment</strong> in healthcare analytics contexts.</p>
 <p><strong>Technologies:</strong> Python, Scikit-learn, SMOTE, Logistic Regression<br>
 <a href="#">View on GitHub ↗</a></p>
 
@@ -81,7 +78,7 @@ permalink: /projects/
 
 ## CSUF Data Science Project – UEFA Euro 2024 Match Prediction
 
-<p>This sports analytics project developed predictive models for UEFA Euro 2024 match outcomes by combining traditional statistical features with ELO-based ratings. The models were evaluated across Decision Trees, Random Forests, and XGBoost, with selection based on precision, recall, and F1-score. Visualizations compared predictions with actual outcomes, providing insight into model accuracy and forecasting reliability for competitive sports analytics.</p>
+<p>This <strong>sports analytics project</strong> developed <strong>predictive models</strong> for UEFA Euro 2024 match outcomes by combining <strong>traditional statistical features</strong> with <strong>ELO-based ratings</strong>. Models were evaluated across <strong>Decision Trees, Random Forests, and XGBoost</strong>, with selection based on <strong>precision, recall, and F1-score</strong>. <strong>Visualizations</strong> compared predictions with actual outcomes, providing insight into <strong>model accuracy and forecasting reliability</strong> for competitive sports analytics.</p>
 <p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling<br>
 <a href="#">View on GitHub ↗</a></p>
 
