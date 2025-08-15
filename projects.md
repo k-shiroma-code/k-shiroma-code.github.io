@@ -134,3 +134,10 @@ permalink: /projects/
 <p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling</p>
 <p><a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a></p>
 
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Project Screenshot 1" style="border-radius:12px; width:400px;">
+</p>
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Project Screenshot 2" style="border-radius:12px; width:400px;">
+</p>
