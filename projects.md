@@ -47,7 +47,7 @@ permalink: /projects/
     <iframe 
         src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
         width="100%" 
-        height="240" 
+        height="500" 
         style="border: none; border-radius: 8px;">
     </iframe>
   </div>
@@ -78,4 +78,3 @@ permalink: /projects/
   <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Project Screenshot 1" style="border-radius: 8px; width: 50%;">
   <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Project Screenshot 2" style="border-radius: 8px; width: 50%;">
 </div>
-
