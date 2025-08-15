@@ -119,22 +119,21 @@ header nav.nav-center a.button:focus {
 -----------------------------*/
 main h2, main h3 {
   color: var(--primary-text);
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin: 1.5rem 0 1rem;  /* Reduced spacing for tighter layout */
   font-weight: 600;
   text-align: center;
 }
 
 main p {
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-  text-align: justify;
+  margin: 0.5rem 0;       /* Normal paragraph spacing */
+  line-height: 1.4;       /* Slightly tighter line height for compact text */
+  text-align: left;       /* Left-align for readability */
 }
 
 /* Images and iframes */
 img, iframe, .tableauPlaceholder {
   display: block;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   max-width: 100%;
   height: auto;
   border-radius: 12px;
