@@ -24,6 +24,9 @@ header {
   background: #f8f8f8;
   padding: 1rem 0;
   border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
@@ -37,38 +40,74 @@ header h1 a {
   color: #111;
 }
 
-/* Centered navigation */
+/* Navigation */
 header nav.nav-center {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;           /* space between links */
+  gap: 1rem;
   margin-top: 0.5rem;
 }
 
 header nav.nav-center a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   color: #007acc;
   font-weight: 500;
-  transition: color 0.3s;
+  border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
-header nav.nav-center a:hover {
-  color: #005f99;
-  text-decoration: underline;
-}
-
-/* Resume button */
-header nav.nav-center a.button {
+header nav.nav-center a:hover,
+header nav.nav-center a:focus {
   background-color: #007acc;
   color: #fff;
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s;
+  transform: translateY(-2px);
+  outline: none;
 }
 
-header nav.nav-center a.button:hover {
+header nav.nav-center a[aria-current="page"] {
+  background-color: #007acc;
+  color: #fff;
+}
+
+/* Resume Button */
+header nav.nav-center a.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #007acc;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+}
+
+header nav.nav-center a.button:hover,
+header nav.nav-center a.button:focus {
   background-color: #005f99;
+  transform: translateY(-2px);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #1a1a1a;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 /* ----------------------------
@@ -78,6 +117,7 @@ main h2, main h3 {
   color: #111;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -87,23 +127,14 @@ main p {
   text-align: justify;
 }
 
-/* Images */
-img {
-  display: block;
-  margin: 1.5rem auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Tableau embeds / iframes */
-iframe, .tableauPlaceholder {
+/* Images and iframes */
+img, iframe, .tableauPlaceholder {
   display: block;
   margin: 2rem auto;
   max-width: 100%;
+  height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
 /* Links */
@@ -118,32 +149,61 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Buttons */
-a.button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #007acc;
-  color: #fff;
-  border-radius: 6px;
-  font-weight: 500;
-  margin-top: 1rem;
-  transition: background-color 0.3s;
+/* ----------------------------
+   Footer
+-----------------------------*/
+footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #e5e5e5;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-a.button:hover {
-  background-color: #005f99;
+footer p {
+  margin: 0.5rem 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a svg {
+  transition: color 0.2s;
+}
+
+.social-links a:hover svg {
+  color: #007acc;
 }
 
 /* ----------------------------
    Responsive Adjustments
 -----------------------------*/
-@media (max-width: 600px) {
-  header nav.nav-center {
-    flex-direction: column;
-    gap: 1rem;
+@media (max-width: 800px) {
+  .mobile-menu-toggle {
+    display: flex;
   }
 
+  header nav.nav-center {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  header nav.nav-center.is-open {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
   main h2, main h3 {
     font-size: 1.5rem;
+  }
+
+  header nav.nav-center a {
+    padding: 0.75rem 1.25rem;
   }
 }
