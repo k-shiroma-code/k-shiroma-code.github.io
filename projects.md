@@ -98,26 +98,29 @@ permalink: /projects/
 
 ## Heart Disease Prediction Pipeline
 
-<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
+<div style="display: flex; align-items: center; gap: 20px; margin: 1.5rem 0; flex-wrap: wrap;">
+  <!-- Text column -->
   <div style="flex: 1; min-width: 300px;">
-    <p>Machine learning pipeline for cardiovascular risk assessment using the UCI Heart Disease dataset. Focused on improving predictions for minority-class patients using <strong>SMOTE</strong> and logistic regression. Designed to assist clinical decision-making and early risk detection.</p>
+    <p>Machine learning pipeline for cardiovascular risk assessment using the UCI Heart Disease dataset. Improved minority-class predictions with SMOTE and logistic regression.</p>
     
     <p><strong>Key Achievements:</strong></p>
     <ul>
-      <li>20% improvement in minority-class recall through oversampling</li>
-      <li>Comprehensive feature engineering and selection for predictive accuracy</li>
-      <li>Production-ready ML pipeline with validation and visualization support</li>
+      <li>20% improvement in minority-class recall</li>
+      <li>Feature engineering and selection</li>
+      <li>Production-ready ML pipeline</li>
     </ul>
     
-    <p><strong>Technologies:</strong> Python, Scikit-learn, SMOTE, Logistic Regression, Healthcare ML<br>
+    <p><strong>Technologies:</strong> Python, Scikit-learn, SMOTE, Logistic Regression<br>
     <a href="https://github.com/k-shiroma-code/Heart-Disease-ML-Project">View on GitHub ↗</a></p>
   </div>
-  
-  <div style="flex: 0 0 400px; display: flex; flex-direction: column; gap: 10px;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 100%;">
-    <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 100%;">
+
+  <!-- Images column -->
+  <div style="flex: 0 0 250px; display: flex; flex-direction: column; gap: 10px;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius:8px; width:100%; height:auto;">
+    <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius:8px; width:100%; height:auto;">
   </div>
 </div>
+
 
 ---
 
