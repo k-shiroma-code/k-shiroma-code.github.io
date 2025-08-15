@@ -9,7 +9,6 @@ You can view the live portfolio here: [k-shiroma-code.github.io](https://k-shiro
 - `index.md` – Home page (About Me + quick links)  
 - `projects.md` – Projects page  
 - `experience.md` – Work & research experience  
-- `academics.md` – Education & certifications  
 - `_layouts/` – Layout templates  
 - `assets/css/style.css` – Custom styling  
 
