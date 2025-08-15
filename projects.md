@@ -11,7 +11,6 @@ permalink: /projects/
 ## Machine Learning Intrusion Detection
 <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px; margin: 20px 0;">
 
-  <!-- Left side: Text -->
   <div style="flex: 1; min-width: 300px;">
     <p>A production-ready cybersecurity threat detection system built with <strong>Random Forest</strong> algorithms. Successfully identifies 3 out of 4 major cyberattack types with <strong>88.6% accuracy</strong>, demonstrating robust performance in real-world security scenarios.</p>
 
@@ -108,9 +107,9 @@ permalink: /projects/
 
 ## Heart Disease Prediction Pipeline
 
-<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px; margin: 20px 0;">
+<div style="display: flex; flex-direction: column; gap: 20px; margin: 20px 0;">
 
-  <div style="flex: 1; min-width: 300px;">
+  <div>
     <p>ML pipeline for cardiovascular risk assessment using the UCI Heart Disease dataset. Improved minority-class predictions with SMOTE and logistic regression.</p>
     
     <p><strong>Key Achievements:</strong></p>
@@ -124,9 +123,9 @@ permalink: /projects/
     <a href="https://github.com/k-shiroma-code/Heart-Disease-ML-Project">View on GitHub ↗</a></p>
   </div>
 
-  <div style="flex: 0 0 400px; display: flex; gap: 15px;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 50%;">
-    <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 50%;">
+  <div style="display: flex; flex-direction: column; gap: 15px;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 100%;">
+    <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 100%;">
   </div>
 
 </div>
@@ -135,9 +134,9 @@ permalink: /projects/
 
 ## CSUF Data Science Project – UEFA Euro 2024 Match Prediction
 
-<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px; margin: 20px 0;">
+<div style="display: flex; flex-direction: column; gap: 20px; margin: 20px 0;">
 
-  <div style="flex: 1; min-width: 300px;">
+  <div>
     <p>Sports analytics project developing predictive models for European Championship match outcomes. Integrated traditional statistical features with ELO rating systems for comprehensive match forecasting.</p>
     
     <p><strong>Model Performance:</strong></p>
@@ -151,9 +150,9 @@ permalink: /projects/
     <a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a></p>
   </div>
 
-  <div style="flex: 0 0 400px; display: flex; gap: 15px;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Project Screenshot 1" style="border-radius: 8px; width: 50%;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Project Screenshot 2" style="border-radius: 8px; width: 50%;">
+  <div style="display: flex; flex-direction: column; gap: 15px;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Project Screenshot 1" style="border-radius: 8px; width: 100%;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Project Screenshot 2" style="border-radius: 8px; width: 100%;">
   </div>
 
 </div>
