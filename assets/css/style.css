@@ -5,10 +5,11 @@
   --primary-text: #2D2D2D;       /* Dark grey for text */
   --accent: #1A3C7A;             /* Light navy accent */
   --accent-hover: #162F63;       /* Slightly darker light navy for hover */
-  --bg: #FAFAFA;                 /* Soft off-white background */
-  --bg-alt: #F0F0F0;             /* Slightly darker for header/footer */
+  --bg: #FFF8E5;                 /* Soft beige background */
+  --bg-alt: #F5F0E1;             /* Slightly darker beige for header/footer */
   --border-color: #E5E5E5;       /* Subtle border */
 }
+
 /* ----------------------------
    General Body & Container
 -----------------------------*/
