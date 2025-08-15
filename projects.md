@@ -119,19 +119,22 @@ permalink: /projects/
 
 ## CSUF Data Science Project – UEFA Euro 2024 Match Prediction
 
-<p>Sports analytics project developing predictive models for European Championship match outcomes. Integrated traditional statistical features with ELO ratings.</p>
+<div style="display: flex; flex-direction: column; gap: 15px; margin: 20px 0;">
+  <p>Sports analytics project developing predictive models for European Championship match outcomes. Integrated traditional statistical features with ELO ratings.</p>
 
-<p><strong>Model Performance:</strong></p>
-<ul>
-  <li>Decision Trees, Random Forests, and XGBoost comparison</li>
-  <li>ELO-based team strength features</li>
-  <li>Precision, recall, and F1-score evaluation</li>
-</ul>
+  <p><strong>Model Performance:</strong></p>
+  <ul>
+    <li>Decision Trees, Random Forests, and XGBoost comparison</li>
+    <li>ELO-based team strength features</li>
+    <li>Precision, recall, and F1-score evaluation</li>
+  </ul>
 
-<p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering<br>
-<a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a></p>
+  <p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering<br>
+  <a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a></p>
 
-<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-  <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Screenshot 1" style="border-radius:12px; width:400px;">
-  <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Screenshot 2" style="border-radius:12px; width:400px;">
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; align-items: flex-start; margin-top: 20px;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Screenshot 1" style="border-radius:12px; max-width: 48%; height: auto;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Screenshot 2" style="border-radius:12px; max-width: 48%; height: auto;">
+  </div>
 </div>
+
