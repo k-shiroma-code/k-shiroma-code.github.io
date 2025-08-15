@@ -30,7 +30,7 @@ permalink: /projects/
 
 ---
 
-## Pulsepanion – AI Healthcare Tool 🏆
+## Pulsepanion – AI Healthcare Tool 
 *Winner – AI Hackathon*
 
 <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px; margin: 20px 0;">
