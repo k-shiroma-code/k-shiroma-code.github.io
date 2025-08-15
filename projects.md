@@ -43,7 +43,7 @@ permalink: /projects/
     <a href="https://github.com/k-shiroma-code/Customer-Segmentation-with-RFM-Analysis">View on GitHub ↗</a></p>
   </div>
   
-  <div style="flex: 1; min-width: 500px;">
+  <div style="flex: 1; min-width: 400px;">
     <iframe 
         src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
         width="100%" 
