@@ -2,12 +2,12 @@
    Color Variables
 -----------------------------*/
 :root {
-  --primary-text: #2D2D2D;   /* Dark grey for body text */
-  --accent: #4ECDC4;         /* Teal accent */
-  --accent-hover: #3cb6a9;   /* Slightly darker teal for hover */
-  --bg: #FFFFFF;             /* Background */
-  --bg-alt: #F7F9FA;         /* Light grey alt background */
-  --border-color: #E5E5E5;   /* Subtle border color */
+  --primary-text: #2D2D2D;       /* Dark grey for text */
+  --accent: #FF6B35;             /* Warm orange accent */
+  --accent-hover: #E85A26;       /* Darker orange for hover */
+  --bg: #FAFAFA;                 /* Soft off-white background */
+  --bg-alt: #F0F0F0;             /* Slightly darker for header/footer */
+  --border-color: #E5E5E5;       /* Subtle border */
 }
 
 /* ----------------------------
@@ -126,8 +126,8 @@ main h2, main h3 {
 }
 
 main p {
-  margin-bottom: 1rem;
-  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
   text-align: justify;
 }
 
@@ -138,7 +138,7 @@ img, iframe, .tableauPlaceholder {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
 /* Links */
