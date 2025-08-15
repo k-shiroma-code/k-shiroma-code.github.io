@@ -19,22 +19,18 @@ permalink: /projects/
 </div>
 
 ---
-
 ## Pulsepanion – AI Healthcare Tool
 
-<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 300px;">
-    <p>Pulsepanion is an AI-powered healthcare analytics platform that transforms 18 months of patient data into actionable clinical insights. It integrates advanced natural language processing with HIPAA-compliant data de-identification and interactive dashboards built in R Shiny. The system includes PDF export capabilities for clinical reports and provides an efficient way for medical professionals to analyze patient histories. Designed with both technical rigor and practical usability in mind, Pulsepanion streamlines healthcare analytics from raw data to decision-making.</p>
-    <p><strong>Technologies:</strong> R Shiny, OpenAI API, NLP, Healthcare Analytics<br>
-    <a href="https://github.com/k-shiroma-code/NCHacks-Pulsepanion">View on GitHub ↗</a></p>
-  </div>
-  
-  <div style="flex: 0 0 230px;">
-    <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard Interface" style="border-radius: 8px; width: 100%;">
-  </div>
+<p>Pulsepanion is an AI-powered healthcare analytics platform that transforms eighteen months of patient data into actionable clinical insights. It integrates advanced natural language processing with HIPAA-compliant data de-identification, an interactive dashboard built in R Shiny, and PDF export functionality for clinical reporting. The tool streamlines healthcare data analysis, enabling practitioners to quickly extract insights from raw patient records.</p>
+<p><strong>Technologies:</strong> R Shiny, OpenAI API, NLP, Healthcare Analytics<br>
+<a href="#">View on GitHub ↗</a></p>
+
+<div style="display: flex; gap: 10px; margin-top: 10px;">
+  <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard" style="border-radius: 8px; width: 50%;">
+  <img src="{{ site.baseurl }}/assets/img/Pulsepantion-Extra.jpg" alt="Pulsepanion Extra Screenshot" style="border-radius: 8px; width: 50%;">
 </div>
 
-<div style="max-width: 320px; margin: 0 auto;">
+<div style="max-width: 320px; margin: 20px auto;">
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
     <iframe src="https://www.youtube.com/embed/tEJoXKLzVH4" title="Pulsepanion Demo" style="position: absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen></iframe>
   </div>
@@ -65,32 +61,26 @@ permalink: /projects/
 
 ## Heart Disease Prediction Pipeline
 
-<div style="display: flex; align-items: flex-start; gap: 20px; margin: 3rem 0 2rem; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 300px; padding-top: 20px;">
-    <p>This machine learning pipeline assesses cardiovascular risk using the UCI Heart Disease dataset. By applying SMOTE to address class imbalance and leveraging logistic regression, the system achieved a 20% improvement in minority-class recall. The pipeline incorporates feature engineering and selection techniques to optimize performance and is designed for production deployment. It serves as a robust example of applied predictive modeling in healthcare.</p>
-    <p><strong>Technologies:</strong> Python, Scikit-learn, SMOTE, Logistic Regression<br>
-    <a href="https://github.com/k-shiroma-code/Heart-Disease-ML-Project">View on GitHub ↗</a></p>
-  </div>
+<p>This machine learning pipeline predicts cardiovascular risk using the UCI Heart Disease dataset. By addressing class imbalance with SMOTE and applying logistic regression, it achieved a 20% improvement in minority-class recall. Feature engineering and selection ensured optimal model performance, and the final pipeline is designed for production deployment in healthcare analytics contexts.</p>
+<p><strong>Technologies:</strong> Python, Scikit-learn, SMOTE, Logistic Regression<br>
+<a href="#">View on GitHub ↗</a></p>
 
-  <div style="flex: 0 0 200px; display: flex; flex-direction: column; gap: 10px;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius:8px; width:100%; height:auto;">
-    <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius:8px; width:100%; height:auto;">
-  </div>
+<div style="display: flex; gap: 10px; margin-top: 10px;">
+  <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 50%;">
+  <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 50%;">
 </div>
+
 
 ---
 
 ## CSUF Data Science Project – UEFA Euro 2024 Match Prediction
 
-<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
-  <div style="flex: 1; min-width: 300px;">
-    <p>This sports analytics project focused on predicting match outcomes for the UEFA Euro 2024 tournament. Combining traditional statistical features with ELO-based ratings, the model provided comprehensive forecasts to inform coaches and analysts. The project compared Decision Trees, Random Forests, and XGBoost, ultimately selecting the optimal approach based on precision, recall, and F1-score. Visualizations were generated to compare predicted results against actual match outcomes, illustrating the model’s accuracy and reliability.</p>
-    <p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling<br>
-    <a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a></p>
-  </div>
-  
-  <div style="flex: 0 0 250px; display: flex; flex-direction: column; gap: 10px;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Project Screenshot 1" style="border-radius: 8px; width: 100%;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Project Screenshot 2" style="border-radius: 8px; width: 100%;">
-  </div>
+<p>This sports analytics project developed predictive models for UEFA Euro 2024 match outcomes by combining traditional statistical features with ELO-based ratings. The models were evaluated across Decision Trees, Random Forests, and XGBoost, with selection based on precision, recall, and F1-score. Visualizations compared predictions with actual outcomes, providing insight into model accuracy and forecasting reliability for competitive sports analytics.</p>
+<p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling<br>
+<a href="#">View on GitHub ↗</a></p>
+
+<div style="display: flex; gap: 10px; margin-top: 10px;">
+  <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Project Screenshot 1" style="border-radius: 8px; width: 50%;">
+  <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Project Screenshot 2" style="border-radius: 8px; width: 50%;">
 </div>
+
