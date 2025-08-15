@@ -28,8 +28,6 @@ permalink: /
 
   <!-- Image column -->
   <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 20px; align-items: center;">
-    <img src="{{ site.baseurl }}/assets/img/UCSanDiego-BlueGold.png" alt="UC San Diego Logo" style="max-width: 200px; height: auto;">
-    <img src="{{ site.baseurl }}/assets/img/Norco Seal RGB.png" alt="Norco College Logo" style="max-width: 200px; height: auto;">
     <img src="{{ site.baseurl }}/assets/img/IMG_0482.jpg" alt="Additional Image" style="max-width: 100%; border-radius: 8px; height: auto;">
   </div>
 
