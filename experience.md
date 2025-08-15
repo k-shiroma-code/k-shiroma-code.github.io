@@ -18,6 +18,8 @@ permalink: /experience/
   </div>
 </div>
 
+---
+
 <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; margin: 1.5rem 0;">
   <!-- Image column (left) -->
   <div style="flex: 0 0 300px; max-width: 100%;">
