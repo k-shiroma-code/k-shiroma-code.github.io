@@ -12,11 +12,10 @@ permalink: /experience/
 <div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
   <div style="flex: 1; min-width: 300px;">
     <p>As a Peer Tutor at Norco College, I supported over 100 students in Calculus, Statistics, and C++. I helped students strengthen their problem-solving skills and develop confidence in tackling complex concepts. I maintained thorough documentation and timesheets to track progress, which enhanced my organizational skills. This experience honed my communication, mentoring, and leadership abilities.</p>
-    <p><a class="button" href="{{ site.baseurl }}/assets/pdf/resume/CRLA.pdf" target="_blank">View CRLA Certificate ↗</a></p>
   </div>
 
   <div style="flex: 0 0 400px;">
-    <img src="{{ site.baseurl }}/assets/img/placeholder_tutoring.png" alt="Tutoring Certificate Preview" style="border-radius:12px; width:100%;">
+    <img src="{{ site.baseurl }}/assets/pdf/CRLA.pdf" alt="CRLA Tutoring Certificate" style="border-radius:12px; width:100%;">
   </div>
 </div>
 
