@@ -4,10 +4,6 @@ layout: default
 permalink: /projects/
 ---
 
-# Projects
-
----
-
 ## Machine Learning Intrusion Detection
 
 <div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
