@@ -7,30 +7,31 @@ permalink: /experience/
 # Experience
 
 ## Norco College Learning Resources Center – Peer Tutor
-*Jan 2023 – June 2025*
+*Jan 2023 – June 2025*  
 
-<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
-  <div style="flex: 1; min-width: 300px;">
-    <p>As a Peer Tutor at Norco College, I supported over 100 students in Calculus, Statistics, and C++. I helped students strengthen their problem-solving skills and develop confidence in tackling complex concepts. I maintained thorough documentation and timesheets to track progress, which enhanced my organizational skills. This experience honed my communication, mentoring, and leadership abilities.</p>
+Tutored over 100 students in Calculus, Statistics, and C++. Developed strong communication and mentoring skills while maintaining accurate documentation and timesheets.
+
+<div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 1rem;">
+  <div style="flex: 1;">
+    <p>Guided students step-by-step through problem-solving, ensuring conceptual understanding and independent thinking. Helped students build confidence in STEM subjects and achieve academic goals.</p>
   </div>
-
-  <div style="flex: 0 0 400px;">
-    <img src="{{ site.baseurl }}/assets/pdf/CRLA.pdf" alt="CRLA Tutoring Certificate" style="border-radius:12px; width:100%;">
+  <div style="flex: 0 0 300px;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1673.jpg" alt="CRLA Tutoring Certificate" style="border-radius:12px; width:100%;">
   </div>
 </div>
 
 ---
 
 ## CIC Summer Research Program – Data Science Intern
-*May – July 2024*
+*May – July 2024*  
 
-<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
-  <div style="flex: 1; min-width: 300px;">
-    <p>During the CIC Summer Research Program, I worked as a Data Science Intern analyzing 5,903 European football match records. I engineered ELO-based ratings and applied machine learning models including Logistic Regression and XGBoost, improving predictive performance by 10%. I also addressed class imbalance issues, boosting minority-class recall by 20% using SMOTE and undersampling. This project strengthened my data analysis, feature engineering, and model evaluation skills.</p>
-    <p><a class="button" href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics" target="_blank">View Project on GitHub ↗</a></p>
+Worked on European football match datasets, cleaning and structuring 5,903 match records. Engineered Elo-based ratings and built predictive models using Logistic Regression and XGBoost, achieving 61% accuracy. Enhanced minority-class recall by 20% using SMOTE and undersampling.
+  
+<div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 1rem;">
+  <div style="flex: 1;">
+    <p>Developed end-to-end data pipelines and applied feature engineering to improve model performance. Presented results and insights in a clear, actionable format for research and team discussions.</p>
   </div>
-
   <div style="flex: 0 0 400px;">
-    <img src="{{ site.baseurl }}/assets/img/CSUF_DS.png" alt="Football Analytics Research Project" style="border-radius:12px; width:100%;">
+    <img src="{{ site.baseurl }}/assets/img/CSUF_DS.png" alt="CSUF Data Science Intern Project" style="border-radius:12px; width:100%;">
   </div>
 </div>
