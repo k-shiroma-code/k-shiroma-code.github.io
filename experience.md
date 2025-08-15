@@ -20,5 +20,5 @@ permalink: /experience/
 - Improved minority class recall by 20% using SMOTE & undersampling.
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/.png" alt="Description of Image" style="border-radius:12px; width:400px;">
+  <img src="{{ site.baseurl }}/assets/img/CSUF_DS.png" alt="Description of Image" style="border-radius:12px; width:400px;">
 </p>
