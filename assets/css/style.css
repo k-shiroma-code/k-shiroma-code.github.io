@@ -1,11 +1,23 @@
 /* ----------------------------
+   Color Variables
+-----------------------------*/
+:root {
+  --primary-text: #2D2D2D;   /* Dark grey for body text */
+  --accent: #4ECDC4;         /* Teal accent */
+  --accent-hover: #3cb6a9;   /* Slightly darker teal for hover */
+  --bg: #FFFFFF;             /* Background */
+  --bg-alt: #F7F9FA;         /* Light grey alt background */
+  --border-color: #E5E5E5;   /* Subtle border color */
+}
+
+/* ----------------------------
    General Body & Container
 -----------------------------*/
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.4; /* reduced from 1.7 for tighter spacing */
-  color: #333;
-  background-color: #fff;
+  line-height: 1.4;
+  color: var(--primary-text);
+  background-color: var(--bg);
   margin: 0;
   padding: 0;
 }
@@ -18,30 +30,12 @@ body {
 }
 
 /* ----------------------------
-   Main Content
------------------------------*/
-main h2, main h3 {
-  color: #111;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-main p {
-  margin-bottom: 1rem;  /* reduced from 1.5rem */
-  line-height: 1.4;     /* reduced from 1.8 */
-  text-align: justify;
-}
-
-
-/* ----------------------------
    Header
 -----------------------------*/
 header {
-  background: #f8f8f8;
+  background: var(--bg-alt);
   padding: 1rem 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -55,7 +49,7 @@ header h1 {
 
 header h1 a {
   text-decoration: none;
-  color: #111;
+  color: var(--primary-text);
 }
 
 /* Navigation */
@@ -71,7 +65,7 @@ header nav.nav-center a {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #007acc;
+  color: var(--accent);
   font-weight: 500;
   border-radius: 6px;
   transition: all 0.2s ease;
@@ -79,14 +73,14 @@ header nav.nav-center a {
 
 header nav.nav-center a:hover,
 header nav.nav-center a:focus {
-  background-color: #007acc;
+  background-color: var(--accent);
   color: #fff;
   transform: translateY(-2px);
   outline: none;
 }
 
 header nav.nav-center a[aria-current="page"] {
-  background-color: #007acc;
+  background-color: var(--accent);
   color: #fff;
 }
 
@@ -95,7 +89,7 @@ header nav.nav-center a.button {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background-color: #007acc;
+  background-color: var(--accent);
   color: #fff;
   font-weight: 600;
   border-radius: 6px;
@@ -105,7 +99,7 @@ header nav.nav-center a.button {
 
 header nav.nav-center a.button:hover,
 header nav.nav-center a.button:focus {
-  background-color: #005f99;
+  background-color: var(--accent-hover);
   transform: translateY(-2px);
 }
 
@@ -124,7 +118,7 @@ header nav.nav-center a.button:focus {
    Main Content
 -----------------------------*/
 main h2, main h3 {
-  color: #111;
+  color: var(--primary-text);
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -132,8 +126,8 @@ main h2, main h3 {
 }
 
 main p {
-  margin-bottom: 1.5rem;
-  line-height: 1.8;
+  margin-bottom: 1rem;
+  line-height: 1.4;
   text-align: justify;
 }
 
@@ -144,18 +138,18 @@ img, iframe, .tableauPlaceholder {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
 /* Links */
 a {
-  color: #007acc;
+  color: var(--accent);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #005f99;
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 
@@ -163,8 +157,8 @@ a:hover {
    Footer
 -----------------------------*/
 footer {
-  background-color: #f8f8f8;
-  border-top: 1px solid #e5e5e5;
+  background-color: var(--bg-alt);
+  border-top: 1px solid var(--border-color);
   padding: 2rem 0;
   text-align: center;
 }
@@ -185,7 +179,7 @@ footer p {
 }
 
 .social-links a:hover svg {
-  color: #007acc;
+  color: var(--accent);
 }
 
 /* ----------------------------
