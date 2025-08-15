@@ -28,8 +28,9 @@ permalink: /
 
   <!-- Image column -->
   <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 20px;">
-    <img src="/assets/images/ucsd-logo.png" alt="UC San Diego Logo" style="max-width: 200px;">
-    <img src="/assets/images/norco-logo.png" alt="Norco College Logo" style="max-width: 200px;">
+    <img src="/assets/images/UCSanDiego-BlueGold![Uploading UCSanDiegoLogo-BlueGold.png…]()
+" alt="UC San Diego Logo" style="max-width: 200px;">
+    <img src="/assets/images/NORCO Seal RGB.png" alt="Norco College Logo" style="max-width: 200px;">
     <img src="/assets/images/project-preview.png" alt="Project Preview" style="max-width: 100%; border-radius: 8px;">
   </div>
 
