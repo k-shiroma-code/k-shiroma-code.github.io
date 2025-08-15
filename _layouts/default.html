@@ -7,20 +7,19 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-<header>
-  <div class="container">
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    <nav class="nav-center">
-      <a href="{{ '/projects/' | relative_url }}">Projects</a>
-      <a href="{{ '/academics/' | relative_url }}">Academics</a>
-      <a href="{{ '/experience/' | relative_url }}">Experience</a>
-      {% if site.show_downloads %}
-        <a class="button" href="{{ '/pdf/Kyle_Shiroma_Resume_2025_Github.pdf' | relative_url }}" target="_blank">Resume ↗</a>
-      {% endif %}
-    </nav>
-  </div>
-</header>
-
+  <header>
+    <div class="container">
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <nav class="nav-center">
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a href="{{ '/academics/' | relative_url }}">Academics</a>
+        <a href="{{ '/experience/' | relative_url }}">Experience</a>
+        <a class="button" href="https://k-shiroma-code.github.io/pdf/Kyle_Shiroma_Resume_2025.pdf" target="_blank">
+          Resume ↗
+        </a>
+      </nav>
+    </div>
+  </header>
 
   <main class="container">
     {{ content }}
