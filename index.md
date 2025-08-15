@@ -13,7 +13,7 @@ permalink: /
       I’m Kyle Shiroma, a data science student transferring from Norco College (A.S. in Mathematics, Aug 2022 – Jun 2025) 
       to UC San Diego (B.S. in Data Science, Sept 2025 – Jun 2027). 
       My work blends technical skill and real-world problem solving, from analyzing half a million retail transactions 
-      to building AI-powered health tools as a <strong>2025 AI4Purpose NYC Finalist</strong>.
+      to building AI-powered health tools as a <strong>2025 AI4Purpose NYC Winner</strong>.
     </p>
     <p>
       My technical toolkit includes Python, R, SQL, Tableau, TensorFlow, and Scikit-learn, with experience in machine learning, 
