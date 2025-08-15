@@ -122,22 +122,15 @@ permalink: /projects/
 
 ## UEFA Euro 2024 Match Prediction
 
-<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
-  <div style="flex: 1; min-width: 300px;">
-    <p>Sports analytics project developing predictive models for European Championship match outcomes. Integrated traditional statistical features with ELO rating systems for comprehensive match forecasting.</p>
-    
-    <p><strong>Model Performance:</strong></p>
-    <ul>
-      <li>Compared Decision Trees, Random Forests, and XGBoost algorithms</li>
-      <li>Implemented ELO-based team strength features</li>
-      <li>Comprehensive evaluation using precision, recall, and F1-score metrics</li>
-    </ul>
-    
-    <p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling<br>
-    <a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a></p>
-  </div>
-  
-  <div style="flex: 0 0 400px;">
-    <img src="{{ site.baseurl }}/assets/img/CSUF_DS.png" alt="Football Analytics Research Project" style="border-radius: 8px; width: 100%;">
-  </div>
-</div>
+<p>Sports analytics project developing predictive models for European Championship match outcomes. Integrated traditional statistical features with ELO rating systems for comprehensive match forecasting.</p>
+
+<p><strong>Model Performance:</strong></p>
+<ul>
+  <li>Compared Decision Trees, Random Forests, and XGBoost algorithms</li>
+  <li>Implemented ELO-based team strength features</li>
+  <li>Comprehensive evaluation using precision, recall, and F1-score metrics</li>
+</ul>
+
+<p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling</p>
+<p><a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a></p>
+
