@@ -33,6 +33,8 @@ permalink: /projects/
 </div>
 
 ---
+
+## Customer Segmentation Analytics
 <!-- Customer Segmentation Analytics -->
 <div style="display: flex; flex-wrap: wrap; gap: 30px; margin: 20px 0; align-items: flex-start;">
 
