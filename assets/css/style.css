@@ -61,12 +61,13 @@ header nav.nav-center {
   margin-top: 0.5rem;
 }
 
-header nav.nav-center a {
+/* Navigation Links (exclude buttons like Resume) */
+header nav.nav-center a:not(.button) {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 500; /* only applies to regular nav links */
   border-radius: 6px;
   transition: all 0.2s ease;
 }
