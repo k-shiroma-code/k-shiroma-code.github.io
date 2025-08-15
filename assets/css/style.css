@@ -3,7 +3,7 @@
 -----------------------------*/
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.7;
+  line-height: 1.4; /* reduced from 1.7 for tighter spacing */
   color: #333;
   background-color: #fff;
   margin: 0;
@@ -16,6 +16,24 @@ body {
   margin: 0 auto;
   padding: 2rem 0;
 }
+
+/* ----------------------------
+   Main Content
+-----------------------------*/
+main h2, main h3 {
+  color: #111;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+main p {
+  margin-bottom: 1rem;  /* reduced from 1.5rem */
+  line-height: 1.4;     /* reduced from 1.8 */
+  text-align: justify;
+}
+
 
 /* ----------------------------
    Header
