@@ -27,7 +27,7 @@ permalink: /
 
   <!-- Image column -->
   <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; align-items: center;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_0482.jpg" 
+    <img src="{{ site.baseurl }}/assets/img/MG_0482.jpg" 
          alt="Kyle Shiroma" 
          style="max-width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
   </div>
