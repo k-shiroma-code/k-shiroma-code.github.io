@@ -1,4 +1,4 @@
-# Kyle Shiroma Website
+# Kyle's Website
 
 Welcome! This repository contains my personal portfolio built with GitHub Pages and Jekyll.  
 
