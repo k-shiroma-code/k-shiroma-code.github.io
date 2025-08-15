@@ -125,7 +125,7 @@ main h2, main h3 {
 }
 
 main p {
-  margin: 0.5rem 0;       /* Normal paragraph spacing */
+  margin: 1.0rem 0;       /* Normal paragraph spacing */
   line-height: 1.4;       /* Slightly tighter line height for compact text */
   text-align: left;       /* Left-align for readability */
 }
