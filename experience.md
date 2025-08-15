@@ -30,7 +30,7 @@ permalink: /experience/
   <div style="flex: 1; min-width: 400px;">
     <h3>CIC Summer Research Program – Data Science Intern</h3>
     <p style="text-align: center;"><em>May – July 2024</em></p>
-    <p>Analyzed and structured <strong>5,903 European football match records</strong> through data cleaning, transformation, and Elo-based rating engineering. Built predictive models with <strong>Logistic Regression</strong> and <strong>XGBoost</strong>, achieving <strong>61% accuracy</strong> and increasing <strong>minority-class recall by 20%</strong> using SMOTE and undersampling. Developed automated data pipelines, applied targeted feature engineering, and delivered insights via clear visualizations to support research and team decision-making.</p>
+    <p>Analyzed and structured <strong>5,903 European football match records</strong> through data cleaning, transformation, and Elo-based rating engineering. Built predictive models with <strong>Logistic Regression</strong> and <strong>XGBoost</strong>, achieving <strong>61% accuracy</strong> and increasing <strong>minority-class recall by 20%</strong> using SMOTE and undersampling. Delivered insights through visual presentation to peers. </p>
   </div>
 </div>
 
