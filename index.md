@@ -11,7 +11,7 @@ permalink: /
     <h2>About Me</h2>
     <p>
       I’m <strong>Kyle Shiroma</strong>, a data science student transferring from <strong>Norco College (A.S. Mathematics)</strong> 
-      to <strong>UC San Diego (B.S. Data Science)</strong>. I combine <strong>technical skills</strong> and <strong>real-world problem solving</strong>, from analyzing retail transactions to building AI health tools (<strong>2025 AI4Purpose NYC Winner</strong>).
+      to <strong>UC San Diego (B.S. Data Science)</strong>. I combine <strong>technical skills</strong> with <strong>real-world problem solving</strong>, from analyzing retail transactions to building AI health tools (<strong>2025 AI4Purpose NYC Winner</strong>).
     </p>
     <p>
       My toolkit includes <strong>Python, R, SQL, Tableau, TensorFlow, Scikit-learn</strong>, with experience in <strong>ML, data visualization,</strong> and <strong>scalable pipelines</strong>. 
@@ -27,7 +27,9 @@ permalink: /
 
   <!-- Image column -->
   <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 20px; align-items: center;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_0482.jpg" alt="Kyle Shiroma" style="max-width: 100%; border-radius: 8px; height: auto;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_0482.jpg" 
+         alt="Kyle Shiroma" 
+         style="max-width: 80%; width: 250px; height: auto; border-radius: 8px;">
   </div>
 
 </div>
