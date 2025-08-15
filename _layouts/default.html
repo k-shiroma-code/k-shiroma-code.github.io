@@ -30,24 +30,20 @@
         </h1>
         
         <nav role="navigation" class="main-navigation" aria-label="Main navigation">
-          <ul class="nav-list">
-            <li><a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a></li>
-            <li><a href="{{ '/academics/' | relative_url }}" {% if page.url == '/academics/' %}aria-current="page"{% endif %}>Academics</a></li>
-            <li><a href="{{ '/experience/' | relative_url }}" {% if page.url == '/experience/' %}aria-current="page"{% endif %}>Experience</a></li>
-            <li>
-              <a class="resume-button" 
-                 href="{{ '/assets/pdf/Kyle_Shiroma_Resume_2025_Github.pdf' | relative_url }}" 
-                 target="_blank" 
-                 rel="noopener noreferrer"
-                 aria-label="Download Resume (opens in new tab)">
-                Resume
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M7 7h10v10"></path>
-                  <path d="M7 17 17 7"></path>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+          <a href="{{ '/academics/' | relative_url }}" {% if page.url == '/academics/' %}aria-current="page"{% endif %}>Academics</a>
+          <a href="{{ '/experience/' | relative_url }}" {% if page.url == '/experience/' %}aria-current="page"{% endif %}>Experience</a>
+          <a class="resume-button" 
+             href="{{ '/assets/pdf/Kyle_Shiroma_Resume_2025_Github.pdf' | relative_url }}" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Download Resume (opens in new tab)">
+            Resume
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
         </nav>
 
         <!-- Mobile Menu Button -->
