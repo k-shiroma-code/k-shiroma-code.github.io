@@ -3,8 +3,8 @@
 -----------------------------*/
 :root {
   --primary-text: #2D2D2D;       /* Dark grey for text */
-  --accent: #FF6B35;             /* Warm orange accent */
-  --accent-hover: #E85A26;       /* Darker orange for hover */
+  --accent: #502419;             /* Dark reddish-brown accent */
+  --accent-hover: #3D1B17;       /* Slightly darker for hover */
   --bg: #FAFAFA;                 /* Soft off-white background */
   --bg-alt: #F0F0F0;             /* Slightly darker for header/footer */
   --border-color: #E5E5E5;       /* Subtle border */
