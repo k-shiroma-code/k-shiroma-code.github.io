@@ -34,8 +34,6 @@ permalink: /projects/
 
 ---
 
-## Customer Segmentation Analytics
-
 <div style="display: flex; flex-wrap: wrap; gap: 30px; margin: 20px 0; align-items: flex-start;">
   <!-- Text column -->
   <div style="flex: 1; min-width: 300px; max-width: 500px;">
@@ -45,17 +43,15 @@ permalink: /projects/
   </div>
   
   <!-- Dashboard column -->
-  <div style="flex: 0 0 400px; max-width: 100%;">
+  <div style="flex: 1; min-width: 350px; max-width: 700px;">
     <iframe 
         src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
         width="100%" 
-        height="400" 
+        height="550" 
         style="border: none; border-radius: 8px; display: block;">
     </iframe>
   </div>
 </div>
-
-
 
 ---
 
