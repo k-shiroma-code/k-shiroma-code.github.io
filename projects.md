@@ -29,36 +29,40 @@ permalink: /projects/
 
 ---
 
-## Pulsepanion – AI Healthcare Tool 
+## Pulsepanion – AI Healthcare Tool 🏆
 
 <div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
   <div style="flex: 1; min-width: 300px;">
     <p><em>Winner - AI Hackathon</em></p>
-    <p>An AI-powered healthcare analytics platform transforming 18 months of patient data into actionable clinical insights. Built to assist healthcare professionals in decision-making while maintaining HIPAA-compliant data privacy.</p>
+    <p>An AI-powered healthcare analytics platform that transforms 18 months of patient data into actionable clinical insights. Features advanced NLP processing, interactive visualizations, and HIPAA-compliant data de-identification.</p>
     
     <p><strong>Key Features:</strong></p>
     <ul>
       <li>Automated patient data analysis using OpenAI NLP</li>
-      <li>Interactive dashboard and visualizations via R Shiny</li>
+      <li>Interactive dashboard with R Shiny</li>
       <li>PDF export functionality for clinical reports</li>
-      <li>Lightweight de-identification system to protect sensitive data</li>
+      <li>Lightweight de-identification system for privacy compliance</li>
     </ul>
     
     <p><strong>Technologies:</strong> R Shiny, OpenAI API, NLP, Healthcare Analytics<br>
     <a href="https://github.com/k-shiroma-code/NCHacks-Pulsepanion">View on GitHub ↗</a></p>
   </div>
   
-  <div style="flex: 0 0 400px; display: flex; flex-direction: column; gap: 10px;">
-    <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard" style="border-radius: 8px; width: 100%;">
-    <iframe width="100%" height="250" 
-            src="https://www.youtube.com/embed/tEJoXKLzVH4" 
-            title="Pulsepanion Demo" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-    </iframe>
+  <div style="flex: 0 0 260px;"> <!-- 1.5x smaller than original 400px -->
+    <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard Interface" style="border-radius: 8px; width: 100%;">
   </div>
 </div>
+
+<p align="center">
+  <iframe width="373" height="210" <!-- 1.5x smaller than original 560x315 -->
+          src="https://www.youtube.com/embed/tEJoXKLzVH4" 
+          title="Pulsepanion Demo" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+</p>
+
 
 ---
 
