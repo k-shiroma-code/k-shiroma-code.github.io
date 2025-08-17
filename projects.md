@@ -6,8 +6,11 @@ permalink: /projects/
 
 ## Pulsepanion – AI Healthcare Tool
 
-<p><strong>Pulsepanion</strong> is an <strong>AI-powered healthcare analytics platform</strong> that transforms eighteen months of patient data into <strong>actionable clinical insights</strong>. It integrates <strong>advanced NLP</strong> with <strong>HIPAA-compliant data de-identification</strong>, an <strong>interactive R Shiny dashboard</strong>, and <strong>PDF export functionality</strong> for clinical reporting. The tool streamlines healthcare data analysis, enabling practitioners to quickly extract insights from raw patient records.</p>
-<p><strong>Technologies:</strong> R Shiny, OpenAI API, NLP, Healthcare Analytics<br>
+### Pulsepanion  
+**Pulsepanion** is an **AI-based healthcare project** that takes about eighteen months of patient data and turns it into **useful insights for caregivers**. It uses **natural language processing (NLP)** to process the records and provides an **interactive R Shiny dashboard** where users can explore results. I also added a **PDF export feature** so caregivers can easily share summaries. The goal was to make it easier to find patterns and insights in patient data without having to go through everything manually.  
+
+**Technologies:** R Shiny, OpenAI API, NLP, Healthcare Analytics  
+
 <a href="#">View on GitHub ↗</a></p>
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
