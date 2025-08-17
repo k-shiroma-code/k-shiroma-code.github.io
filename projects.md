@@ -11,7 +11,7 @@ permalink: /projects/
 
 **Technologies:** R Shiny, OpenAI API, NLP, Healthcare Analytics  
 
-<a href="#">View on GitHub ↗</a></p>
+<a href="#">View on GitHub ↗</a>
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
   <!-- Image -->
