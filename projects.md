@@ -8,9 +8,9 @@ permalink: /projects/
 
 <div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
   <div style="flex: 1; min-width: 300px;">
-    <p>This <strong>production-ready cybersecurity threat detection system</strong> was built with <strong>Random Forest algorithms</strong> and achieves <strong>88.6% accuracy</strong> in identifying three out of four major cyberattack types. It is designed for <strong>real-time detection</strong>, offering robust performance in live environments. The deployment architecture supports <strong>scalability</strong>, ensuring the <strong>machine learning pipeline</strong> can be extended for future threat models. Developed using <strong>Python</strong> and <strong>Scikit-learn</strong>, this project demonstrates expertise in both <strong>cybersecurity analytics</strong> and <strong>model optimization for production</strong>.</p>
-    <p><strong>Technologies:</strong> Python, Scikit-learn, Random Forest, Cybersecurity Analytics<br>
-    <a href="https://github.com/k-shiroma-code/cybersecurity-ml-detection">View on GitHub ↗</a></p>
+    <p>This <strong>hybrid semi supervised intrusion detection system</strong> integrates <strong>ASVM classification</strong> with <strong>FCM clustering</strong> to provide a passive and adaptive defense that learns to detect anomalies in network traffic. This project is still a <strong>work in progress</strong>. After testing various models, <strong>logistic regression</strong> outperformed <strong>isolation forest</strong>, which guided the next phase of development. Motivated by reviewing multiple <strong>academic papers</strong>, my team identified <strong>T50 packet injection</strong> as a promising complement to our IDS. Insights from an <strong>IEEE publication</strong> suggested that combining semi supervised learning with controlled adversarial traffic could significantly strengthen evaluation, inspiring us to extend our work in this direction.</p>
+    <p><strong>Technologies:</strong> ASVM, FCM, Logistic Regression, Machine Learning, Cybersecurity Analytics<br>
+    <a href="https://github.com/k-shiroma-code/hybrid-ids">View on GitHub ↗</a></p>
   </div>
 </div>
 
