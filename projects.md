@@ -4,18 +4,6 @@ layout: default
 permalink: /projects/
 ---
 
-## Machine Learning Intrusion Detection
-
-<div style="display: flex; align-items: flex-start; gap: 30px; margin: 20px 0;">
-  <div style="flex: 1; min-width: 300px;">
-    <p>This <strong>hybrid semi supervised intrusion detection system</strong> integrates <strong>ASVM classification</strong> with <strong>FCM clustering</strong> to provide a passive and adaptive defense that learns to detect anomalies in network traffic. This project is still a <strong>work in progress</strong>. After testing various models, <strong>random forest</strong> outperformed <strong>isolation forest</strong>, which guided the next phase of development. Motivated by reviewing multiple <strong>academic papers</strong>, my team identified <strong>T50 packet injection</strong> as a promising complement to our IDS. Insights from an <strong>IEEE publication</strong> suggested that combining semi supervised learning with controlled adversarial traffic could significantly strengthen evaluation, inspiring us to extend our work in this direction.</p>
-    <p><strong>Technologies:</strong> ASVM, FCM, Logistic Regression, Machine Learning, Cybersecurity Analytics<br>
-    <a href="https://github.com/k-shiroma-code/hybrid-ids">View on GitHub ↗</a></p>
-  </div>
-</div>
-
----
-
 ## Pulsepanion – AI Healthcare Tool
 
 <p><strong>Pulsepanion</strong> is an <strong>AI-powered healthcare analytics platform</strong> that transforms eighteen months of patient data into <strong>actionable clinical insights</strong>. It integrates <strong>advanced NLP</strong> with <strong>HIPAA-compliant data de-identification</strong>, an <strong>interactive R Shiny dashboard</strong>, and <strong>PDF export functionality</strong> for clinical reporting. The tool streamlines healthcare data analysis, enabling practitioners to quickly extract insights from raw patient records.</p>
