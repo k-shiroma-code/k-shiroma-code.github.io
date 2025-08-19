@@ -70,11 +70,13 @@ permalink: /projects/
 
 ## CSUF Data Science Project – UEFA Euro 2024 Match Prediction
 
-<p>This <strong>sports analytics project</strong> developed <strong>predictive models</strong> for UEFA Euro 2024 match outcomes by combining <strong>traditional statistical features</strong> with <strong>ELO-based ratings</strong>. Models were evaluated across <strong>Decision Trees, Random Forests, and XGBoost</strong>, with selection based on <strong>precision, recall, and F1-score</strong>. <strong>Visualizations</strong> compared predictions with actual outcomes, providing insight into <strong>model accuracy and forecasting reliability</strong> for competitive sports analytics.</p>
-<p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling<br>
-<a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a>
+This **sports analytics project** developed **predictive models** for UEFA Euro 2024 match outcomes by combining **traditional statistical features** with **ELO-based ratings**. Models were evaluated across **Decision Trees, Random Forests, and XGBoost**, with selection based on **precision, recall, and F1-score**. **Visualizations** compared predictions with actual outcomes, providing insight into **model accuracy and forecasting reliability** for competitive sports analytics.
+
+**Technologies:** Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling  
+[View on GitHub ↗](https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics)
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
   <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Project Screenshot 1" style="border-radius: 8px; width: 50%;">
   <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Project Screenshot 2" style="border-radius: 8px; width: 50%;">
 </div>
+
