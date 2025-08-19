@@ -68,15 +68,31 @@ permalink: /projects/
 
 ---
 
+---
+
 ## CSUF Data Science Project – UEFA Euro 2024 Match Prediction
 
-This **sports analytics project** developed **predictive models** for UEFA Euro 2024 match outcomes by combining **traditional statistical features** with **ELO-based ratings**. Models were evaluated across **Decision Trees, Random Forests, and XGBoost**, with selection based on **precision, recall, and F1-score**. **Visualizations** compared predictions with actual outcomes, providing insight into **model accuracy and forecasting reliability** for competitive sports analytics.
+<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 30px; margin: 20px 0; align-items: center;">
 
-**Technologies:** Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling  
-[View on GitHub ↗](https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics)
+  <!-- Text column -->
+  <div style="min-width: 300px; max-width: 500px; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+    <p>
+      This <strong>sports analytics project</strong> developed <strong>predictive models</strong> for UEFA Euro 2024 match outcomes by combining <strong>ELO-based ratings</strong> with traditional <strong>statistical features</strong>. Models such as <strong>Decision Trees, Random Forests, and XGBoost</strong> were trained and evaluated using <strong>precision, recall, and F1-score</strong> to identify the most effective approach. 
+    </p>
+    <p>
+      The project also included <strong>visualizations comparing predictions with actual outcomes</strong>, providing insights into <strong>model accuracy</strong> and <strong>forecasting reliability</strong> in competitive sports analytics.
+    </p>
+    <p>
+      <strong>Technologies:</strong> Python, XGBoost, Feature Engineering, Statistical Modeling, Sports Analytics<br>
+      <a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a>
+    </p>
+  </div>
 
-<div style="display: flex; gap: 10px; margin-top: 10px;">
-  <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Project Screenshot 1" style="border-radius: 8px; width: 50%;">
-  <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="CSUF Data Science Project Screenshot 2" style="border-radius: 8px; width: 50%;">
+  <!-- Image column -->
+  <div style="min-width: 400px; display: flex; flex-direction: column; gap: 10px; justify-content: center; align-items: center;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="UEFA Euro 2024 Prediction Visualization 1" style="border-radius: 8px; width: 100%;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="UEFA Euro 2024 Prediction Visualization 2" style="border-radius: 8px; width: 100%;">
+  </div>
+
 </div>
 
