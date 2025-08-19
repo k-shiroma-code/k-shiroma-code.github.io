@@ -59,7 +59,8 @@ permalink: /projects/
 
 <p>This <strong>machine learning pipeline</strong> predicts <strong>cardiovascular risk</strong> using the <strong>UCI Heart Disease dataset</strong>. By addressing <strong>class imbalance with SMOTE</strong> and applying <strong>logistic regression</strong>, it achieved a <strong>20% improvement in minority-class recall</strong>. <strong>Feature engineering and selection</strong> ensured <strong>optimal model performance</strong>, and the final pipeline is designed for <strong>production deployment</strong> in healthcare analytics contexts.</p>
 <p><strong>Technologies:</strong> Python, Scikit-learn, SMOTE, Logistic Regression<br>
-<a href="#">View on GitHub ↗</a></p>
+<a href="https://github.com/k-shiroma-code/Heart-Disease-ML-Project" target="_blank" rel="noopener">View on GitHub ↗</a>
+
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
   <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 50%;">
