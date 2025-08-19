@@ -11,7 +11,7 @@ permalink: /projects/
 
 **Technologies:** R Shiny, OpenAI API, NLP, Healthcare Analytics  
 
-<a href="#">View on GitHub ↗</a>
+<a href="https://github.com/k-shiroma-code/NCHacks-Pulsepanion">View on GitHub ↗</a>
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
   <!-- Image -->
@@ -61,7 +61,6 @@ permalink: /projects/
 <p><strong>Technologies:</strong> Python, Scikit-learn, SMOTE, Logistic Regression<br>
 <a href="https://github.com/k-shiroma-code/Heart-Disease-ML-Project" target="_blank" rel="noopener">View on GitHub ↗</a>
 
-
 <div style="display: flex; gap: 10px; margin-top: 10px;">
   <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 50%;">
   <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 50%;">
@@ -73,7 +72,7 @@ permalink: /projects/
 
 <p>This <strong>sports analytics project</strong> developed <strong>predictive models</strong> for UEFA Euro 2024 match outcomes by combining <strong>traditional statistical features</strong> with <strong>ELO-based ratings</strong>. Models were evaluated across <strong>Decision Trees, Random Forests, and XGBoost</strong>, with selection based on <strong>precision, recall, and F1-score</strong>. <strong>Visualizations</strong> compared predictions with actual outcomes, providing insight into <strong>model accuracy and forecasting reliability</strong> for competitive sports analytics.</p>
 <p><strong>Technologies:</strong> Python, XGBoost, Sports Analytics, Feature Engineering, Statistical Modeling<br>
-<a href="#">View on GitHub ↗</a></p>
+<a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a>
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
   <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="CSUF Data Science Project Screenshot 1" style="border-radius: 8px; width: 50%;">
