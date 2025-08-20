@@ -87,10 +87,9 @@ permalink: /projects/
   </div>
 
   <!-- Image column -->
-  <div style="min-width: 400px; display: flex; flex-direction: column; gap: 10px; justify-content: center; align-items: center;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="UEFA Euro 2024 Prediction Visualization 1" style="border-radius: 8px; width: 100%;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="UEFA Euro 2024 Prediction Visualization 2" style="border-radius: 8px; width: 100%;">
+  <div style="min-width: 400px; display: flex; gap: 10px; justify-content: center; align-items: center;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="UEFA Euro 2024 Prediction Visualization 1" style="border-radius: 8px; width: 50%;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="UEFA Euro 2024 Prediction Visualization 2" style="border-radius: 8px; width: 50%;">
   </div>
 
 </div>
-
