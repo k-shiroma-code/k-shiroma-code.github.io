@@ -68,8 +68,6 @@ permalink: /projects/
 
 ---
 
----
-
 ## CSUF Data Science Project – UEFA Euro 2024 Match Prediction
 
 <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 30px; margin: 20px 0; align-items: center;">
