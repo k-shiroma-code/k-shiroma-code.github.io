@@ -69,12 +69,19 @@ permalink: /projects/
 
 ## CSUF Data Science Project – UEFA Euro 2024 Match Prediction
 
-This **sports analytics project** developed **predictive models** for UEFA Euro 2024 match outcomes by combining **ELO-based ratings** with traditional **statistical features**. Models such as **Decision Trees, Random Forests, and XGBoost** were trained and evaluated using **precision, recall, and F1-score** to identify the most effective approach. 
-
-The project also included **visualizations comparing predictions with actual outcomes**, providing insights into **model accuracy** and **forecasting reliability** in competitive sports analytics.
-
-**Technologies:** Python, XGBoost, Feature Engineering, Statistical Modeling, Sports Analytics  
-<a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics">View on GitHub ↗</a>
+<div class="project-card">
+  <h3 class="project-title">UEFA Euro 2024 Sports Analytics Project</h3>
+  <p class="project-description">
+    This <strong>sports analytics project</strong> developed <strong>predictive models</strong> for UEFA Euro 2024 match outcomes by combining <strong>ELO-based ratings</strong> with traditional <strong>statistical features</strong>. Models such as <strong>Decision Trees, Random Forests, and XGBoost</strong> were trained and evaluated using <strong>precision, recall, and F1-score</strong> to identify the most effective approach.
+  </p>
+  <p class="project-description">
+    The project also included <strong>visualizations comparing predictions with actual outcomes</strong>, providing insights into <strong>model accuracy</strong> and <strong>forecasting reliability</strong> in competitive sports analytics.
+  </p>
+  <p class="project-tech">
+    <strong>Technologies:</strong> Python, XGBoost, Feature Engineering, Statistical Modeling, Sports Analytics
+  </p>
+  <a href="https://github.com/k-shiroma-code/CSUF-REU-Football-Analytics" class="project-link" target="_blank">View on GitHub ↗</a>
+</div>
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
   <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="UEFA Euro 2024 Prediction Visualization 1" style="border-radius: 8px; width: 50%;">
