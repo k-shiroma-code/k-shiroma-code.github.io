@@ -65,10 +65,6 @@ permalink: /projects/
   <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 50%;">
 </div>
 
----
-
-## CSUF Data Science Project – UEFA Euro 2024 Match Prediction
-
 <div class="project-card">
   <h3 class="project-title">UEFA Euro 2024 Sports Analytics Project</h3>
   <p class="project-description">
@@ -87,5 +83,3 @@ permalink: /projects/
   <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="UEFA Euro 2024 Prediction Visualization 1" style="border-radius: 8px; width: 50%;">
   <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="UEFA Euro 2024 Prediction Visualization 2" style="border-radius: 8px; width: 50%;">
 </div>
-
----
