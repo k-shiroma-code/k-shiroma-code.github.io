@@ -23,7 +23,6 @@ This project analyzes **rocket hotfire telemetry data** provided by the **Norco 
 Models such as **ARIMA, Prophet, and LSTM** were evaluated, with **LSTM reducing mean absolute error (MAE)** compared to traditional methods. Anomaly detection approaches (e.g., Isolation Forest, Autoencoder) flagged system deviations consistent with real-world events.  
 
 **Technologies:** Python, Pandas, Statsmodels, Prophet, TensorFlow/Keras, Scikit-learn  
-<a href="https://github.com/k-shiroma-code/Time-Series-Analysis-with-Telemetry-Data">View on GitHub ↗</a>
 
 ---
 
