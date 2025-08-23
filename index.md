@@ -28,7 +28,7 @@ permalink: /
   
   <!-- Image column -->
   <div style="flex: 1; min-width: 300px;">
-    <img src="{{ '/assets/img/nature-image.jpg' | relative_url }}" 
+    <img src="{{ '/img/IMG_0448.jpg' | relative_url }}" 
          alt="Nature landscape" 
          style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   </div>
