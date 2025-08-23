@@ -5,7 +5,7 @@ permalink: /ongoing-projects/
 description: A showcase of active development projects in data engineering, aerospace systems, and cybersecurity
 ---
 
-# 🚧 Ongoing Projects  
+# Ongoing Projects  
 
 Welcome! 👋 This page highlights my **in-progress projects** — research and builds that are still being refined.  
 I’ll be publishing full GitHub repositories once the code and documentation are cleaned up.  
