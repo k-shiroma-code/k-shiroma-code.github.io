@@ -4,15 +4,6 @@ layout: default
 permalink: /
 ---
 
-<div style="text-align: center; margin-bottom: 30px;">
-  <img 
-    src="{{ site.baseurl }}/assets/img/IMG_0482.jpg" 
-    alt="Kyle Shiroma" 
-    style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" 
-  >
-</div>
-
-<div class="section" style="max-width: 800px; margin: 0 auto; text-align: left;">
   <h2>About Me</h2>
   <p>
     I'm <strong>Kyle Shiroma</strong>, a data science student transferring from <strong>Norco College (A.S. Mathematics)</strong> 
