@@ -5,8 +5,14 @@ permalink: /ongoing-projects/
 description: A showcase of active development projects in data engineering, aerospace systems, and cybersecurity
 ---
 
-Welcome! 👋 This page highlights my **in-progress projects** — research and builds that are still being refined.  
-I’ll be publishing full GitHub repositories once the code and documentation are cleaned up.  
+<div style="text-align: center; margin-bottom: 30px;">
+  <p>
+    Welcome! This page highlights my <strong>in-progress projects</strong> — research and builds that are still being refined.  
+    I’ll be publishing full GitHub repositories once the code and documentation are cleaned up.  
+  </p>
+</div>
+
+---
 
 ## Cybersecurity Research: IDS vs. Attack Traffic Generation
 
@@ -29,7 +35,7 @@ Models such as **ARIMA, Prophet, and LSTM** were evaluated, with **LSTM reducing
 
 ---
 
-## Enhanced Weather Data Pipeline with Apache Airflow 🌤️
+## Enhanced Weather Data Pipeline with Apache Airflow
 
 A **production-grade data pipeline** for extracting, processing, and distributing weather data, built with **Apache Airflow** and modern data engineering best practices. The pipeline supports:  
 
