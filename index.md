@@ -8,24 +8,21 @@ permalink: /
   <div style="flex: 1; min-width: 300px;">
     <h2>About Me</h2>
     <p>
-      Hey there! I'm <strong>Kyle Shiroma</strong>, and I'm absolutely fascinated by the stories data can tell. Currently making my way from <strong>Norco College (A.S. Mathematics)</strong> 
-      to <strong>UC San Diego (B.S. Data Science)</strong>, and loving every step of this journey into turning numbers into real solutions.
+      I'm <strong>Kyle Shiroma</strong>, a data science student transferring from <strong>Norco College (A.S. Mathematics)</strong> 
+      to <strong>UC San Diego (B.S. Data Science)</strong>. I work on projects that solve actual problems, from retail analytics to AI health tools 
+      (<strong>2025 AI4Purpose NYC Winner</strong>).
     </p>
     <p>
-      I get genuinely excited about finding patterns where others see chaos—whether that's digging into retail data to help businesses grow or creating AI health tools 
-      that actually help people (super proud to be a <strong>2025 AI4Purpose NYC Winner!</strong>). My go-to tools are <strong>Python, R, SQL, Tableau, TensorFlow, and Scikit-learn</strong>, 
-      and I love building everything from machine learning models to dashboards that make complex data feel simple.
+      My toolkit includes <strong>Python, R, SQL, Tableau, TensorFlow, and Scikit-learn</strong> for building machine learning models, 
+      data pipelines, and visualizations. Currently focused on <strong>Apache Airflow, AWS, Kubernetes, and Docker</strong> 
+      for scalable data engineering workflows.
     </p>
     <p>
-      Lately, I've been geeking out over <strong>Apache Airflow</strong> and data engineering—there's something magical about setting up <strong>AWS, Kubernetes, and Docker</strong> 
-      workflows that just... work perfectly, day after day. It's like building invisible robots that handle all the heavy lifting while you sleep!
+      I'm interested in <strong>soccer analytics, healthcare applications,</strong> and <strong>customer behavior analysis</strong>. 
+      Outside of coding, I play soccer, spend time outdoors, and drink way too much diet coke.
     </p>
     <p>
-      When I'm not buried in code, I'm probably analyzing <strong>soccer stats</strong> (because why not turn your hobbies into data projects?), brainstorming <strong>healthcare tech</strong> ideas, 
-      or figuring out what makes customers tick. You'll also find me kicking a ball around, hiking somewhere beautiful, or savoring that perfect diet coke moment.
-    </p>
-    <p>
-      <strong>Love connecting with fellow data enthusiasts and collaborating on projects that actually matter—let's build something cool together!</strong>
+      Open to collaborating on data science projects with real-world impact.
     </p>
   </div>
   
