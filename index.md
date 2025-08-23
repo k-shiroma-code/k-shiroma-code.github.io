@@ -27,9 +27,11 @@ permalink: /
   </div>
   
   <!-- Image column -->
-  <div style="flex: 1; min-width: 300px;">
-    <img src="{{ site.baseurl }}/assets/img/IMG_0448.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 50%;">
-         alt="Nature landscape" 
-         style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  <div style="flex: 1; min-width: 300px; text-align: center;">
+    <img 
+      src="{{ site.baseurl }}/assets/img/IMG_0448.jpg" 
+      alt="Kyle Shiroma - Nature landscape" 
+      style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" 
+    >
   </div>
 </div>
