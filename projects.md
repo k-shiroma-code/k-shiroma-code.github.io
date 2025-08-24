@@ -14,10 +14,10 @@ permalink: /projects/
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
   <!-- Image -->
-  <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard" style="border-radius: 8px; width: 50%;">
+  <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard" style="border-radius: 8px; width: 50%; border: 2px solid #ddd;">
 
   <!-- Video -->
-  <div style="position: relative; padding-bottom: 28.125%; height: 0; width: 50%; border-radius: 8px; overflow: hidden; cursor: pointer;" onclick="this.style.position='fixed'; this.style.top='50%'; this.style.left='50%'; this.style.transform='translate(-50%, -50%)'; this.style.width='80vw'; this.style.height='80vh'; this.style.zIndex='9999'; this.style.paddingBottom='0'; this.style.backgroundColor='rgba(0,0,0,0.9)'; this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/tEJoXKLzVH4&quot; title=&quot;Pulsepanion Demo&quot; style=&quot;width:100%; height:100%; border:none;&quot; frameborder=&quot;0&quot; allowfullscreen></iframe><button onclick=&quot;event.stopPropagation(); this.parentElement.style.position=\&#39;relative\&#39;; this.parentElement.style.top=\&#39;auto\&#39;; this.parentElement.style.left=\&#39;auto\&#39;; this.parentElement.style.transform=\&#39;none\&#39;; this.parentElement.style.width=\&#39;50%\&#39;; this.parentElement.style.height=\&#39;0\&#39;; this.parentElement.style.zIndex=\&#39;auto\&#39;; this.parentElement.style.paddingBottom=\&#39;28.125%\&#39;; this.parentElement.style.backgroundColor=\&#39;transparent\&#39;; this.parentElement.innerHTML=\&#39;&lt;iframe src=\\&quot;https://www.youtube.com/embed/tEJoXKLzVH4\\&quot; title=\\&quot;Pulsepanion Demo\\&quot; style=\\&quot;position: absolute; top:0; left:0; width:100%; height:100%;\\&quot; frameborder=\\&quot;0\\&quot; allowfullscreen&gt;&lt;/iframe&gt;\&#39;&quot; style=&quot;position:absolute; top:10px; right:10px; background:rgba(255,255,255,0.8); border:none; border-radius:50%; width:30px; height:30px; cursor:pointer; font-size:16px;&quot;&gt;×</button>';">
+  <div style="position: relative; padding-bottom: 28.125%; height: 0; width: 50%; border-radius: 8px; overflow: hidden; cursor: pointer; border: 2px solid #ddd;" onclick="this.style.position='fixed'; this.style.top='50%'; this.style.left='50%'; this.style.transform='translate(-50%, -50%)'; this.style.width='80vw'; this.style.height='80vh'; this.style.zIndex='9999'; this.style.paddingBottom='0'; this.style.backgroundColor='rgba(0,0,0,0.9)'; this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/tEJoXKLzVH4&quot; title=&quot;Pulsepanion Demo&quot; style=&quot;width:100%; height:100%; border:none;&quot; frameborder=&quot;0&quot; allowfullscreen></iframe><button onclick=&quot;event.stopPropagation(); this.parentElement.style.position=\&#39;relative\&#39;; this.parentElement.style.top=\&#39;auto\&#39;; this.parentElement.style.left=\&#39;auto\&#39;; this.parentElement.style.transform=\&#39;none\&#39;; this.parentElement.style.width=\&#39;50%\&#39;; this.parentElement.style.height=\&#39;0\&#39;; this.parentElement.style.zIndex=\&#39;auto\&#39;; this.parentElement.style.paddingBottom=\&#39;28.125%\&#39;; this.parentElement.style.backgroundColor=\&#39;transparent\&#39;; this.parentElement.innerHTML=\&#39;&lt;iframe src=\\&quot;https://www.youtube.com/embed/tEJoXKLzVH4\\&quot; title=\\&quot;Pulsepanion Demo\\&quot; style=\\&quot;position: absolute; top:0; left:0; width:100%; height:100%;\\&quot; frameborder=\\&quot;0\\&quot; allowfullscreen&gt;&lt;/iframe&gt;\&#39;&quot; style=&quot;position:absolute; top:10px; right:10px; background:rgba(255,255,255,0.8); border:none; border-radius:50%; width:30px; height:30px; cursor:pointer; font-size:16px;&quot;&gt;×</button>';">
     <iframe src="https://www.youtube.com/embed/tEJoXKLzVH4" title="Pulsepanion Demo" style="position: absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
@@ -41,7 +41,7 @@ permalink: /projects/
 
   <!-- Dashboard column -->
   <div style="min-width: 400px; display: flex; justify-content: center; align-items: center;">
-    <div style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden;">
+    <div style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;">
       <iframe 
         src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true" 
         style="width: 100%; height: 100%; border: none;">
@@ -60,8 +60,8 @@ permalink: /projects/
 <a href="https://github.com/k-shiroma-code/Heart-Disease-ML-Project" target="_blank" rel="noopener">View on GitHub ↗</a>
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
-  <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 50%;">
-  <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 50%;">
+  <img src="{{ site.baseurl }}/assets/img/IMG_1668.jpg" alt="Model Performance Metrics" style="border-radius: 8px; width: 50%; border: 2px solid #ddd;">
+  <img src="{{ site.baseurl }}/assets/img/Feature_Importance.jpg" alt="Feature Importance Analysis" style="border-radius: 8px; width: 50%; border: 2px solid #ddd;">
 </div>
 
 <div class="project-card">
@@ -79,8 +79,6 @@ permalink: /projects/
 </div>
 
 <div style="display: flex; gap: 10px; margin-top: 10px;">
-  <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="UEFA Euro 2024 Prediction Visualization 1" style="border-radius: 8px; width: 50%;">
-  <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="UEFA Euro 2024 Prediction Visualization 2" style="border-radius: 8px; width: 50%;">
+  <img src="{{ site.baseurl }}/assets/img/IMG_1670.jpg" alt="UEFA Euro 2024 Prediction Visualization 1" style="border-radius: 8px; width: 50%; border: 2px solid #ddd;">
+  <img src="{{ site.baseurl }}/assets/img/IMG_1671.jpg" alt="UEFA Euro 2024 Prediction Visualization 2" style="border-radius: 8px; width: 50%; border: 2px solid #ddd;">
 </div>
-
-
