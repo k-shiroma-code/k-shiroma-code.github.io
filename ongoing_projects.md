@@ -37,4 +37,4 @@ This research explores the **contrasting but complementary roles** of intrusion 
 By combining the two, T50 becomes a **benchmarking framework** to stress-test IDS resilience and adaptability—creating a more **robust cybersecurity evaluation pipeline**.  
 
 **Technologies:** Machine Learning (ASVM, FCM), Semi-supervised Learning, Network Security, T50 Traffic Generator  
-**Reference:** [IEEE Xplore Digital Library ↗](https://ieeexplore.ieee.org/document/8058397/citations#citations)
+**Reference:** [IEEE Xplore Digital Library ↗](https://ieeexplore.ieee.org/document/8058397/)
