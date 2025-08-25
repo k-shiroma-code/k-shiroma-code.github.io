@@ -14,7 +14,7 @@ description: A showcase of active development projects in data engineering, aero
 
 ---
 
-## Enhanced Weather Data Pipeline with Apache Airflow
+## Enhanced Weather Data Pipeline with Apache Airflow <br><small>Started: June 2025 – Present</small>
 
 A **production-grade data pipeline** for extracting, processing, and distributing weather data, built with **Apache Airflow** and modern data engineering best practices. The pipeline supports:  
 
@@ -30,7 +30,7 @@ The modular DAG architecture enables **historical backfill, quality monitoring, 
 
 ---
 
-## Cybersecurity Research: IDS vs. Attack Traffic Generation
+## Cybersecurity Research: IDS vs. Attack Traffic Generation <br><small>Started: July 2025 – Present</small>
 
 This research explores the **contrasting but complementary roles** of intrusion detection systems (IDS) and active attack traffic generators. Using a **hybrid semi-supervised model** (Adaptive Support Vector Machine + Fuzzy C-Means), the IDS passively detects anomalies in real-time network traffic, while **T50** functions as an adversarial tool to generate high-volume, multi-protocol attack traffic.  
 
