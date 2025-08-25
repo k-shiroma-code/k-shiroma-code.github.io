@@ -26,17 +26,7 @@ A **production-grade data pipeline** for extracting, processing, and distributin
 
 The modular DAG architecture enables **historical backfill, quality monitoring, and ML retraining**, making the system enterprise-ready for real-time analytics and forecasting.  
 
-**Technologies:** Apache Airflow, Docker, MinIO, Kubernetes, Prometheus, Grafana, PostgreSQL, Delta Lake  
-
----
-
-## Telemetry Time Series Analysis
-
-This project analyzes **rocket hotfire telemetry data** provided by the **Norco Rocketry Club** to detect anomalies and forecast system performance. Using a mix of **classical time series models** and **deep learning**, the analysis identifies trends, seasonal patterns, and operational irregularities.  
-
-Models such as **ARIMA, Prophet, and LSTM** were evaluated, with **LSTM reducing mean absolute error (MAE)** compared to traditional methods. Anomaly detection approaches (e.g., Isolation Forest, Autoencoder) flagged system deviations consistent with real-world events.  
-
-**Technologies:** Python, Pandas, Statsmodels, Prophet, TensorFlow/Keras, Scikit-learn  
+**Technologies:** Apache Airflow, Docker, MinIO, Kubernetes, Prometheus, Grafana, PostgreSQL, Delta Lake   
 
 ---
 
