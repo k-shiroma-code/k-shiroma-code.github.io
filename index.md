@@ -16,8 +16,8 @@ permalink: /
   for scalable data engineering workflows.
 </p>
 <p>
-  I'm interested in <strong>soccer analytics, healthcare applications,</strong> and <strong>customer behavior analysis</strong>. 
-  Outside of coding, I play soccer, spend time outdoors, and drink way too much diet coke.
+  As a <strong>former soccer player</strong>, I’m especially interested in <strong>soccer analytics</strong>, as well as <strong>healthcare applications</strong> 
+  and <strong>customer behavior analysis</strong>. Outside of coding, I play soccer, spend time outdoors, and drink way too much diet coke.
 </p>
 <p>
   I’m open to collaborating on data science projects with real-world impact.
