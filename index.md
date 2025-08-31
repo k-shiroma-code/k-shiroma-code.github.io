@@ -15,9 +15,5 @@ permalink: /
   for scalable data engineering workflows.
 </p>
 <p>
-  As a former soccer player, I’m especially interested in soccer analytics, as well as healthcare applications 
-  and customer behavior analysis. Outside of coding, I enjoy soccer, hiking, and watching anime.
-</p>
-<p>
   I’m open to collaborating on data science projects with real-world impact.
 </p>
