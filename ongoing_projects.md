@@ -28,7 +28,7 @@ A **data pipeline project** for collecting and processing weather data using **A
 
 The pipeline collects weather data for multiple cities, handles missing values and API failures, and stores historical records for time-series analysis. Includes comprehensive **unit tests, documentation, and version control** following software development best practices.
 
-**Technologies:** Apache Airflow, Python, pandas, PostgreSQL, Docker, Git, REST APIs
+**Technologies:** Apache Airflow, Python, pandas, Apache Spark (exploring), PostgreSQL, Docker, Git, REST APIs
 
 **Key Learning Outcomes:**
 - Workflow orchestration and scheduling
