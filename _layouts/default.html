@@ -48,24 +48,24 @@
         height: 40px;
       }
 
-      /* Updated mobile nav */
+      /* Updated mobile nav with dark theme */
       .main-navigation {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        background: white;
+        background: #1f2937; /* Dark background */
         flex-direction: column;
         align-items: stretch;
         gap: 0;
         padding: 1rem 20px 2rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-top: 1px solid #e5e7eb;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow */
+        border-top: 1px solid #374151; /* Dark border */
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
-        z-index: 9999; /* raised for iOS Safari */
+        z-index: 9999;
       }
 
       .main-navigation.is-open {
@@ -76,10 +76,15 @@
 
       .main-navigation a {
         padding: 0.75rem 0;
-        border-bottom: 1px solid #f3f4f6;
-        color: #374151;
+        border-bottom: 1px solid #374151; /* Dark separator lines */
+        color: #f9fafb; /* Light text */
         font-size: 1.1rem;
         text-align: center;
+      }
+
+      .main-navigation a:hover {
+        color: #60a5fa; /* Light blue on hover */
+        background-color: #374151; /* Subtle hover background */
       }
 
       .main-navigation a:last-child {
@@ -91,6 +96,13 @@
         justify-content: center;
         padding: 0.75rem 1rem;
         border-radius: 0.5rem;
+        background-color: #3b82f6; /* Keep button blue */
+        color: white;
+        border: none;
+      }
+
+      .main-navigation .button:hover {
+        background-color: #2563eb; /* Darker blue on hover */
       }
 
       body.mobile-menu-open {
