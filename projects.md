@@ -4,11 +4,11 @@ layout: default
 permalink: /projects/
 ---
 
-## Pulsepanion – AI Healthcare Tool
+## Pulsepanion – AI Healthcare Tool (🏆 1st Place, 2025 Ai4Purpose Hackathon)
 
-**Pulsepanion** is an **AI-based healthcare project** that takes about eighteen months of patient data and turns it into **useful insights for caregivers**. It uses **natural language processing (NLP)** to process the records and provides an **interactive R Shiny dashboard** where users can explore results. I also added a **PDF export feature** so caregivers can easily share summaries. The goal was to make it easier to find patterns and insights in patient data without having to go through everything manually.  
+**Pulsepanion** is an **award-winning AI-based healthcare project** that analyzes eighteen months of patient data to generate **actionable insights for caregivers**. It applies **natural language processing (NLP)** with **large language models (LLMs)** via the **OpenAI API** and presents results in an **interactive R Shiny dashboard**. I also added a **PDF export feature** so caregivers can easily share summaries. The tool was designed to make it easier to identify patterns in patient data without manual review.  
 
-**Technologies:** R Shiny, OpenAI API, LLM, Healthcare Analytics  
+**Technologies:** R Shiny, OpenAI API (LLM-based NLP), Healthcare Analytics  
 
 <a href="https://github.com/k-shiroma-code/NCHacks-Pulsepanion">View on GitHub ↗</a>
 
