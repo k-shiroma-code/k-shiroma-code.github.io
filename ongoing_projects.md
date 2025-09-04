@@ -2,9 +2,8 @@
 title: Ongoing Projects
 layout: default
 permalink: /ongoing-projects/
-description: A showcase of active development projects in data engineering, aerospace systems, and cybersecurity
+description: A showcase of active development projects in data engineering, machine learning, and cybersecurity
 ---
-
 <div style="text-align: center; margin-bottom: 30px;">
   <p>
     Welcome! This page highlights my <strong>in-progress projects</strong> — research and builds that are still being refined.  
@@ -36,6 +35,34 @@ The pipeline collects weather data for multiple cities, handles missing values a
 - Database design and SQL operations
 - Data quality validation techniques
 - Containerization with Docker
+
+---
+
+## Medical Image Classification with Deep Learning
+**Started: September 2025 – Present**
+
+A **computer vision project** exploring transfer learning techniques for medical image analysis. This educational research project demonstrates responsible AI development in healthcare contexts by building a skin lesion classification system using pre-trained convolutional neural networks.
+
+**Project Focus:**
+- **Transfer learning implementation** using EfficientNet/ResNet architectures
+- **Data preprocessing pipeline** with image augmentation and normalization
+- **Model evaluation** with medical-relevant metrics (sensitivity, specificity, AUROC)
+- **Interpretability tools** including Grad-CAM visualization for model decisions
+- **Ethical AI practices** with proper data handling and bias consideration
+- **Web deployment** using Streamlit for interactive demonstrations
+
+The system performs binary classification on dermatological images while emphasizing the educational nature of the project. Includes comprehensive documentation on model architecture decisions, evaluation methodologies, and responsible AI principles in healthcare applications.
+
+**Technologies:** Python, TensorFlow/Keras, OpenCV, scikit-learn, Streamlit, Matplotlib, NumPy
+
+**Key Learning Outcomes:**
+- Transfer learning with pre-trained CNN models
+- Medical image preprocessing techniques
+- Model interpretability and explainability methods
+- Responsible AI development practices
+- Healthcare data handling considerations
+
+**Note:** *This project is for educational and research purposes only and is not intended for medical diagnosis. Always consult qualified healthcare professionals for medical concerns.*
 
 ---
 
