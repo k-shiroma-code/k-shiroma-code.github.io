@@ -224,92 +224,107 @@
   <!-- Mobile Menu Script -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      console.log('Mobile menu script loaded');
+      
       const mobileToggle = document.querySelector('.mobile-menu-toggle');
       const navigation = document.querySelector('.main-navigation');
       const body = document.body;
 
+      console.log('Mobile toggle found:', !!mobileToggle);
+      console.log('Navigation found:', !!navigation);
+
       if (mobileToggle && navigation) {
-        mobileToggle.addEventListener('click', function() {
-          const isExpanded = this.getAttribute('aria-expanded') === 'true';
-          
-          // Toggle aria-expanded
-          this.setAttribute('aria-expanded', !isExpanded);
-          
-          // Toggle menu classes
-          navigation.classList.toggle('is-open');
-          body.classList.toggle('mobile-menu-open');
-          
-          // Update hamburger icon
-          const icon = this.querySelector('svg');
-          if (!isExpanded) {
-            // Change to X icon
-            icon.innerHTML = `
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            `;
-          } else {
-            // Change back to hamburger
+        // Function to reset hamburger icon
+        function resetIcon() {
+          const icon = mobileToggle.querySelector('svg');
+          if (icon) {
             icon.innerHTML = `
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
             `;
+          }
+        }
+
+        // Function to set X icon
+        function setXIcon() {
+          const icon = mobileToggle.querySelector('svg');
+          if (icon) {
+            icon.innerHTML = `
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            `;
+          }
+        }
+
+        // Function to close menu
+        function closeMenu() {
+          navigation.classList.remove('is-open');
+          body.classList.remove('mobile-menu-open');
+          mobileToggle.setAttribute('aria-expanded', 'false');
+          resetIcon();
+          console.log('Menu closed');
+        }
+
+        // Function to open menu
+        function openMenu() {
+          navigation.classList.add('is-open');
+          body.classList.add('mobile-menu-open');
+          mobileToggle.setAttribute('aria-expanded', 'true');
+          setXIcon();
+          console.log('Menu opened');
+        }
+
+        // Toggle menu on button click
+        mobileToggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          console.log('Toggle clicked, currently expanded:', isExpanded);
+          
+          if (isExpanded) {
+            closeMenu();
+          } else {
+            openMenu();
           }
         });
 
         // Close menu when clicking on navigation links
         navigation.addEventListener('click', function(e) {
           if (e.target.tagName === 'A') {
-            navigation.classList.remove('is-open');
-            body.classList.remove('mobile-menu-open');
-            mobileToggle.setAttribute('aria-expanded', 'false');
-            
-            // Reset hamburger icon
-            const icon = mobileToggle.querySelector('svg');
-            icon.innerHTML = `
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            `;
+            console.log('Navigation link clicked');
+            closeMenu();
           }
         });
 
         // Close menu when clicking outside
         document.addEventListener('click', function(e) {
-          if (!navigation.contains(e.target) && !mobileToggle.contains(e.target)) {
-            if (navigation.classList.contains('is-open')) {
-              navigation.classList.remove('is-open');
-              body.classList.remove('mobile-menu-open');
-              mobileToggle.setAttribute('aria-expanded', 'false');
-              
-              // Reset hamburger icon
-              const icon = mobileToggle.querySelector('svg');
-              icon.innerHTML = `
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              `;
-            }
+          if (navigation.classList.contains('is-open') && 
+              !navigation.contains(e.target) && 
+              !mobileToggle.contains(e.target)) {
+            console.log('Clicked outside menu');
+            closeMenu();
           }
         });
 
         // Handle escape key
         document.addEventListener('keydown', function(e) {
           if (e.key === 'Escape' && navigation.classList.contains('is-open')) {
-            navigation.classList.remove('is-open');
-            body.classList.remove('mobile-menu-open');
-            mobileToggle.setAttribute('aria-expanded', 'false');
+            console.log('Escape key pressed');
+            closeMenu();
             mobileToggle.focus();
-            
-            // Reset hamburger icon
-            const icon = mobileToggle.querySelector('svg');
-            icon.innerHTML = `
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            `;
           }
         });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+          if (window.innerWidth > 768 && navigation.classList.contains('is-open')) {
+            closeMenu();
+          }
+        });
+      } else {
+        console.error('Mobile menu elements not found');
       }
 
       // Smooth scrolling for anchor links (if any)
