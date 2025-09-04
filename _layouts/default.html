@@ -3,243 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kyle Shiroma - Data Scientist & Machine Learning Engineer Portfolio">
-  <meta name="author" content="Kyle Shiroma">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  
-  <!-- Mobile Responsive Styles -->
+  <title>Mobile Drawer Menu</title>
   <style>
-    /* Mobile Menu Toggle - Only visible on mobile */
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+    }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10000;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+    }
+
+    .site-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
     .mobile-menu-toggle {
-      display: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
       background: none;
       border: none;
-      padding: 0.5rem;
       cursor: pointer;
       color: #374151;
-      z-index: 101;
+      z-index: 10001;
     }
 
     .mobile-menu-toggle:hover {
       color: #3b82f6;
     }
 
-    @media (max-width: 768px) {
-      .container {
-        padding: 0 16px;
-      }
-
-      .header-content {
-        padding: 0.75rem 0;
-      }
-
-      .site-title {
-        font-size: 1.25rem;
-      }
-
-      .mobile-menu-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-      }
-
-      /* Updated mobile nav */
-      .main-navigation {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: white;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        padding: 1rem 20px 2rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-top: 1px solid #e5e7eb;
-        transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 9999; /* raised for iOS Safari */
-      }
-
-      .main-navigation.is-open {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .main-navigation a {
-        padding: 0.75rem 0;
-        border-bottom: 1px solid #f3f4f6;
-        color: #374151;
-        font-size: 1.1rem;
-        text-align: center;
-      }
-
-      .main-navigation a:last-child {
-        border-bottom: none;
-      }
-
-      .main-navigation .button {
-        margin-top: 1rem;
-        justify-content: center;
-        padding: 0.75rem 1rem;
-        border-radius: 0.5rem;
-      }
-
-      body.mobile-menu-open {
-        overflow: hidden;
-      }
+    /* Overlay */
+    .menu-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 9998;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .menu-overlay.active {
+      display: block;
+      opacity: 1;
     }
 
-    @media (min-width: 769px) and (max-width: 1024px) {
-      .container {
-        padding: 0 32px;
-      }
+    /* Side drawer */
+    .main-navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 80%;
+      max-width: 320px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1rem;
+      transform: translateX(-100%);
+      transition: transform 0.35s ease;
+      z-index: 9999;
+      box-shadow: 4px 0 16px rgba(0,0,0,0.15);
+    }
 
-      .main-navigation {
-        gap: 1.5rem;
-      }
+    .main-navigation.is-open {
+      transform: translateX(0);
+    }
+
+    .main-navigation a {
+      padding: 1rem 0;
+      color: #374151;
+      font-size: 1.15rem;
+      font-weight: 500;
+      text-align: left;
+      border-bottom: 1px solid #f3f4f6;
+      transition: color 0.2s ease;
+    }
+
+    .main-navigation a:hover {
+      color: #3b82f6;
+    }
+
+    .main-navigation a:last-child {
+      border-bottom: none;
+    }
+
+    .main-navigation .button {
+      margin-top: 2rem;
+      padding: 0.9rem 1.2rem;
+      background: #3b82f6;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 0.75rem;
+      border: none;
+      width: 100%;
+      text-align: center;
+      transition: background 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .main-navigation .button:hover {
+      background: #2563eb;
+    }
+
+    body.mobile-menu-open {
+      overflow: hidden;
     }
   </style>
 </head>
-
 <body>
-  <!-- Header -->
-  <header role="banner" class="site-header">
-    <div class="container">
-      <div class="header-content">
-        <h1 class="site-title">
-          <a href="{{ '/' | relative_url }}" aria-label="Home">{{ site.title }}</a>
-        </h1>
-        
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
-               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-        
-        <nav role="navigation" class="nav-center main-navigation" aria-label="Main navigation">
-          <a href="{{ '/experience/' | relative_url }}" {% if page.url == '/experience/' %}aria-current="page"{% endif %}>Experience</a>
-          <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
-          <a href="{{ '/ongoing-projects/' | relative_url }}" class="nav-link {% if page.url == '/ongoing-projects/' %}active{% endif %}">Ongoing Projects</a>
-          <a class="button" 
-             href="{{ '/assets/pdf/Kyle_Shiroma_Data_Science_Resume (1).pdf' | relative_url }}" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            Resume
-          </a>
-        </nav>
-      </div>
+
+  <header>
+    <div class="header-content">
+      <div class="site-title">My Site</div>
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle menu">
+        <!-- Hamburger icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-hamburger" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="28" height="28">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- X icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-close" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="28" height="28" style="display:none;">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main role="main" class="main-content">
-    <div class="container">
-      {{ content }}
-    </div>
+  <!-- Navigation drawer -->
+  <nav class="main-navigation">
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#" class="button">Resume</a>
+  </nav>
+
+  <!-- Overlay -->
+  <div class="menu-overlay"></div>
+
+  <main style="padding: 2rem;">
+    <h1>Welcome</h1>
+    <p>This is just placeholder content under the header. Resize to mobile and try the menu!</p>
   </main>
 
-  <!-- Footer (unchanged) -->
-  <footer role="contentinfo" class="site-footer">
-    <div class="container">
-      <p>© {{ site.time | date: '%Y' }} Kyle Shiroma. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Mobile Menu Script -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileToggle = document.querySelector('.mobile-menu-toggle');
-      const navigation = document.querySelector('.main-navigation');
-      const body = document.body;
+    const body = document.body;
+    const navigation = document.querySelector('.main-navigation');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const overlay = document.querySelector('.menu-overlay');
+    const iconHamburger = document.querySelector('.icon-hamburger');
+    const iconClose = document.querySelector('.icon-close');
 
-      if (mobileToggle && navigation) {
-        function resetIcon() {
-          const icon = mobileToggle.querySelector('svg');
-          if (icon) {
-            icon.innerHTML = `
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            `;
-          }
-        }
+    function resetIcon() {
+      iconHamburger.style.display = 'block';
+      iconClose.style.display = 'none';
+    }
 
-        function setXIcon() {
-          const icon = mobileToggle.querySelector('svg');
-          if (icon) {
-            icon.innerHTML = `
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            `;
-          }
-        }
+    function setXIcon() {
+      iconHamburger.style.display = 'none';
+      iconClose.style.display = 'block';
+    }
 
-        function closeMenu() {
-          navigation.classList.remove('is-open');
-          body.classList.remove('mobile-menu-open');
-          mobileToggle.setAttribute('aria-expanded', 'false');
-          resetIcon();
-        }
+    function closeMenu() {
+      navigation.classList.remove('is-open');
+      overlay.classList.remove('active');
+      body.classList.remove('mobile-menu-open');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+      resetIcon();
+    }
 
-        function openMenu() {
-          navigation.classList.add('is-open');
-          body.classList.add('mobile-menu-open');
-          mobileToggle.setAttribute('aria-expanded', 'true');
-          setXIcon();
-        }
+    function openMenu() {
+      navigation.classList.add('is-open');
+      overlay.classList.add('active');
+      body.classList.add('mobile-menu-open');
+      mobileToggle.setAttribute('aria-expanded', 'true');
+      setXIcon();
+    }
 
-        mobileToggle.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          const isExpanded = this.getAttribute('aria-expanded') === 'true';
-          if (isExpanded) {
-            closeMenu();
-          } else {
-            openMenu();
-          }
-        });
-
-        navigation.addEventListener('click', function(e) {
-          if (e.target.tagName === 'A') {
-            closeMenu();
-          }
-        });
-
-        document.addEventListener('click', function(e) {
-          if (navigation.classList.contains('is-open') && 
-              !navigation.contains(e.target) && 
-              !mobileToggle.contains(e.target)) {
-            closeMenu();
-          }
-        });
-
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && navigation.classList.contains('is-open')) {
-            closeMenu();
-            mobileToggle.focus();
-          }
-        });
-
-        window.addEventListener('resize', function() {
-          if (window.innerWidth > 768 && navigation.classList.contains('is-open')) {
-            closeMenu();
-          }
-        });
+    mobileToggle.addEventListener('click', () => {
+      if (navigation.classList.contains('is-open')) {
+        closeMenu();
+      } else {
+        openMenu();
       }
     });
+
+    overlay.addEventListener('click', closeMenu);
   </script>
+
 </body>
 </html>
