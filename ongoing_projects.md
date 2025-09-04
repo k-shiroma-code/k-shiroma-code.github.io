@@ -81,4 +81,6 @@ The framework uses **T50 traffic generator** to create controlled attack scenari
 - IDS performance metrics and evaluation methodologies
 - Attack simulation and traffic generation
 
+**Note:** *This is a long-term research project that will likely extend into and form the foundation for a Master's thesis in cybersecurity or machine learning.*
+
 **Reference:** [IEEE Xplore Digital Library ↗](https://ieeexplore.ieee.org/document/8058397/)
