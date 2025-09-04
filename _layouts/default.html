@@ -5,108 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Kyle Shiroma - Data Scientist & Machine Learning Engineer Portfolio">
   <meta name="author" content="Kyle Shiroma">
-  <title>Kyle Shiroma | Data Scientist Portfolio</title>
+  <title>{{ page.title }} | {{ site.title }}</title>
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
-  <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Kyle Shiroma | Data Scientist Portfolio">
-  <meta property="og:description" content="Data Scientist & Machine Learning Engineer Portfolio">
-  
+  <!-- Mobile Responsive Styles -->
   <style>
-    /* Reset and Base Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #fff;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* Header Styles */
-    .site-header {
-      background: #fff;
-      border-bottom: 1px solid #e5e7eb;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    }
-
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 0;
-    }
-
-    .site-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-
-    .site-title a {
-      text-decoration: none;
-      color: #111827;
-      transition: color 0.2s;
-    }
-
-    .site-title a:hover {
-      color: #3b82f6;
-    }
-
-    /* Navigation Styles */
-    .main-navigation {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    .main-navigation a {
-      text-decoration: none;
-      color: #6b7280;
-      font-weight: 500;
-      transition: color 0.2s;
-      position: relative;
-    }
-
-    .main-navigation a:hover,
-    .main-navigation a[aria-current="page"],
-    .main-navigation a.active {
-      color: #3b82f6;
-    }
-
-    .button {
-      background: #3b82f6;
-      color: white !important;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: all 0.2s;
-    }
-
-    .button:hover {
-      background: #2563eb;
-      transform: translateY(-1px);
-    }
-
-    /* Mobile Menu Toggle */
+    /* Mobile Menu Toggle - Only visible on mobile */
     .mobile-menu-toggle {
       display: none;
       background: none;
@@ -114,114 +20,16 @@
       padding: 0.5rem;
       cursor: pointer;
       color: #374151;
+      z-index: 101;
     }
 
     .mobile-menu-toggle:hover {
       color: #3b82f6;
     }
 
-    /* Main Content */
-    .main-content {
-      min-height: calc(100vh - 140px);
-      padding: 2rem 0;
-    }
-
-    /* Footer */
-    .site-footer {
-      background: #f9fafb;
-      border-top: 1px solid #e5e7eb;
-      padding: 2rem 0;
-      margin-top: 4rem;
-    }
-
-    .site-footer .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .social-links a {
-      color: #6b7280;
-      transition: color 0.2s;
-    }
-
-    .social-links a:hover {
-      color: #3b82f6;
-    }
-
-    /* Sample Content Styles */
-    .hero-section {
-      text-align: center;
-      padding: 4rem 0;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      margin-bottom: 3rem;
-    }
-
-    .hero-title {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-
-    .hero-subtitle {
-      font-size: 1.25rem;
-      opacity: 0.9;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .content-section {
-      margin-bottom: 3rem;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-      color: #111827;
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 0.75rem;
-      padding: 1.5rem;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-      border: 1px solid #e5e7eb;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: #111827;
-    }
-
-    .card-description {
-      color: #6b7280;
-      line-height: 1.6;
-    }
-
     /* Mobile Responsive Styles */
     @media (max-width: 768px) {
+      /* Container adjustments */
       .container {
         padding: 0 16px;
       }
@@ -244,7 +52,7 @@
         height: 40px;
       }
 
-      /* Hide desktop navigation */
+      /* Transform desktop navigation for mobile */
       .main-navigation {
         position: fixed;
         top: 100%;
@@ -256,18 +64,18 @@
         gap: 0;
         padding: 1rem 20px 2rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #e5e7eb;
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
+        z-index: 100;
       }
 
       .main-navigation.is-open {
-        transform: translateY(-100%);
+        transform: translateY(0);
         opacity: 1;
         visibility: visible;
-        top: 100%;
-        transform: translateY(0);
       }
 
       .main-navigation a {
@@ -275,16 +83,18 @@
         border-bottom: 1px solid #f3f4f6;
         color: #374151;
         font-size: 1.1rem;
+        text-align: center;
       }
 
       .main-navigation a:last-child {
         border-bottom: none;
       }
 
-      .button {
+      .main-navigation .button {
         margin-top: 1rem;
         justify-content: center;
         padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
       }
 
       /* Mobile body scroll lock */
@@ -292,50 +102,12 @@
         overflow: hidden;
       }
 
-      /* Mobile Content */
+      /* Mobile Content adjustments */
       .main-content {
         padding: 1rem 0;
       }
 
-      .hero-section {
-        padding: 2.5rem 0;
-        margin-bottom: 2rem;
-      }
-
-      .hero-title {
-        font-size: 2rem;
-        line-height: 1.2;
-      }
-
-      .hero-subtitle {
-        font-size: 1.1rem;
-        padding: 0 1rem;
-      }
-
-      .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-
-      .content-section {
-        margin-bottom: 2rem;
-      }
-
-      .card-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
-
-      .card {
-        padding: 1.25rem;
-      }
-
       /* Mobile Footer */
-      .site-footer {
-        padding: 1.5rem 0;
-        margin-top: 2rem;
-      }
-
       .site-footer .container {
         flex-direction: column;
         gap: 1rem;
@@ -356,25 +128,6 @@
       .main-navigation {
         gap: 1.5rem;
       }
-
-      .hero-title {
-        font-size: 2.5rem;
-      }
-
-      .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    /* Large Screen Optimization */
-    @media (min-width: 1200px) {
-      .hero-section {
-        padding: 5rem 0;
-      }
-
-      .hero-title {
-        font-size: 3.5rem;
-      }
     }
 
     /* Animation for mobile menu */
@@ -393,6 +146,15 @@
       animation: slideDown 0.3s ease-out;
     }
   </style>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+  <meta property="og:description" content="Data Scientist & Machine Learning Engineer Portfolio">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 </head>
 
 <body>
@@ -401,7 +163,7 @@
     <div class="container">
       <div class="header-content">
         <h1 class="site-title">
-          <a href="#" aria-label="Home">Kyle Shiroma</a>
+          <a href="{{ '/' | relative_url }}" aria-label="Home">{{ site.title }}</a>
         </h1>
         
         <!-- Mobile Menu Toggle -->
@@ -413,12 +175,12 @@
           </svg>
         </button>
         
-        <nav role="navigation" class="main-navigation" aria-label="Main navigation">
-          <a href="#experience">Experience</a>
-          <a href="#projects" aria-current="page">Projects</a>
-          <a href="#ongoing" class="active">Ongoing Projects</a>
+        <nav role="navigation" class="nav-center main-navigation" aria-label="Main navigation">
+          <a href="{{ '/experience/' | relative_url }}" {% if page.url == '/experience/' %}aria-current="page"{% endif %}>Experience</a>
+          <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+          <a href="{{ '/ongoing-projects/' | relative_url }}" class="nav-link {% if page.url == '/ongoing-projects/' %}active{% endif %}">Ongoing Projects</a>
           <a class="button" 
-             href="/assets/pdf/Kyle_Shiroma_Data_Science_Resume.pdf" 
+             href="{{ '/assets/pdf/Kyle_Shiroma_Data_Science_Resume (1).pdf' | relative_url }}" 
              target="_blank" 
              rel="noopener noreferrer"
              aria-label="Download Resume (opens in new tab)">
@@ -435,86 +197,15 @@
 
   <!-- Main Content -->
   <main role="main" class="main-content">
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <h2 class="hero-title">Data Scientist & ML Engineer</h2>
-        <p class="hero-subtitle">
-          Transforming complex data into actionable insights through machine learning, statistical analysis, and innovative data solutions.
-        </p>
-      </div>
-    </section>
-
     <div class="container">
-      <!-- Experience Section -->
-      <section class="content-section" id="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="card-grid">
-          <div class="card">
-            <h3 class="card-title">Senior Data Scientist</h3>
-            <p class="card-description">
-              Leading machine learning initiatives and developing predictive models to drive business decisions. Expertise in Python, SQL, and cloud platforms.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">ML Engineer</h3>
-            <p class="card-description">
-              Building and deploying scalable machine learning pipelines. Experience with MLOps, model monitoring, and production systems.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section class="content-section" id="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="card-grid">
-          <div class="card">
-            <h3 class="card-title">Predictive Analytics Platform</h3>
-            <p class="card-description">
-              Developed an end-to-end analytics platform using Python, TensorFlow, and AWS to predict customer behavior and optimize marketing campaigns.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">NLP Sentiment Analysis</h3>
-            <p class="card-description">
-              Built a real-time sentiment analysis system processing social media data using advanced NLP techniques and deep learning models.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Computer Vision Pipeline</h3>
-            <p class="card-description">
-              Created an automated image classification system using CNNs and transfer learning, achieving 95% accuracy on production data.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ongoing Projects Section -->
-      <section class="content-section" id="ongoing">
-        <h2 class="section-title">Ongoing Projects</h2>
-        <div class="card-grid">
-          <div class="card">
-            <h3 class="card-title">AI Research Initiative</h3>
-            <p class="card-description">
-              Currently exploring novel approaches to few-shot learning and developing more efficient neural network architectures for resource-constrained environments.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Open Source Contributions</h3>
-            <p class="card-description">
-              Contributing to popular ML libraries and maintaining data science tools that help the community build better models faster.
-            </p>
-          </div>
-        </div>
-      </section>
+      {{ content }}
     </div>
   </main>
 
   <!-- Footer -->
   <footer role="contentinfo" class="site-footer">
     <div class="container">
-      <p>© 2025 Kyle Shiroma. All rights reserved.</p>
+      <p>© {{ site.time | date: '%Y' }} Kyle Shiroma. All rights reserved.</p>
       <div class="social-links" aria-label="Social media links">
         <a href="https://github.com/k-shiroma-code" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -621,7 +312,7 @@
         });
       }
 
-      // Smooth scrolling for anchor links
+      // Smooth scrolling for anchor links (if any)
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
