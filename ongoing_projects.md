@@ -84,3 +84,31 @@ The framework uses **T50 traffic generator** to create controlled attack scenari
 **Note:** *This is a long-term research project that will likely extend into and form the foundation for a Master's thesis in cybersecurity or machine learning.*
 
 **Reference:** [IEEE Xplore Digital Library ↗](https://ieeexplore.ieee.org/document/8058397/)
+
+---
+
+## Symptom-Severity-Analyzer
+**Started: September 2025 – Present**
+
+A **natural language processing (NLP) project** that classifies patient symptom descriptions into **Mild, Moderate, or Severe** categories. This project demonstrates end-to-end text classification in a healthcare context, from preprocessing to deployment, while emphasizing responsible use of medical data.
+
+**Project Focus:**
+- **Text preprocessing and tokenization** using NLTK/spaCy  
+- **Feature extraction** with TF-IDF and word embeddings  
+- **Model training** with Logistic Regression, Naive Bayes, and SVM  
+- **Model evaluation** using accuracy, precision, recall, and F1-score  
+- **Interactive demo interface** built with Streamlit for real-time predictions  
+
+The system accepts free-text symptom descriptions and returns a severity classification, providing a practical example of machine learning applied to healthcare text data. The project is designed for educational purposes and highlights techniques for working with sensitive data responsibly.
+
+**Technologies:** Python, scikit-learn, NLTK/spaCy, pandas, Streamlit  
+
+**Key Learning Outcomes:**
+- End-to-end text classification pipeline development  
+- Handling domain-specific medical text data  
+- Applying TF-IDF and word embeddings to healthcare tasks  
+- Deploying an interactive Streamlit application  
+- Responsible AI considerations for medical contexts  
+
+**Note:** *This project is for educational and research purposes only and is not intended for medical diagnosis. Always consult qualified healthcare professionals for medical concerns.*
+
