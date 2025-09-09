@@ -5,15 +5,17 @@ permalink: /
 ---
 <h2>About Me</h2>
 <p>
-  I'm Kyle Shiroma, a data science student transferring from Norco College (A.S. Mathematics) 
-  to UC San Diego (B.S. Data Science). I work on projects that solve actual problems, from retail analytics to AI health tools 
-  (2025 AI4Purpose NYC Winner).
+  I'm <b>Kyle Shiroma</b>, a <b>Data Science student</b> transferring from <b>Norco College (A.S. Mathematics)</b> 
+  to <b>UC San Diego (B.S. Data Science)</b>. I work on projects that solve actual problems, from 
+  <b>retail analytics</b> to <b>AI health tools</b> (<b>2025 AI4Purpose NYC Winner</b>).
 </p>
 <p>
-  My toolkit includes Python, R, SQL, Tableau, TensorFlow, and Scikit-learn for building machine learning models, 
-  data pipelines, and visualizations. I’m currently focused on Apache Airflow, AWS, Kubernetes, and Docker 
-  for scalable data engineering workflows.
+  My toolkit includes <b>Python</b>, <b>R</b>, <b>SQL</b>, <b>Tableau</b>, <b>TensorFlow</b>, and <b>Scikit-learn</b> 
+  for building <b>machine learning models</b>, <b>data pipelines</b>, and <b>visualizations</b>. 
+  I’m currently focused on <b>Apache Airflow</b>, <b>AWS</b>, <b>Kubernetes</b>, and <b>Docker</b> 
+  for <b>scalable data engineering workflows</b>.
 </p>
 <p>
-  I’m open to collaborating on data science projects with real-world impact.
+  I’m open to collaborating on <b>data science projects with real-world impact</b>.
 </p>
+
