@@ -3,9 +3,6 @@ title: Home
 layout: default
 permalink: /
 ---
-
-<img src="images/IMG_9510.jpg" alt="Kyle Shiroma" 
-     style="display: block; margin: 30px auto; width: 200px; height: 200px; object-fit: cover; border-radius: 50%; box-shadow: 0 0 12px rgba(0,0,0,0.15);">
      
 <h2>About Me</h2>
 <p>
@@ -22,4 +19,18 @@ permalink: /
 <p>
   I’m open to collaborating on <b>data science projects with real-world impact</b>.
 </p>
+
+<img 
+  src="images/IMG_9510.jpg" 
+  alt="Kyle Shiroma"
+  style="
+    display: block;
+    margin: 30px auto;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  "
+>
 
