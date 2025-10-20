@@ -3,21 +3,17 @@ title: Home
 layout: default
 permalink: /
 ---
-
 <div style="display: flex; align-items: flex-start; gap: 30px; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 300px;">
     <h2>About Me</h2>
     <p>
-     I'm <b>Kyle Shiroma</b>, a <b>Data Science student at UC San Diego</b> and a <b>Norco College (A.S. Mathematics) alumnus</b>. I work on projects that address      real-world challenges, ranging from <b>retail analytics</b> to <b>AI-driven health tools</b> (<b>2025 AI4Purpose NYC Winner</b>).
+     I'm <b>Kyle Shiroma</b>, a <b>Data Science student at UC San Diego</b> who transforms complex data into solutions that matter. From <b>optimizing retail operations</b> to <b>developing AI-driven health interventions</b>—work that earned recognition at the <b>2025 AI4Purpose NYC competition</b>—I'm focused on projects where data science meets real-world impact.
     </p>
     <p>
-      My toolkit includes <b>Python</b>, <b>R</b>, <b>SQL</b>, <b>Tableau</b>, and <b>Scikit-learn</b> 
-      for building <b>machine learning models</b>, <b>data pipelines</b>, and <b>visualizations</b>. 
-      I'm currently focused on <b>Apache Airflow</b>, <b>AWS</b>, <b>Kubernetes</b>, and <b>Docker</b> 
-      for <b>scalable data engineering workflows</b>.
+      I build end-to-end data solutions: designing <b>machine learning models</b> with <b>Python</b> and <b>Scikit-learn</b>, architecting <b>data pipelines</b>, and crafting analytical insights through <b>SQL</b>, <b>R</b>, and <b>Tableau</b>. Recently, I've been scaling up—integrating <b>Apache Airflow</b> for workflow orchestration, deploying on <b>AWS</b>, and containerizing applications with <b>Docker</b> and <b>Kubernetes</b> to handle production-grade data engineering challenges.
     </p>
     <p>
-      Outside of academics, I love watching sports, playing them, and reading manga. 
+      Beyond the terminal, I'm fueling my competitive side through sports and staying creative with manga. 
     </p>
   </div>
   
