@@ -17,7 +17,7 @@ permalink: /
       for <b>scalable data engineering workflows</b>.
     </p>
     <p>
-      I'm open to collaborating on <b>data science projects with real-world impact</b>.
+      Outside of academics, I love watching sports, playing them, and reading manga. 
     </p>
   </div>
   
