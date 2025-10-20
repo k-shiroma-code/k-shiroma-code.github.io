@@ -8,9 +8,7 @@ permalink: /
   <div style="flex: 1; min-width: 300px;">
     <h2>About Me</h2>
     <p>
-      I'm <b>Kyle Shiroma</b>, a <b>Data Science student</b> transferring from <b>Norco College (A.S. Mathematics)</b> 
-      to <b>UC San Diego (B.S. Data Science)</b>. I work on projects that solve actual problems, from 
-      <b>retail analytics</b> to <b>AI health tools</b> (<b>2025 AI4Purpose NYC Winner</b>).
+     I'm <b>Kyle Shiroma</b>, a <b>Data Science student at UC San Diego</b> and a <b>Norco College (A.S. Mathematics) alumnus</b>. I work on projects that address      real-world challenges, ranging from <b>retail analytics</b> to <b>AI-driven health tools</b> (<b>2025 AI4Purpose NYC Winner</b>).
     </p>
     <p>
       My toolkit includes <b>Python</b>, <b>R</b>, <b>SQL</b>, <b>Tableau</b>, <b>TensorFlow</b>, and <b>Scikit-learn</b> 
