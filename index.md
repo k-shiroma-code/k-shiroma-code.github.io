@@ -22,7 +22,7 @@ permalink: /
   </div>
   
   <img 
-    src="{{ site.baseurl }}/assets/img/Maze.jpg" 
+    src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
     alt="Kyle Shiroma"
     style="
       width: 270px;
