@@ -7,10 +7,10 @@ permalink: /
   <div style="flex: 1; min-width: 300px;">
     <h2>About Me</h2>
     <p>
-     I'm <b>Kyle Shiroma</b>, a <b>Data Science student at UC San Diego</b> who transforms complex data into solutions that matter. From <b>optimizing retail operations</b> to <b>developing AI-driven health interventions</b>—work that earned recognition at the <b>2025 AI4Purpose NYC competition</b>—I'm focused on projects where data science meets real-world impact.
+     I'm <b>Kyle Shiroma</b>, a <b>Data Science student at UC San Diego</b> who transforms data into solutions that matter. From <b>retail analytics</b> to <b>AI-driven health tools</b> (<b>2025 AI4Purpose NYC Winner</b>), I focus on projects with real-world impact.
     </p>
     <p>
-      I build end-to-end data solutions: designing <b>machine learning models</b> with <b>Python</b> and <b>Scikit-learn</b>, architecting <b>data pipelines</b>, and crafting analytical insights through <b>SQL</b>, <b>R</b>, and <b>Tableau</b>. Recently, I've been scaling up—integrating <b>Apache Airflow</b> for workflow orchestration, deploying on <b>AWS</b>, and containerizing applications with <b>Docker</b> and <b>Kubernetes</b> to handle production-grade data engineering challenges.
+      I build end-to-end data solutions using <b>Python</b>, <b>SQL</b>, <b>R</b>, and <b>Tableau</b> for <b>machine learning models</b> and <b>data pipelines</b>. Currently scaling up with <b>Apache Airflow</b>, <b>AWS</b>, <b>Docker</b>, and <b>Kubernetes</b> for production-grade data engineering.
     </p>
     <p>
       Beyond the terminal, I'm fueling my competitive side through sports and staying creative with manga. 
