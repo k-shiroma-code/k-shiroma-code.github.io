@@ -13,15 +13,14 @@ permalink: /
 <p>
   My toolkit includes <b>Python</b>, <b>R</b>, <b>SQL</b>, <b>Tableau</b>, <b>TensorFlow</b>, and <b>Scikit-learn</b> 
   for building <b>machine learning models</b>, <b>data pipelines</b>, and <b>visualizations</b>. 
-  I’m currently focused on <b>Apache Airflow</b>, <b>AWS</b>, <b>Kubernetes</b>, and <b>Docker</b> 
+  I'm currently focused on <b>Apache Airflow</b>, <b>AWS</b>, <b>Kubernetes</b>, and <b>Docker</b> 
   for <b>scalable data engineering workflows</b>.
 </p>
 <p>
-  I’m open to collaborating on <b>data science projects with real-world impact</b>.
+  I'm open to collaborating on <b>data science projects with real-world impact</b>.
 </p>
-
 <img 
-  src="images/IMG_9510.jpg" 
+  src="{{ site.baseurl }}/images/IMG_9510.jpg" 
   alt="Kyle Shiroma"
   style="
     display: block;
@@ -33,4 +32,3 @@ permalink: /
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   "
 >
-
