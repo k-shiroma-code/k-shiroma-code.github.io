@@ -27,7 +27,7 @@ permalink: /
     src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
     alt="Kyle Shiroma"
     style="
-      width: 2700px;
+      width: 270px;
       height: 270px;
       object-fit: cover;
       border-radius: 50%;
