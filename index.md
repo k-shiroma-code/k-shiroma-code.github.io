@@ -3,6 +3,10 @@ title: Home
 layout: default
 permalink: /
 ---
+
+<img src="images/IMG_9510.jpg" alt="Kyle Shiroma" 
+     style="display: block; margin: 30px auto; width: 200px; height: 200px; object-fit: cover; border-radius: 50%; box-shadow: 0 0 12px rgba(0,0,0,0.15);">
+     
 <h2>About Me</h2>
 <p>
   I'm <b>Kyle Shiroma</b>, a <b>Data Science student</b> transferring from <b>Norco College (A.S. Mathematics)</b> 
