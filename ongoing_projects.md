@@ -13,6 +13,6 @@ description: A showcase of active development projects in data engineering, mach
 
 ---
 
-## Currently working on this
+## DS3 Project: EvoCharge
 Selected to join EvoCharge, a DS3 data science project focused on forecasting next-hour stall availability at San Diego’s busiest EV charging stations using AFDC, ChargePoint APIs, and traffic data. Collaborating in a 4-person team to design and train predictive models for real-world mobility challenges. Utilizing Python, pandas, NumPy, scikit-learn, Streamlit, Mapbox, and GitHub for data processing, model development, visualization, and deployment. Contributing 5–8 hours per week toward developing a scalable, data-driven solution for sustainable transportation.
 
