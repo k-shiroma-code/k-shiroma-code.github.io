@@ -10,7 +10,8 @@ You can view the live portfolio here: [k-shiroma-code.github.io](https://k-shiro
 - `projects.md` – Projects page  
 - `experience.md` – Work & research experience  
 - `_layouts/` – Layout templates  
-- `assets/css/style.css` – Custom styling  
+- `assets/css/style.css` – Custom styling
+- `ongoing_project.md` – Current projects I am working on
 
 ## About Me
 
