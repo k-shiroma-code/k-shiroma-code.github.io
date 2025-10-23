@@ -30,8 +30,6 @@ permalink: /experience/
   </div>
 </div>
 
-<hr style="margin: 40px 0;">
-
 ---
 
 <h3>Norco College Learning Resources Center – Peer Tutor</h3>
