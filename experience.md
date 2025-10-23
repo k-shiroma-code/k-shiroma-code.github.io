@@ -7,7 +7,7 @@ permalink: /experience/
   <!-- Text column -->
   <div style="flex: 1; min-width: 400px;">
     <h3>UC San Diego HDSI 3.0 Lab – Research Fellow</h3>
-    <p style="text-align: center; color: #3b82f6;"><em>Undergraduate Research Fellow • Starting Soon (2025)</em></p>
+    <p style="text-align: center; color: dark blue;"><em>Undergraduate Research Fellow • Starting Soon (2025)</em></p>
     <p style="text-align: justify;">
       Selected as an <strong>Undergraduate Research Fellow</strong> at the <strong>Halıcıoğlu Data Science Institute (HDSI) 3.0 Lab</strong> at UC San Diego. 
       This fellowship integrates <strong>AI, engineering, and art</strong> to create <strong>K–12 engagement projects</strong> that combine 
