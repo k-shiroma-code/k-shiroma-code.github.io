@@ -13,9 +13,6 @@ permalink: /
       I’m interested in <b>sports</b>, <b>healthcare</b>, and <b>business analytics</b>. At UCSD, I joined the <b>Data Science Student Society (DS3)</b> and contribute to the <b>EvoCharge project</b> — more details are on the <i>Ongoing Projects</i> page.
     </p>
     <p>
-      My skills include <b>Python</b>, <b>R</b>, and <b>SQL</b>, and I’m expanding into <b>AWS</b>, <b>Docker</b>, and <b>Airflow</b> for data engineering.
-    </p>
-    <p>
       Outside of academics, I enjoy <b>playing pickup soccer</b>, <b>reading manga</b>, and <b>making Spotify playlists</b>.
     </p>
   </div>
