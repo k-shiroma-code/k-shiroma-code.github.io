@@ -10,13 +10,13 @@ permalink: /
       I’m <b>Kyle Shiroma</b>, a transfer student from <b>Norco College</b> pursuing a <b>B.S. in Data Science</b> at <b>UC San Diego</b>, with a possible <b>minor in Mathematics</b>.
     </p>
     <p>
-      My interests include <b>sports</b>, <b>healthcare</b>, and <b>business analytics</b>. At UCSD, I recently joined the <b>Data Science Student Society (DS3)</b> and was selected to work on the <b>EvoCharge project</b> — more details can be found on the <i>Ongoing Projects</i> page.
+      I’m interested in <b>sports</b>, <b>healthcare</b>, and <b>business analytics</b>. At UCSD, I joined the <b>Data Science Student Society (DS3)</b> and contribute to the <b>EvoCharge project</b> — more details are on the <i>Ongoing Projects</i> page.
     </p>
     <p>
-      My technical skill set includes <b>Python</b>, <b>R</b>, and <b>SQL</b>, with a focus on <b>data science applications</b>. I’m also learning <b>AWS services</b> to complement my experience with tools like <b>Docker</b>, <b>Airflow</b>, and other <b>data/software engineering practices</b>.
+      My skills include <b>Python</b>, <b>R</b>, and <b>SQL</b>, and I’m expanding into <b>AWS</b>, <b>Docker</b>, and <b>Airflow</b> for data engineering.
     </p>
     <p>
-      Outside of my career focus, I enjoy <b>playing pickup soccer</b>, <b>reading manga</b>, and <b>making random Spotify playlists</b>.
+      Outside of academics, I enjoy <b>playing pickup soccer</b>, <b>reading manga</b>, and <b>making Spotify playlists</b>.
     </p>
   </div>
   
