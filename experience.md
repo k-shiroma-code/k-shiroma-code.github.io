@@ -4,12 +4,6 @@ layout: default
 permalink: /experience/
 ---
 
-<div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; margin: 1.5rem 0;">
-  <!-- Image column (left) -->
-  <div style="flex: 0 0 300px; max-width: 100%;">
-    <img src="{{ site.baseurl }}/assets/img/HDSI_Lab.png" alt="UCSD HDSI 3.0 Lab" style="border-radius:12px; width:100%; height:auto;">
-  </div>
-
   <!-- Text column -->
   <div style="flex: 1; min-width: 400px;">
     <h3>UC San Diego HDSI 3.0 Lab – Research Fellow</h3>
