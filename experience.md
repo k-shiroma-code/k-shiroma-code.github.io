@@ -22,7 +22,6 @@ permalink: /experience/
       preparing fellows to bridge <strong>hardware, software, and creative learning</strong>.
     </p>
   </div>
-</div>
 
 ---
 
