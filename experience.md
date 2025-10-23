@@ -25,15 +25,27 @@ permalink: /experience/
 
 ---
 
-<h3>Norco College Learning Resources Center – Peer Tutor</h3>
-<p style="text-align: center;"><em>Jan 2023 – June 2025</em></p>
-<p>
-  Tutored over <strong>100 students</strong> in <strong>Calculus</strong>, <strong>Statistics</strong>, and <strong>C++</strong>, developing strong <strong>communication</strong> and <strong>mentoring skills</strong> while maintaining accurate documentation and timesheets. Guided students <strong>step-by-step through problem-solving</strong>, ensuring <strong>conceptual understanding</strong> and <strong>independent thinking</strong>, and helped students <strong>build confidence in STEM subjects</strong> and achieve academic goals.
-</p>
+<!-- Norco College Tutoring Section -->
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px; margin: 1.5rem 0;">
+  <!-- Text column -->
+  <div style="flex: 1; min-width: 400px;">
+    <h3>Norco College Learning Resources Center – Peer Tutor</h3>
+    <p style="text-align: center;"><em>Jan 2023 – June 2025</em></p>
+    <p style="text-align: justify;">
+      Tutored over <strong>100 students</strong> in <strong>Calculus</strong>, <strong>Statistics</strong>, and <strong>C++</strong>, developing strong <strong>communication</strong> 
+      and <strong>mentoring skills</strong> while maintaining accurate documentation and timesheets. Guided students <strong>step-by-step through problem-solving</strong>, 
+      ensuring <strong>conceptual understanding</strong> and <strong>independent thinking</strong>, and helped students <strong>build confidence in STEM subjects</strong> 
+      and achieve academic goals.
+    </p>
+  </div>
 
-<div style="flex: 0 0 300px; max-width: 100%;">
-  <img src="{{ site.baseurl }}/assets/img/IMG_1673.jpg" alt="CRLA Tutoring Certificate" style="border-radius:12px; width:100%; height:auto;">
+  <!-- Image column (right) -->
+  <div style="flex: 0 0 300px; max-width: 100%;">
+    <img src="{{ site.baseurl }}/assets/img/IMG_1673.jpg" alt="CRLA Tutoring Certificate" 
+         style="border-radius:12px; width:100%; height:auto; box-shadow:0 0 10px rgba(0,0,0,0.15);">
+  </div>
 </div>
+
 
 ---
 
