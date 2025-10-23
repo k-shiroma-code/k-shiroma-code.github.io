@@ -7,18 +7,30 @@ permalink: /experience/
 <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; margin: 1.5rem 0;">
   <!-- Image column (left) -->
   <div style="flex: 0 0 300px; max-width: 100%;">
-    <img src="{{ site.baseurl }}/assets/img/HDSI_Lab.png" alt="HDSI 3.0 Lab Fellowship" style="border-radius:12px; width:100%; height:auto;">
+    <img src="{{ site.baseurl }}/assets/img/HDSI_Lab.png" alt="UCSD HDSI 3.0 Lab" style="border-radius:12px; width:100%; height:auto;">
   </div>
 
   <!-- Text column -->
   <div style="flex: 1; min-width: 400px;">
     <h3>UC San Diego HDSI 3.0 Lab – Research Fellow</h3>
-    <p style="text-align: center;"><em>Starting Soon (2025)</em></p>
-    <p>
-      Selected as a <strong>Research Fellow</strong> at the <strong>Halıcıoğlu Data Science Institute (HDSI) 3.0 Lab</strong> at UC San Diego. Will contribute to <strong>AI-driven research projects</strong> at the intersection of <strong>data science, engineering, and social impact</strong>, collaborating with faculty mentors and student researchers to develop <strong>real-world data solutions</strong>. Focused on applying <strong>machine learning</strong> and <strong>data analysis</strong> to address emerging challenges in <strong>healthcare, sustainability, and technology ethics</strong>.
+    <p style="text-align: center; color: #3b82f6;"><em>Undergraduate Research Fellow • Starting Soon (2025)</em></p>
+    <p style="text-align: justify;">
+      Selected as an <strong>Undergraduate Research Fellow</strong> at the <strong>Halıcıoğlu Data Science Institute (HDSI) 3.0 Lab</strong> at UC San Diego. 
+      This fellowship integrates <strong>AI, engineering, and art</strong> to create <strong>K–12 engagement projects</strong> that combine 
+      <strong>data science, robotics, and creativity</strong>. Fellows gain hands-on experience with <strong>Linux</strong>, <strong>Python</strong>, 
+      <strong>Arduino</strong>, <strong>Raspberry Pi</strong>, <strong>circuits</strong>, and <strong>3D printing</strong> while documenting and sharing 
+      their work on <strong>GitHub</strong>.
+    </p>
+    <p style="text-align: justify;">
+      Responsibilities include <strong>designing and assembling circuits and robotics prototypes</strong>, programming interactive systems, 
+      and developing <strong>AI-driven, art-themed demos</strong> to support <strong>K–12 educational outreach</strong>. 
+      The program emphasizes <strong>problem-solving</strong>, <strong>iterative design</strong>, and <strong>technical communication</strong>, 
+      preparing fellows to bridge <strong>hardware, software, and creative learning</strong>.
     </p>
   </div>
 </div>
+
+<hr style="margin: 40px 0;">
 
 ---
 
