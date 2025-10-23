@@ -13,7 +13,7 @@ description: A showcase of active development projects!
 
 <hr style="margin: 40px 0;">
 
-<h2 style="font-size: 1.6rem; margin-bottom: 8px;">DS3 Project: EvoCharge <span style="font-size: 1rem; color:#3b82f6 ;">(October – Present)</span></h2>
+<h2 style="font-size: 1.6rem; margin-bottom: 8px;">DS3 Project: EvoCharge</h2>
 
 <p style="font-size: 1rem; line-height: 1.6; text-align: justify;">
   Selected to join <strong>EvoCharge</strong>, a <strong>DS3 data science project</strong> focused on 
