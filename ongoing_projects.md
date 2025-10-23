@@ -7,8 +7,7 @@ description: A showcase of active development projects!
 
 <div style="text-align: center; margin-bottom: 40px;">
   <p style="font-size: 1.1rem; line-height: 1.6;">
-    Welcome! This page highlights my <strong>in-progress projects</strong> — research and builds that are still being refined.<br>
-    I'll be publishing full GitHub repositories once the code and documentation are cleaned up.
+    Welcome! This page highlights my <strong>in-progress projects</strong> — research and builds that are still being refined. I'll be publishing full GitHub repositories once the code and documentation are cleaned up.
   </p>
 </div>
 
