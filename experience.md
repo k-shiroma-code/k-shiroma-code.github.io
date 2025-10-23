@@ -4,6 +4,9 @@ layout: default
 permalink: /experience/
 ---
 
+HDSI 3.0 Lab Fellow 
+Starting my role here soon! 
+
 <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; margin: 1.5rem 0;">
   <!-- Text column -->
   <div style="flex: 1; min-width: 400px;">
