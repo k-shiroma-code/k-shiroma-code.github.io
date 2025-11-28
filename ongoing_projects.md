@@ -25,4 +25,6 @@ description: A showcase of active development projects!
   for data processing, model development, visualization, and deployment. Contributing 
   <strong>5–8 hours per week</strong> toward developing a <strong>scalable, data-driven solution 
   for sustainable transportation</strong>.
+  <br><br>
+  🔗 <a href="https://github.com/anirudh9280/EvoCharge" target="_blank">View the GitHub Repository</a>
 </p>
