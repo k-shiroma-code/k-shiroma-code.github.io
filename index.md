@@ -10,10 +10,6 @@ permalink: /
       I’m <b>Kyle Shiroma</b>, a transfer student from <b>Norco College</b> pursuing a <b>B.S. in Data Science</b> at <b>UC San Diego</b>, with a possible <b>minor in Mathematics</b>.
     </p>
 
-<p>
-  I’m interested in <b>sports</b>, <b>healthcare</b>, <b>business analytics</b>, and <b>more!</b>. At UCSD, I joined the <b>Data Science Student Society (DS3)</b> and contribute to the <b>EvoCharge project</b> — more details are on the <i>Ongoing Projects</i> page. I will also help organize UCSD’s annual hackathon as part of the <b>DataHacks committee</b> in DS3.
-</p>
-
   </div>
   
   <img 
