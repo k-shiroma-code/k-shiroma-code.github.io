@@ -10,49 +10,25 @@ permalink: /experience/
   <p style="text-align: center; color: darkblue;">
     <em>Undergraduate Research Fellow (2025)</em>
   </p>
-
   <p style="text-align: justify;">
-    Selected as an <strong>Undergraduate Research Fellow</strong> at the 
+    As an <strong>Undergraduate Research Fellow</strong> at the 
     <strong>Halıcıoğlu Data Science Institute (HDSI) 3.0 Lab</strong> at 
-    <strong>UC San Diego</strong>. The fellowship integrates 
-    <strong>artificial intelligence, engineering, and art</strong> to develop 
-    <strong>K–12 engagement projects</strong> that combine 
-    <strong>data science, robotics, and creative technologies</strong>.
+    <strong>UC San Diego</strong>, I work at the intersection of 
+    <strong>AI, engineering, and art</strong> to build 
+    <strong>K–12 educational engagement projects</strong>. The fellowship combines 
+    <strong>data science, robotics, and creative technologies</strong> with hands-on experience in 
+    <strong>Python, Arduino, Raspberry Pi, 3D printing</strong>, and <strong>web development (React, Astro)</strong>.
   </p>
-
   <p style="text-align: justify;">
-    The program provides hands-on experience with <strong>Linux</strong>, 
-    <strong>Python</strong>, <strong>Arduino</strong>, <strong>Raspberry Pi</strong>, 
-    <strong>electronic circuits</strong>, and <strong>3D printing</strong>. 
-    Fellows design and build interactive systems while documenting and sharing 
-    their work on <strong>GitHub</strong>.
-  </p>
-
-  <p style="text-align: justify;">
-    My contributions include <strong>designing and assembling electronic and robotic prototypes</strong>, 
-    programming interactive systems, and developing <strong>AI-driven, art-centered demonstrations</strong> 
-    for <strong>K–12 educational outreach</strong>. I also contributed to 
-    <strong>web development</strong>, gaining experience with 
-    <strong>React</strong> and <strong>Astro</strong>.
-  </p>
-
-  <p style="text-align: justify;">
-    I created a <strong>creative poster board</strong> to showcase a 
-    <strong>3D fiber-optic installation</strong>, featuring 
+    I designed a <strong>3D fiber-optic installation</strong> with 
     <strong>Arduino-controlled LEDs</strong> and 
-    <strong>3D-printed linear actuators</strong>. The poster was designed as an 
-    <strong>interactive and visual exhibit</strong> rather than a formal research poster, 
-    emphasizing <strong>concept communication</strong> and 
-    <strong>hands-on learning</strong>.
-  </p>
-
-  <p style="text-align: justify;">
-    Ongoing work involves extending this installation into a 
-    <strong>machine learning–assisted self-alignment system</strong> that automatically adjusts 
-    LED positioning to correct fiber-optic misalignment. This project highlights 
-    <strong>hardware–software integration</strong>, 
-    <strong>iterative prototyping</strong>, and 
-    <strong>applied machine learning</strong>.
+    <strong>3D-printed linear actuators</strong>, presented through an 
+    <strong>interactive visual exhibit</strong> emphasizing hands-on learning. 
+    Currently, I'm extending this into a 
+    <strong>machine learning–assisted self-alignment system</strong> that automatically corrects 
+    fiber-optic misalignment—demonstrating 
+    <strong>hardware–software integration</strong> and 
+    <strong>applied ML in physical systems</strong>.
   </p>
 </div>
 
