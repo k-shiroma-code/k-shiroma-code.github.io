@@ -5,84 +5,85 @@ permalink: /ongoing-projects/
 description: A showcase of active development projects!
 ---
 
-## 🌤️ Weather API Project
+## Weather API Project
 
 **Status:** Actively Developing  
-**Tech Focus:** Full-Stack Development · Machine Learning · Data Engineering
+**Focus Areas:** Full-Stack Development, Machine Learning, Data Engineering
 
-A full-stack weather forecasting application that combines **real-time weather data** with **AI-powered SARIMA temperature predictions**. The project demonstrates end-to-end development — from data ingestion and modeling to API design and frontend visualization.
+A full-stack weather forecasting application that integrates real-time weather data with machine learning–based time-series forecasting. This project demonstrates end-to-end system design, from data ingestion and model training to API development and frontend visualization.
 
 ---
 
-### 🚀 Project Overview
+### Project Overview
 
-This application provides:
+The Weather API Project provides:
 - Real-time weather conditions for any city
 - A 14-day temperature forecast powered by a SARIMA time-series model
-- An interactive frontend dashboard with charts and tables
-- A RESTful backend API built with FastAPI
+- An interactive web dashboard with charts and tables
+- A RESTful backend API built using FastAPI
 
-The goal of this project is to showcase **production-style architecture**, **machine learning workflows**, and **clean API design**.
+The primary goal of this project is to showcase production-style architecture, applied machine learning, and clean API design.
 
 ---
 
-### 🏗️ Architecture
+### Architecture
 
 **Frontend**
-- Astro + React
+- Astro and React
 - Tailwind CSS
 - Recharts for data visualization
 
 **Backend**
 - FastAPI REST API
-- OpenWeather API for live data
-- Model inference endpoints for ML forecasts
+- OpenWeather API for live weather data
+- Dedicated endpoints for model inference
 
 **Machine Learning Pipeline**
-- Historical data from Open-Meteo (2020–2024)
+- Historical data sourced from the Open-Meteo API (2020–2024)
 - Automated ETL pipeline
 - SARIMA model trained using `auto_arima`
-- Evaluation with RMSE, MAE, and MAPE
+- Model evaluation using RMSE, MAE, and MAPE
 
 ---
 
-### 🧠 Machine Learning Details
+### Machine Learning Details
 
 - **Model:** SARIMA (Seasonal ARIMA)
 - **Seasonality:** 365 days
-- **Training Data:** ~5 years of daily weather data (Tokyo)
+- **Training Data:** Approximately five years of daily weather data for Tokyo
 - **Forecast Horizon:** 14 days
 - **Features Used:**
-  - Daily max temperature
-  - Daily min temperature
-  - Precipitation
-  - Wind speed
+  - Daily maximum temperature
+  - Daily minimum temperature
+  - Daily precipitation
+  - Maximum wind speed
 
-This pipeline is fully reproducible and modular, allowing future expansion to additional locations or models.
-
----
-
-### 🔌 API Capabilities
-
-- `/weather?city=CityName`
-- `/sarima/forecast?days=14`
-- `/sarima/info`
-
-Includes automatic OpenAPI documentation via FastAPI.
+The machine learning pipeline is modular and reproducible, allowing future expansion to additional locations or alternative models.
 
 ---
 
-### 🛠️ Tech Stack
+### API Capabilities
+
+- `GET /weather?city=CityName`
+- `GET /sarima/forecast?days=14`
+- `GET /sarima/info`
+
+The backend includes automatically generated OpenAPI documentation via FastAPI.
+
+---
+
+### Technology Stack
 
 **Languages**
 - Python
 - JavaScript
 
-**Frameworks & Libraries**
+**Frameworks and Libraries**
 - FastAPI
 - Astro
 - React
-- Pandas, NumPy
+- Pandas
+- NumPy
 - Statsmodels
 - Scikit-learn
 
@@ -92,25 +93,23 @@ Includes automatic OpenAPI documentation via FastAPI.
 
 ---
 
-### 📍 Current Focus
+### Current Development Focus
 
-- Improving forecast accuracy
-- Expanding ML endpoints
-- Enhancing frontend UX
-- Preparing the project for cloud deployment
+- Improving forecast accuracy and model stability
+- Expanding machine learning endpoints
+- Enhancing frontend usability and performance
+- Preparing the application for cloud deployment
 
 ---
 
-### 🔗 Links
+### Links
 
 - **GitHub Repository:**  
   https://github.com/k-shiroma-code/Weather-API-Project
 
-- **API Docs (Local):**  
+- **API Documentation (Local):**  
   http://localhost:8000/docs
 
 ---
-
-_Last updated: December 2024_
 
 
