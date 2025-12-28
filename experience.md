@@ -24,29 +24,37 @@ permalink: /experience/
     The program provides hands-on experience with <strong>Linux</strong>, 
     <strong>Python</strong>, <strong>Arduino</strong>, <strong>Raspberry Pi</strong>, 
     <strong>electronic circuits</strong>, and <strong>3D printing</strong>. 
-    Fellows design, build, and document interactive systems while publishing 
-    project work and technical documentation on <strong>GitHub</strong>.
+    Fellows design and build interactive systems while documenting and sharing 
+    their work on <strong>GitHub</strong>.
   </p>
 
   <p style="text-align: justify;">
-    My responsibilities include <strong>designing and assembling electronic and robotic prototypes</strong>, 
-    programming interactive systems, and developing <strong>AI-driven, art-focused demonstrations</strong> 
+    My contributions include <strong>designing and assembling electronic and robotic prototypes</strong>, 
+    programming interactive systems, and developing <strong>AI-driven, art-centered demonstrations</strong> 
     for <strong>K–12 educational outreach</strong>. I also contributed to 
-    <strong>web development</strong> tasks, gaining experience with 
-    <strong>React</strong> and <strong>Astro</strong>, and created a 
-    <strong>research poster</strong> showcasing a <strong>3D fiber-optic project</strong>.
+    <strong>web development</strong>, gaining experience with 
+    <strong>React</strong> and <strong>Astro</strong>.
   </p>
 
   <p style="text-align: justify;">
-    Current and ongoing work includes a <strong>fiber-optic alignment system</strong> that uses 
-    <strong>Arduino-controlled LEDs</strong>, <strong>3D-printed linear actuators</strong>, and 
-    <strong>machine learning techniques</strong> to automatically self-align misaligned light sources. 
-    This project emphasizes <strong>iterative design</strong>, 
-    <strong>hardware–software integration</strong>, and 
+    I created a <strong>creative poster board</strong> to showcase a 
+    <strong>3D fiber-optic installation</strong>, featuring 
+    <strong>Arduino-controlled LEDs</strong> and 
+    <strong>3D-printed linear actuators</strong>. The poster was designed as an 
+    <strong>interactive and visual exhibit</strong> rather than a formal research poster, 
+    emphasizing <strong>concept communication</strong> and 
+    <strong>hands-on learning</strong>.
+  </p>
+
+  <p style="text-align: justify;">
+    Ongoing work involves extending this installation into a 
+    <strong>machine learning–assisted self-alignment system</strong> that automatically adjusts 
+    LED positioning to correct fiber-optic misalignment. This project highlights 
+    <strong>hardware–software integration</strong>, 
+    <strong>iterative prototyping</strong>, and 
     <strong>applied machine learning</strong>.
   </p>
 </div>
-
 
 ---
 
