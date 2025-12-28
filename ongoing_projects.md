@@ -43,6 +43,5 @@ The application provides <strong>current weather conditions for any city</strong
 </p>
 
 <p>
-<a href="https://k-shiroma-code.github.io/Weather-API-Project/" target="_blank" rel="noopener"><strong>Live Project Page ↗</strong></a><br>
 <a href="https://github.com/k-shiroma-code/Weather-API-Project" target="_blank" rel="noopener"><strong>View on GitHub ↗</strong></a>
 </p>
