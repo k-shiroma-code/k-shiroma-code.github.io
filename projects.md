@@ -6,10 +6,11 @@ permalink: /projects/
 ---
 ## EvoCharge – California EV Charging Cost Predictor
 
-EvoCharge is a machine-learning dashboard that predicts electric vehicle charging energy usage and cost across California. It uses 3,500 charging sessions, 16,455 statewide charging stations, and county-level electricity rates to power a real-time Lasso regression model. The app provides energy and cost estimates, an interactive station map, and detailed model insights.
+EvoCharge is a **machine-learning dashboard** that predicts electric vehicle charging energy usage and cost across California. The system uses **3,500 charging sessions**, **16,455 statewide charging stations**, and **county-level electricity rates** to power a **real-time Lasso regression model**. The app provides **energy and cost estimates**, an **interactive station map**, and **detailed model insights**.  
 
-<a href="https://evocharge.streamlit.app">Live App</a> | <a href="https://github.com/anirudh9280/EvoCharge">GitHub</a>
+My contributions include **designing the website in Figma** and **assisting with model testing and validation**.
 
+<a href="https://evocharge.streamlit.app" target="_blank" rel="noopener"><strong>Live App ↗</strong></a> | <a href="https://github.com/anirudh9280/EvoCharge" target="_blank" rel="noopener"><strong>GitHub ↗</strong></a>
 
 ---
 
