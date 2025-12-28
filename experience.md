@@ -4,24 +4,49 @@ layout: default
 permalink: /experience/
 ---
 
-  <!-- Text column -->
-  <div style="flex: 1; min-width: 400px;">
-    <h3>UC San Diego HDSI 3.0 Lab – Research Fellow</h3>
-    <p style="text-align: center; color: dark blue;"><em>Undergraduate Research Fellow (2025)</em></p>
-    <p style="text-align: justify;">
-      Selected as an <strong>Undergraduate Research Fellow</strong> at the <strong>Halıcıoğlu Data Science Institute (HDSI) 3.0 Lab</strong> at UC San Diego. 
-      This fellowship integrates <strong>AI, engineering, and art</strong> to create <strong>K–12 engagement projects</strong> that combine 
-      <strong>data science, robotics, and creativity</strong>. Fellows gain hands-on experience with <strong>Linux</strong>, <strong>Python</strong>, 
-      <strong>Arduino</strong>, <strong>Raspberry Pi</strong>, <strong>circuits</strong>, and <strong>3D printing</strong> while documenting and sharing 
-      their work on <strong>GitHub</strong>.
-    </p>
-    <p style="text-align: justify;">
-      Responsibilities include <strong>designing and assembling circuits and robotics prototypes</strong>, programming interactive systems, 
-      and developing <strong>AI-driven, art-themed demos</strong> to support <strong>K–12 educational outreach</strong>. 
-      The program emphasizes <strong>problem-solving</strong>, <strong>iterative design</strong>, and <strong>technical communication</strong>, 
-      preparing fellows to bridge <strong>hardware, software, and creative learning</strong>.
-    </p>
-  </div>
+<!-- Text column -->
+<div style="flex: 1; min-width: 400px;">
+  <h3>UC San Diego HDSI 3.0 Lab – Research Fellow</h3>
+  <p style="text-align: center; color: darkblue;">
+    <em>Undergraduate Research Fellow (2025)</em>
+  </p>
+
+  <p style="text-align: justify;">
+    Selected as an <strong>Undergraduate Research Fellow</strong> at the 
+    <strong>Halıcıoğlu Data Science Institute (HDSI) 3.0 Lab</strong> at 
+    <strong>UC San Diego</strong>. The fellowship integrates 
+    <strong>artificial intelligence, engineering, and art</strong> to develop 
+    <strong>K–12 engagement projects</strong> that combine 
+    <strong>data science, robotics, and creative technologies</strong>.
+  </p>
+
+  <p style="text-align: justify;">
+    The program provides hands-on experience with <strong>Linux</strong>, 
+    <strong>Python</strong>, <strong>Arduino</strong>, <strong>Raspberry Pi</strong>, 
+    <strong>electronic circuits</strong>, and <strong>3D printing</strong>. 
+    Fellows design, build, and document interactive systems while publishing 
+    project work and technical documentation on <strong>GitHub</strong>.
+  </p>
+
+  <p style="text-align: justify;">
+    My responsibilities include <strong>designing and assembling electronic and robotic prototypes</strong>, 
+    programming interactive systems, and developing <strong>AI-driven, art-focused demonstrations</strong> 
+    for <strong>K–12 educational outreach</strong>. I also contributed to 
+    <strong>web development</strong> tasks, gaining experience with 
+    <strong>React</strong> and <strong>Astro</strong>, and created a 
+    <strong>research poster</strong> showcasing a <strong>3D fiber-optic project</strong>.
+  </p>
+
+  <p style="text-align: justify;">
+    Current and ongoing work includes a <strong>fiber-optic alignment system</strong> that uses 
+    <strong>Arduino-controlled LEDs</strong>, <strong>3D-printed linear actuators</strong>, and 
+    <strong>machine learning techniques</strong> to automatically self-align misaligned light sources. 
+    This project emphasizes <strong>iterative design</strong>, 
+    <strong>hardware–software integration</strong>, and 
+    <strong>applied machine learning</strong>.
+  </p>
+</div>
+
 
 ---
 
