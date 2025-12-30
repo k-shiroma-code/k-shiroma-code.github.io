@@ -4,7 +4,7 @@ layout: default
 permalink: /projects/
 ---
 
-## ⚡ Weather & Energy Dashboard
+## Weather & Energy Dashboard
 
 A **full-stack web application** featuring **global weather data** and **California grid load forecasting** using machine learning. The dashboard predicts **14-day electricity demand** across **4 California service areas** (SCE, PG&E, SDG&E, VEA) using **Gradient Boosting, Random Forest, and Ridge Regression** models trained on **315,648 observations**. The best model achieved **2.26% MAPE** with **5-fold cross-validation**. The weather module provides **real-time forecasts** for any city worldwide with **°C/°F toggle** and **interactive charts**.
 
