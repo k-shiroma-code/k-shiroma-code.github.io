@@ -4,6 +4,37 @@ layout: default
 permalink: /projects/
 ---
 
+## ⚡ Weather & Energy Dashboard
+
+A **full-stack web application** featuring **global weather data** and **California grid load forecasting** using machine learning. The dashboard predicts **14-day electricity demand** across **4 California service areas** (SCE, PG&E, SDG&E, VEA) using **Gradient Boosting, Random Forest, and Ridge Regression** models trained on **315,648 observations**. The best model achieved **2.26% MAPE** with **5-fold cross-validation**. The weather module provides **real-time forecasts** for any city worldwide with **°C/°F toggle** and **interactive charts**.
+
+**Technologies:** React, Astro, FastAPI, Python, scikit-learn, Recharts, OpenWeather API  
+
+<a href="https://github.com/k-shiroma-code/Weather-API-Project" target="_blank" rel="noopener"><strong>View on GitHub ↗</strong></a>
+
+<div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%); border-radius: 8px; padding: 20px; border: 1px solid #333;">
+    <h4 style="color: #f59e0b; margin-bottom: 10px;">📊 Model Performance</h4>
+    <table style="width: 100%; font-size: 14px; color: #ccc;">
+      <tr style="border-bottom: 1px solid #444;"><th style="text-align: left; padding: 5px 0;">Model</th><th>MAE</th><th>MAPE</th></tr>
+      <tr><td>Gradient Boosting</td><td style="color: #10b981;">573 MW</td><td style="color: #10b981;">2.26%</td></tr>
+      <tr><td>Random Forest</td><td>577 MW</td><td>2.29%</td></tr>
+      <tr><td>Ridge + Weather</td><td>840 MW</td><td>3.41%</td></tr>
+    </table>
+  </div>
+  <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%); border-radius: 8px; padding: 20px; border: 1px solid #333;">
+    <h4 style="color: #f59e0b; margin-bottom: 10px;">🏢 Service Areas</h4>
+    <ul style="font-size: 14px; color: #ccc; padding-left: 20px;">
+      <li><strong>SCE</strong> – Southern California (15M people)</li>
+      <li><strong>PG&E</strong> – Northern & Central CA (16M people)</li>
+      <li><strong>SDG&E</strong> – San Diego Area (3.7M people)</li>
+      <li><strong>VEA</strong> – Nevada/CA Border (45K people)</li>
+    </ul>
+  </div>
+</div>
+
+---
+
 ## EvoCharge – California EV Charging Cost Predictor
 
 EvoCharge is a **machine-learning dashboard** that predicts electric vehicle charging energy usage and cost across California. The system uses **3,500 charging sessions**, **16,455 statewide charging stations**, and **county-level electricity rates** to power a **real-time Lasso regression model**. The app provides **energy and cost estimates**, an **interactive station map**, and **detailed model insights**.  
