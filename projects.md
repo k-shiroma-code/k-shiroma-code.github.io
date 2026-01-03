@@ -36,25 +36,17 @@ A **full-stack web application** featuring **global weather data** and **Califor
 ---
 
 ## EvoCharge – California EV Charging Cost Predictor
-
 EvoCharge is a **machine-learning dashboard** that predicts electric vehicle charging energy usage and cost across California. The system uses **3,500 charging sessions**, **16,455 statewide charging stations**, and **county-level electricity rates** to power a **real-time Lasso regression model**. The app provides **energy and cost estimates**, an **interactive station map**, and **detailed model insights**.  
-
 My contributions include **designing the website in Figma** and **assisting with model testing and validation**.
 
 <a href="https://evocharge.streamlit.app" target="_blank" rel="noopener"><strong>Live App ↗</strong></a> | 
 <a href="https://github.com/anirudh9280/EvoCharge" target="_blank" rel="noopener"><strong>GitHub ↗</strong></a>
 
-<div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
-
-  <!-- Screenshot -->
-  <img src="{{ site.baseurl }}/assets/img/evocharge_screenshot.jpg" alt="EvoCharge Dashboard" style="border-radius: 8px; width: 50%; min-width: 280px;">
-
-  <!-- Video -->
-  <video controls poster="{{ site.baseurl }}/assets/img/evocharge_screenshot.jpg" style="width: 50%; min-width: 280px; border-radius: 8px;">
+<div style="display: flex; justify-content: center; margin-top: 10px;">
+  <video controls poster="{{ site.baseurl }}/assets/img/evocharge_screenshot.jpg" style="width: 100%; max-width: 640px; border-radius: 8px;">
     <source src="{{ site.baseurl }}/assets/img/EvoChargeDemo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-
 </div>
 
 ---
