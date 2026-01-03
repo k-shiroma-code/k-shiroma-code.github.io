@@ -44,6 +44,15 @@ My contributions include **designing the website in Figma** and **assisting with
 <a href="https://evocharge.streamlit.app" target="_blank" rel="noopener"><strong>Live App ↗</strong></a> | 
 <a href="https://github.com/anirudh9280/EvoCharge" target="_blank" rel="noopener"><strong>GitHub ↗</strong></a>
 
+<div style="display: flex; gap: 10px; margin-top: 10px;">
+  <img src="{{ site.baseurl }}/assets/img/evocharge_screenshot.jpg" alt="EvoCharge Dashboard" style="border-radius: 8px; width: 50%;">
+
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; width: 50%; border-radius: 8px; overflow: hidden; cursor: pointer;" onclick="this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/YOUR_VIDEO_ID&quot; title=&quot;EvoCharge Demo&quot; style=&quot;position:absolute; top:0; left:0; width:100%; height:100%; border:none;&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>';">
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="EvoCharge Demo" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+
 ---
 
 ## Pulsepanion – AI Healthcare Tool (🏆 1st Place, 2025 Ai4Purpose Hackathon)
