@@ -6,8 +6,8 @@ permalink: /
 
 <style>
 .home-container {
-  --accent: #e85d04;
-  --accent-soft: #f48c06;
+  --accent: #a78bfa;
+  --accent-soft: #c4b5fd;
   --surface: #0a0a0a;
   --surface-elevated: #141414;
   --surface-border: #222;
@@ -124,7 +124,7 @@ permalink: /
 
 .btn-primary {
   background: var(--accent);
-  color: #000;
+  color: #0a0a0a;
   border: 1px solid var(--accent);
 }
 
@@ -143,7 +143,7 @@ permalink: /
 .btn-secondary:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: #000;
+  color: #0a0a0a;
 }
 
 /* Info Cards */
@@ -170,8 +170,8 @@ permalink: /
 .info-card-icon {
   width: 48px;
   height: 48px;
-  background: rgba(232, 93, 4, 0.1);
-  border: 1px solid rgba(232, 93, 4, 0.3);
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.3);
   border-radius: 12px;
   display: flex;
   align-items: center;
