@@ -7,8 +7,8 @@ description: A showcase of active development projects!
 
 <style>
 .ongoing-container {
-  --accent: #e85d04;
-  --accent-soft: #f48c06;
+  --accent: #a78bfa;
+  --accent-soft: #c4b5fd;
   --surface: #0a0a0a;
   --surface-elevated: #141414;
   --surface-border: #222;
@@ -153,14 +153,14 @@ description: A showcase of active development projects!
 }
 
 .feature-item:hover {
-  border-color: rgba(232, 93, 4, 0.4);
+  border-color: rgba(167, 139, 250, 0.4);
 }
 
 .feature-icon {
   width: 32px;
   height: 32px;
-  background: rgba(232, 93, 4, 0.1);
-  border: 1px solid rgba(232, 93, 4, 0.3);
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.3);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -194,8 +194,8 @@ description: A showcase of active development projects!
 }
 
 .tech-tag {
-  background: rgba(232, 93, 4, 0.1);
-  border: 1px solid rgba(232, 93, 4, 0.3);
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.3);
   color: var(--accent-soft);
   font-size: 0.8rem;
   font-weight: 500;
