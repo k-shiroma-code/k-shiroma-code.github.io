@@ -1,4 +1,4 @@
----
+ ---
 title: Experience
 layout: default
 permalink: /experience/
@@ -70,11 +70,12 @@ permalink: /experience/
 
 .experience-layout.with-image {
   grid-template-columns: 1fr 280px;
-  align-items: start;
+  align-items: center;
 }
 
 .experience-layout.image-left {
   grid-template-columns: 280px 1fr;
+  align-items: center;
 }
 
 /* Header */
@@ -139,6 +140,8 @@ permalink: /experience/
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--surface-border);
+  width: 100%;
+  height: fit-content;
 }
 
 .experience-image img {
