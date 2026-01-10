@@ -5,8 +5,6 @@ permalink: /projects/
 ---
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap');
-
 .projects-container {
   --accent: #e85d04;
   --accent-soft: #f48c06;
@@ -16,7 +14,7 @@ permalink: /projects/
   --text-primary: #f5f5f5;
   --text-secondary: #a0a0a0;
   --text-muted: #666;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-primary);
   line-height: 1.7;
 }
@@ -24,8 +22,8 @@ permalink: /projects/
 .projects-container h1,
 .projects-container h2,
 .projects-container h3 {
-  font-family: 'Instrument Serif', Georgia, serif;
-  font-weight: 400;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
   letter-spacing: -0.02em;
 }
 
@@ -53,7 +51,8 @@ permalink: /projects/
 }
 
 .project-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
+  font-weight: 700;
   margin: 0;
   color: var(--text-primary);
 }
@@ -98,7 +97,8 @@ permalink: /projects/
 
 .project-links {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 24px;
 }
 
@@ -150,8 +150,8 @@ permalink: /projects/
 }
 
 .stat-value {
-  font-family: 'Instrument Serif', serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: var(--accent);
   display: block;
 }
@@ -258,30 +258,46 @@ permalink: /projects/
   }
   
   .project-title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .media-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 /* Page Header */
 .page-header {
   text-align: center;
-  padding: 60px 0 40px;
+  padding: 48px 0 32px;
   margin-bottom: 20px;
 }
 
 .page-header h1 {
-  font-size: 3.5rem;
+  font-size: 2.75rem;
+  font-weight: 700;
   margin: 0;
-  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-muted) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 .page-header p {
   color: var(--text-muted);
   font-size: 1.1rem;
   margin-top: 12px;
+}
+
+/* Section Headers */
+.section-header {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 /* Service Area List */
@@ -305,6 +321,12 @@ permalink: /projects/
   color: var(--accent-soft);
 }
 
+@media (max-width: 480px) {
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Tableau Embed */
 .tableau-container {
   border-radius: 12px;
@@ -317,6 +339,14 @@ permalink: /projects/
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* Contribution Note */
+.contribution-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 20px;
+  font-style: italic;
 }
 </style>
 
@@ -349,7 +379,7 @@ permalink: /projects/
 
   <div class="project-layout-split">
     <div>
-      <h3 style="font-size: 1rem; color: var(--text-muted); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.1em;">Model Performance</h3>
+      <h3 class="section-header">Model Performance</h3>
       <table class="model-table">
         <thead>
           <tr>
@@ -378,7 +408,7 @@ permalink: /projects/
       </table>
     </div>
     <div>
-      <h3 style="font-size: 1rem; color: var(--text-muted); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.1em;">Service Areas</h3>
+      <h3 class="section-header">Service Areas</h3>
       <ul class="service-list">
         <li><strong>SCE</strong> — Southern California (15M people)</li>
         <li><strong>PG&E</strong> — Northern & Central CA (16M people)</li>
@@ -436,7 +466,7 @@ permalink: /projects/
     </video>
   </div>
 
-  <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 20px; font-style: italic;">
+  <p class="contribution-note">
     My contributions: Website design in Figma, model testing and validation
   </p>
 
