@@ -90,10 +90,10 @@
     }
 
     .site-title {
-      font-family: var(--font-serif);
+      font-family: var(--font-sans);
       font-size: 1.5rem;
-      font-weight: 400;
-      letter-spacing: -0.02em;
+      font-weight: 600;
+      letter-spacing: -0.01em;
     }
 
     .site-title a {
@@ -372,6 +372,7 @@
         </button>
         
         <nav role="navigation" class="main-navigation" aria-label="Main navigation">
+          <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>About Me</a>
           <a href="{{ '/experience/' | relative_url }}" {% if page.url == '/experience/' %}aria-current="page"{% endif %}>Experience</a>
           <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
           <a href="{{ '/ongoing-projects/' | relative_url }}" {% if page.url == '/ongoing-projects/' %}aria-current="page"{% endif %}>Ongoing</a>
