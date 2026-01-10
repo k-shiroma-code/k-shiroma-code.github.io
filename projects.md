@@ -78,6 +78,7 @@ A **full-stack web application** featuring **global weather data** and **Califor
   </div>
 </div>
 
+</div>
 ---
 
 ## Pulsepanion – AI Healthcare Tool (🏆 1st Place, 2025 Ai4Purpose Hackathon)
