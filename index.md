@@ -156,6 +156,186 @@ permalink: /
   100% { transform: scaleY(1); }
 }
 
+/* Lightshow Effects */
+.lightshow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.lightshow-container.active {
+  opacity: 1;
+}
+
+.light-beam {
+  position: absolute;
+  width: 150px;
+  height: 150%;
+  top: -25%;
+  background: linear-gradient(180deg, 
+    transparent 0%, 
+    var(--beam-color) 50%, 
+    transparent 100%);
+  opacity: 0.15;
+  filter: blur(30px);
+  transform-origin: top center;
+}
+
+.light-beam:nth-child(1) {
+  --beam-color: #a78bfa;
+  left: 10%;
+  animation: beamSway1 3s ease-in-out infinite, beamPulse 1.5s ease-in-out infinite;
+}
+
+.light-beam:nth-child(2) {
+  --beam-color: #c4b5fd;
+  left: 30%;
+  animation: beamSway2 4s ease-in-out infinite, beamPulse 2s ease-in-out infinite 0.3s;
+}
+
+.light-beam:nth-child(3) {
+  --beam-color: #8b5cf6;
+  left: 50%;
+  animation: beamSway1 3.5s ease-in-out infinite reverse, beamPulse 1.8s ease-in-out infinite 0.6s;
+}
+
+.light-beam:nth-child(4) {
+  --beam-color: #ddd6fe;
+  left: 70%;
+  animation: beamSway2 2.5s ease-in-out infinite, beamPulse 2.2s ease-in-out infinite 0.9s;
+}
+
+.light-beam:nth-child(5) {
+  --beam-color: #a78bfa;
+  left: 90%;
+  animation: beamSway1 4s ease-in-out infinite, beamPulse 1.6s ease-in-out infinite 1.2s;
+}
+
+@keyframes beamSway1 {
+  0%, 100% { transform: rotate(-15deg) translateX(0); }
+  50% { transform: rotate(15deg) translateX(20px); }
+}
+
+@keyframes beamSway2 {
+  0%, 100% { transform: rotate(10deg) translateX(0); }
+  50% { transform: rotate(-20deg) translateX(-30px); }
+}
+
+@keyframes beamPulse {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.25; }
+}
+
+/* Floating particles */
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.particles-container.active {
+  opacity: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  opacity: 0;
+  animation: floatUp 4s ease-in-out infinite;
+}
+
+.particle:nth-child(1) { left: 5%; animation-delay: 0s; }
+.particle:nth-child(2) { left: 15%; animation-delay: 0.5s; }
+.particle:nth-child(3) { left: 25%; animation-delay: 1s; }
+.particle:nth-child(4) { left: 35%; animation-delay: 1.5s; }
+.particle:nth-child(5) { left: 45%; animation-delay: 2s; }
+.particle:nth-child(6) { left: 55%; animation-delay: 0.3s; }
+.particle:nth-child(7) { left: 65%; animation-delay: 0.8s; }
+.particle:nth-child(8) { left: 75%; animation-delay: 1.3s; }
+.particle:nth-child(9) { left: 85%; animation-delay: 1.8s; }
+.particle:nth-child(10) { left: 95%; animation-delay: 2.3s; }
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-20vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Radial pulse from center */
+.pulse-ring {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.lightshow-active .pulse-ring {
+  animation: expandPulse 2s ease-out infinite;
+}
+
+.pulse-ring:nth-child(2) { animation-delay: 0.5s; }
+.pulse-ring:nth-child(3) { animation-delay: 1s; }
+
+@keyframes expandPulse {
+  0% {
+    width: 100px;
+    height: 100px;
+    opacity: 0.6;
+  }
+  100% {
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+  }
+}
+
+/* Background color shift */
+body.lightshow-active {
+  animation: bgColorShift 8s ease-in-out infinite;
+}
+
+@keyframes bgColorShift {
+  0%, 100% { background-color: #0a0a0a; }
+  25% { background-color: #0d0a12; }
+  50% { background-color: #0a0a0f; }
+  75% { background-color: #0f0a10; }
+}
+
 .hero-greeting {
   color: var(--accent);
   font-size: 1rem;
@@ -371,6 +551,32 @@ permalink: /
 
 <div class="home-container">
 
+<!-- Lightshow Elements -->
+<div class="lightshow-container" id="lightshow">
+  <div class="light-beam"></div>
+  <div class="light-beam"></div>
+  <div class="light-beam"></div>
+  <div class="light-beam"></div>
+  <div class="light-beam"></div>
+</div>
+
+<div class="particles-container" id="particles">
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+</div>
+
+<div class="pulse-ring"></div>
+<div class="pulse-ring"></div>
+<div class="pulse-ring"></div>
+
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-top">
@@ -416,6 +622,9 @@ permalink: /
     let player;
     const profilePic = document.getElementById('profilePic');
     const nowPlaying = document.getElementById('nowPlaying');
+    const lightshow = document.getElementById('lightshow');
+    const particles = document.getElementById('particles');
+    const body = document.body;
     
     // Load YouTube API
     var tag = document.createElement('script');
@@ -442,10 +651,16 @@ permalink: /
         player.pauseVideo();
         profilePic.classList.remove('playing');
         nowPlaying.classList.remove('visible');
+        lightshow.classList.remove('active');
+        particles.classList.remove('active');
+        body.classList.remove('lightshow-active');
       } else {
         player.playVideo();
         profilePic.classList.add('playing');
         nowPlaying.classList.add('visible');
+        lightshow.classList.add('active');
+        particles.classList.add('active');
+        body.classList.add('lightshow-active');
       }
       isPlaying = !isPlaying;
     }
