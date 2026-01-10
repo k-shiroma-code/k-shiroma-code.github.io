@@ -400,24 +400,50 @@ permalink: /
     </div>
   </div>
   
-  <!-- Hidden Audio Element - Replace the src with your song URL -->
-  <audio id="bgMusic" loop>
-    <source src="{{ site.baseurl }}/assets/audio/your-song.mp3" type="audio/mpeg">
-  </audio>
+  <!-- Hidden YouTube Player -->
+  <iframe 
+    id="bgMusic" 
+    width="0" 
+    height="0" 
+    src="https://www.youtube.com/embed/PL7AvEObPAM?enablejsapi=1&autoplay=0&loop=1&playlist=PL7AvEObPAM" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    style="position: absolute; visibility: hidden;"
+  ></iframe>
   
   <script>
     let isPlaying = false;
-    const music = document.getElementById('bgMusic');
+    let player;
     const profilePic = document.getElementById('profilePic');
     const nowPlaying = document.getElementById('nowPlaying');
     
+    // Load YouTube API
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('bgMusic', {
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+    
+    function onPlayerReady(event) {
+      // Player is ready
+    }
+    
     function toggleMusic() {
+      if (!player) return;
+      
       if (isPlaying) {
-        music.pause();
+        player.pauseVideo();
         profilePic.classList.remove('playing');
         nowPlaying.classList.remove('visible');
       } else {
-        music.play();
+        player.playVideo();
         profilePic.classList.add('playing');
         nowPlaying.classList.add('visible');
       }
