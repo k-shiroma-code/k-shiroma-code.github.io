@@ -6,8 +6,8 @@ permalink: /projects/
 
 <style>
 .projects-container {
-  --accent: #e85d04;
-  --accent-soft: #f48c06;
+  --accent: #a78bfa;
+  --accent-soft: #c4b5fd;
   --surface: #0a0a0a;
   --surface-elevated: #141414;
   --surface-border: #222;
@@ -62,7 +62,7 @@ permalink: /projects/
   align-items: center;
   gap: 6px;
   background: linear-gradient(135deg, var(--accent), var(--accent-soft));
-  color: #000;
+  color: #0a0a0a;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -86,8 +86,8 @@ permalink: /projects/
 }
 
 .tech-tag {
-  background: rgba(232, 93, 4, 0.1);
-  border: 1px solid rgba(232, 93, 4, 0.3);
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.3);
   color: var(--accent-soft);
   font-size: 0.8rem;
   font-weight: 500;
@@ -119,13 +119,13 @@ permalink: /projects/
 .project-link:hover {
   background: var(--accent);
   border-color: var(--accent);
-  color: #000;
+  color: #0a0a0a;
 }
 
 .project-link.primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: #000;
+  color: #0a0a0a;
 }
 
 .project-link.primary:hover {
