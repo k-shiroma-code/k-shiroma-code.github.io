@@ -35,18 +35,44 @@ A **full-stack web application** featuring **global weather data** and **Califor
 
 ---
 
-## EvoCharge – California EV Charging Cost Predictor
-EvoCharge is a **machine-learning dashboard** that predicts electric vehicle charging energy usage and cost across California. The system uses **3,500 charging sessions**, **16,455 statewide charging stations**, and **county-level electricity rates** to power a **real-time Lasso regression model**. The app provides **energy and cost estimates**, an **interactive station map**, and **detailed model insights**.  
-My contributions include **designing the website in Figma** and **assisting with model testing and validation**.
+<div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap;">
 
-<a href="https://evocharge.streamlit.app" target="_blank" rel="noopener"><strong>Live App ↗</strong></a> | 
-<a href="https://github.com/anirudh9280/EvoCharge" target="_blank" rel="noopener"><strong>GitHub ↗</strong></a>
+  <!-- Text content -->
+  <div style="flex: 1; min-width: 300px;">
+    <h2>EvoCharge – California EV Charging Cost Predictor</h2>
 
-<div style="display: flex; justify-content: center; margin-top: 10px;">
-  <video controls poster="{{ site.baseurl }}/assets/img/evocharge_screenshot.jpg" style="width: 100%; max-width: 640px; border-radius: 8px;">
-    <source src="{{ site.baseurl }}/assets/img/EvoChargeDemo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    <p>
+      EvoCharge is a <strong>machine-learning dashboard</strong> that predicts electric vehicle charging
+      energy usage and cost across California. The system uses
+      <strong>3,500 charging sessions</strong>,
+      <strong>16,455 statewide charging stations</strong>, and
+      <strong>county-level electricity rates</strong> to power a
+      <strong>real-time Lasso regression model</strong>.
+    </p>
+
+    <p>
+      The app provides <strong>energy and cost estimates</strong>,
+      an <strong>interactive station map</strong>, and
+      <strong>detailed model insights</strong>.
+      My contributions include <strong>designing the website in Figma</strong>
+      and <strong>assisting with model testing and validation</strong>.
+    </p>
+
+    <p>
+      <a href="https://evocharge.streamlit.app" target="_blank" rel="noopener"><strong>Live App ↗</strong></a> |
+      <a href="https://github.com/anirudh9280/EvoCharge" target="_blank" rel="noopener"><strong>GitHub ↗</strong></a>
+    </p>
+  </div>
+
+  <!-- Video -->
+  <div style="flex: 1; min-width: 300px;">
+    <video controls poster="{{ site.baseurl }}/assets/img/evocharge_screenshot.jpg"
+      style="width: 100%; border-radius: 8px;">
+      <source src="{{ site.baseurl }}/assets/img/EvoChargeDemo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
 </div>
 
 ---
