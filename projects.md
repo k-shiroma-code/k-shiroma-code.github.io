@@ -65,14 +65,17 @@ A **full-stack web application** featuring **global weather data** and **Califor
   </div>
 
   <!-- Video -->
-  <div style="flex: 1; min-width: 300px;">
-    <video controls poster="{{ site.baseurl }}/assets/img/evocharge_screenshot.jpg"
-      style="width: 100%; border-radius: 8px;">
+<div style="flex: 1; min-width: 300px;">
+  <div style="aspect-ratio: 16 / 9; width: 100%;">
+    <video
+      controls
+      poster="{{ site.baseurl }}/assets/img/evocharge_screenshot.jpg"
+      style="width: 100%; height: 100%; border-radius: 8px; object-fit: cover;"
+    >
       <source src="{{ site.baseurl }}/assets/img/EvoChargeDemo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-
 </div>
 
 ---
