@@ -31,13 +31,14 @@ permalink: /
 .hero-section {
   display: flex;
   align-items: center;
-  gap: 24px;
-  padding: 32px 0 48px;
+  justify-content: center;
+  gap: 60px;
+  padding: 48px 0 64px;
 }
 
 .hero-content {
-  flex: 1;
-  min-width: 300px;
+  flex: 0 1 auto;
+  max-width: 500px;
 }
 
 .hero-greeting {
@@ -233,10 +234,22 @@ permalink: /
 /* Responsive */
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
-    gap: 20px;
-    padding: 24px 0 40px;
+    gap: 32px;
+    padding: 32px 0 48px;
+  }
+  
+  .hero-content {
+    align-items: center;
+  }
+  
+  .hero-description {
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
   }
   
   .hero-title {
