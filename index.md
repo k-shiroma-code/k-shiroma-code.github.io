@@ -30,15 +30,26 @@ permalink: /
 /* Hero Section */
 .hero-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
   padding: 48px 0 64px;
 }
 
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+.hero-intro {
+  text-align: left;
+}
+
 .hero-content {
-  flex: 0 1 auto;
-  max-width: 500px;
+  max-width: 700px;
+  text-align: center;
 }
 
 .hero-greeting {
@@ -234,22 +245,16 @@ permalink: /
 /* Responsive */
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: column;
-    text-align: center;
-    gap: 32px;
     padding: 32px 0 48px;
   }
   
-  .hero-content {
-    align-items: center;
+  .hero-top {
+    flex-direction: column;
+    gap: 24px;
   }
   
-  .hero-description {
+  .hero-intro {
     text-align: center;
-  }
-  
-  .hero-buttons {
-    justify-content: center;
   }
   
   .hero-title {
@@ -258,15 +263,6 @@ permalink: /
   
   .hero-subtitle {
     font-size: 1.1rem;
-  }
-  
-  .hero-description {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .hero-buttons {
-    justify-content: center;
   }
   
   .hero-image {
@@ -284,10 +280,20 @@ permalink: /
 
 <!-- Hero Section -->
 <section class="hero-section">
+  <div class="hero-top">
+    <img 
+      src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
+      alt="Kyle Shiroma"
+      class="hero-image"
+    >
+    <div class="hero-intro">
+      <p class="hero-greeting">Welcome</p>
+      <h1 class="hero-title">Kyle Shiroma</h1>
+      <p class="hero-subtitle">Data Science @ UC San Diego</p>
+    </div>
+  </div>
+  
   <div class="hero-content">
-    <p class="hero-greeting">Welcome</p>
-    <h1 class="hero-title">Kyle Shiroma</h1>
-    <p class="hero-subtitle">Data Science @ UC San Diego</p>
     <p class="hero-description">
       Transfer student from <strong>Norco College</strong> pursuing a <strong>B.S. in Data Science</strong> with a planned <strong>minor in Mathematics</strong>. Currently a fellow with <strong>HDSI Lab 3.0</strong> and an active member of the <strong>Data Science Student Society (DS3)</strong>.
     </p>
@@ -302,11 +308,6 @@ permalink: /
       </a>
     </div>
   </div>
-  <img 
-    src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
-    alt="Kyle Shiroma"
-    class="hero-image"
-  >
 </section>
 
 <!-- Info Cards -->
