@@ -52,6 +52,110 @@ permalink: /
   text-align: center;
 }
 
+/* Profile Photo with Music */
+.profile-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-caption {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.music-caption::after {
+  content: '↓';
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2px;
+  animation: arrowBounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-5px); }
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+.hero-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--surface-border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-image:hover {
+  border-color: var(--accent);
+  transform: scale(1.03);
+}
+
+.hero-image.playing {
+  border-color: var(--accent);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 0 rgba(167, 139, 250, 0.4); }
+  50% { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(167, 139, 250, 0); }
+}
+
+.now-playing {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.now-playing.visible {
+  opacity: 1;
+}
+
+.now-playing .bars {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  height: 12px;
+}
+
+.now-playing .bar {
+  width: 3px;
+  background: var(--accent);
+  animation: soundBar 0.5s ease-in-out infinite alternate;
+}
+
+.now-playing .bar:nth-child(1) { height: 4px; animation-delay: 0s; }
+.now-playing .bar:nth-child(2) { height: 8px; animation-delay: 0.1s; }
+.now-playing .bar:nth-child(3) { height: 6px; animation-delay: 0.2s; }
+.now-playing .bar:nth-child(4) { height: 10px; animation-delay: 0.3s; }
+
+@keyframes soundBar {
+  0% { transform: scaleY(0.5); }
+  100% { transform: scaleY(1); }
+}
+
 .hero-greeting {
   color: var(--accent);
   font-size: 1rem;
@@ -85,22 +189,6 @@ permalink: /
 .hero-description strong {
   color: var(--text-primary);
   font-weight: 600;
-}
-
-.hero-image {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid var(--surface-border);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  flex-shrink: 0;
-  transition: border-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero-image:hover {
-  border-color: var(--accent);
-  transform: scale(1.03);
 }
 
 /* CTA Buttons */
@@ -270,6 +358,11 @@ permalink: /
     height: 180px;
   }
   
+  .music-caption {
+    top: -40px;
+    font-size: 0.75rem;
+  }
+  
   .info-section {
     grid-template-columns: 1fr;
   }
@@ -281,17 +374,56 @@ permalink: /
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-top">
-    <img 
-      src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
-      alt="Kyle Shiroma"
-      class="hero-image"
-    >
+    <div class="profile-container">
+      <span class="music-caption">Click for epic music! 🎵</span>
+      <img 
+        src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
+        alt="Kyle Shiroma"
+        class="hero-image"
+        id="profilePic"
+        onclick="toggleMusic()"
+      >
+      <div class="now-playing" id="nowPlaying">
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <span>Now Playing</span>
+      </div>
+    </div>
     <div class="hero-intro">
       <p class="hero-greeting">Welcome</p>
       <h1 class="hero-title">Kyle Shiroma</h1>
       <p class="hero-subtitle">Data Science @ UC San Diego</p>
     </div>
   </div>
+  
+  <!-- Hidden Audio Element - Replace the src with your song URL -->
+  <audio id="bgMusic" loop>
+    <source src="{{ site.baseurl }}/assets/audio/your-song.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+    let isPlaying = false;
+    const music = document.getElementById('bgMusic');
+    const profilePic = document.getElementById('profilePic');
+    const nowPlaying = document.getElementById('nowPlaying');
+    
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+        profilePic.classList.remove('playing');
+        nowPlaying.classList.remove('visible');
+      } else {
+        music.play();
+        profilePic.classList.add('playing');
+        nowPlaying.classList.add('visible');
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
   
   <div class="hero-content">
     <p class="hero-description">
