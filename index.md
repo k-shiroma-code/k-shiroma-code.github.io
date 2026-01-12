@@ -156,12 +156,8 @@ permalink: /
   100% { transform: scaleY(1); }
 }
 
-/* ========================================
-   EPIC LIGHTSHOW EFFECTS
-======================================== */
-
-/* Main lightshow container */
-.lightshow-container {
+/* Chill Ambient Effects */
+.ambient-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -171,467 +167,89 @@ permalink: /
   z-index: -1;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 }
 
-.lightshow-container.active {
+.ambient-container.active {
   opacity: 1;
 }
 
-/* Spinning light beams */
-.light-beam {
-  position: absolute;
-  width: 200px;
-  height: 200%;
-  top: -50%;
-  left: 50%;
-  margin-left: -100px;
-  background: linear-gradient(180deg, 
-    transparent 0%, 
-    var(--beam-color) 50%, 
-    transparent 100%);
-  opacity: 0.2;
-  filter: blur(40px);
-  transform-origin: center center;
-}
-
-.light-beam:nth-child(1) {
-  --beam-color: #a78bfa;
-  animation: beamRotate 4s linear infinite, beamPulse 0.5s ease-in-out infinite;
-}
-
-.light-beam:nth-child(2) {
-  --beam-color: #c4b5fd;
-  animation: beamRotate 4s linear infinite reverse, beamPulse 0.5s ease-in-out infinite 0.125s;
-  animation-delay: -1s;
-}
-
-.light-beam:nth-child(3) {
-  --beam-color: #8b5cf6;
-  animation: beamRotate 3s linear infinite, beamPulse 0.5s ease-in-out infinite 0.25s;
-  animation-delay: -0.5s;
-}
-
-.light-beam:nth-child(4) {
-  --beam-color: #ddd6fe;
-  animation: beamRotate 3s linear infinite reverse, beamPulse 0.5s ease-in-out infinite 0.375s;
-  animation-delay: -1.5s;
-}
-
-.light-beam:nth-child(5) {
-  --beam-color: #7c3aed;
-  animation: beamRotate 5s linear infinite, beamPulse 0.5s ease-in-out infinite;
-  animation-delay: -2s;
-}
-
-.light-beam:nth-child(6) {
-  --beam-color: #a78bfa;
-  animation: beamRotate 5s linear infinite reverse, beamPulse 0.5s ease-in-out infinite 0.125s;
-  animation-delay: -2.5s;
-}
-
-@keyframes beamRotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@keyframes beamPulse {
-  0%, 100% { opacity: 0.1; filter: blur(40px); }
-  50% { opacity: 0.35; filter: blur(20px); }
-}
-
-/* Strobe effect layer */
-.strobe-layer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 1000;
-}
-
-.lightshow-active .strobe-layer {
-  animation: strobe 0.25s steps(1) infinite;
-}
-
-@keyframes strobe {
-  0%, 90%, 100% { opacity: 0; }
-  45% { opacity: 0.03; }
-}
-
-/* Laser grid */
-.laser-grid {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  background: 
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 50px,
-      rgba(167, 139, 250, 0.03) 50px,
-      rgba(167, 139, 250, 0.03) 51px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 50px,
-      rgba(167, 139, 250, 0.03) 50px,
-      rgba(167, 139, 250, 0.03) 51px
-    );
-}
-
-.laser-grid.active {
-  opacity: 1;
-  animation: gridMove 2s linear infinite;
-}
-
-@keyframes gridMove {
-  0% { transform: perspective(500px) rotateX(60deg) translateY(0); }
-  100% { transform: perspective(500px) rotateX(60deg) translateY(50px); }
-}
-
-/* Floating particles - more of them! */
-.particles-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: -1;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.particles-container.active {
-  opacity: 1;
-}
-
+/* Soft floating particles */
 .particle {
   position: absolute;
   background: var(--accent);
   border-radius: 50%;
   opacity: 0;
-  box-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
 }
 
 .particle:nth-child(odd) {
   width: 4px;
   height: 4px;
-  animation: floatUp 3s ease-in-out infinite;
 }
 
 .particle:nth-child(even) {
-  width: 8px;
-  height: 8px;
-  animation: floatUp 4s ease-in-out infinite;
+  width: 6px;
+  height: 6px;
 }
 
-.particle:nth-child(1) { left: 3%; animation-delay: 0s; }
-.particle:nth-child(2) { left: 8%; animation-delay: 0.2s; }
-.particle:nth-child(3) { left: 13%; animation-delay: 0.4s; }
-.particle:nth-child(4) { left: 18%; animation-delay: 0.6s; }
-.particle:nth-child(5) { left: 23%; animation-delay: 0.8s; }
-.particle:nth-child(6) { left: 28%; animation-delay: 1s; }
-.particle:nth-child(7) { left: 33%; animation-delay: 1.2s; }
-.particle:nth-child(8) { left: 38%; animation-delay: 1.4s; }
-.particle:nth-child(9) { left: 43%; animation-delay: 1.6s; }
-.particle:nth-child(10) { left: 48%; animation-delay: 1.8s; }
-.particle:nth-child(11) { left: 53%; animation-delay: 0.1s; }
-.particle:nth-child(12) { left: 58%; animation-delay: 0.3s; }
-.particle:nth-child(13) { left: 63%; animation-delay: 0.5s; }
-.particle:nth-child(14) { left: 68%; animation-delay: 0.7s; }
-.particle:nth-child(15) { left: 73%; animation-delay: 0.9s; }
-.particle:nth-child(16) { left: 78%; animation-delay: 1.1s; }
-.particle:nth-child(17) { left: 83%; animation-delay: 1.3s; }
-.particle:nth-child(18) { left: 88%; animation-delay: 1.5s; }
-.particle:nth-child(19) { left: 93%; animation-delay: 1.7s; }
-.particle:nth-child(20) { left: 98%; animation-delay: 1.9s; }
+.particle:nth-child(1) { left: 10%; animation: floatSlow 8s ease-in-out infinite; }
+.particle:nth-child(2) { left: 25%; animation: floatSlow 10s ease-in-out infinite 1s; }
+.particle:nth-child(3) { left: 40%; animation: floatSlow 9s ease-in-out infinite 2s; }
+.particle:nth-child(4) { left: 55%; animation: floatSlow 11s ease-in-out infinite 0.5s; }
+.particle:nth-child(5) { left: 70%; animation: floatSlow 8.5s ease-in-out infinite 1.5s; }
+.particle:nth-child(6) { left: 85%; animation: floatSlow 10s ease-in-out infinite 2.5s; }
 
-@keyframes floatUp {
+@keyframes floatSlow {
   0% {
-    transform: translateY(100vh) scale(0) rotate(0deg);
+    transform: translateY(100vh);
     opacity: 0;
   }
   10% {
-    opacity: 1;
+    opacity: 0.5;
   }
   90% {
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
-    transform: translateY(-20vh) scale(1.5) rotate(360deg);
+    transform: translateY(-10vh);
     opacity: 0;
   }
 }
 
-/* Radial pulse rings - more intense */
-.pulse-ring {
+/* Soft corner glows */
+.soft-glow {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  border: 3px solid var(--accent);
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
+  filter: blur(120px);
   opacity: 0;
   pointer-events: none;
   z-index: -1;
-  box-shadow: 0 0 20px var(--accent), inset 0 0 20px var(--accent);
-}
-
-.lightshow-active .pulse-ring {
-  animation: expandPulse 1s ease-out infinite;
-}
-
-.pulse-ring:nth-child(2) { animation-delay: 0.25s; }
-.pulse-ring:nth-child(3) { animation-delay: 0.5s; }
-.pulse-ring:nth-child(4) { animation-delay: 0.75s; }
-
-@keyframes expandPulse {
-  0% {
-    width: 50px;
-    height: 50px;
-    opacity: 0.8;
-    border-width: 3px;
-  }
-  100% {
-    width: 1500px;
-    height: 1500px;
-    opacity: 0;
-    border-width: 1px;
-  }
-}
-
-/* Corner spotlights */
-.spotlight {
-  position: fixed;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0;
-  pointer-events: none;
-  z-index: -1;
-  transition: opacity 0.5s ease;
-}
-
-.spotlight.active {
-  opacity: 0.4;
-}
-
-.spotlight:nth-child(1) {
-  top: -150px;
-  left: -150px;
-  background: #a78bfa;
-  animation: spotlightPulse 2s ease-in-out infinite;
-}
-
-.spotlight:nth-child(2) {
-  top: -150px;
-  right: -150px;
-  background: #8b5cf6;
-  animation: spotlightPulse 2s ease-in-out infinite 0.5s;
-}
-
-.spotlight:nth-child(3) {
-  bottom: -150px;
-  left: -150px;
-  background: #7c3aed;
-  animation: spotlightPulse 2s ease-in-out infinite 1s;
-}
-
-.spotlight:nth-child(4) {
-  bottom: -150px;
-  right: -150px;
-  background: #c4b5fd;
-  animation: spotlightPulse 2s ease-in-out infinite 1.5s;
-}
-
-@keyframes spotlightPulse {
-  0%, 100% { transform: scale(1); opacity: 0.3; }
-  50% { transform: scale(1.5); opacity: 0.6; }
-}
-
-/* Horizontal scanner line */
-.scanner-line {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    var(--accent) 50%, 
-    transparent 100%);
-  box-shadow: 0 0 30px var(--accent), 0 0 60px var(--accent);
-  opacity: 0;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.lightshow-active .scanner-line {
-  opacity: 0.6;
-  animation: scanVertical 2s linear infinite;
-}
-
-@keyframes scanVertical {
-  0% { top: -4px; }
-  100% { top: 100%; }
-}
-
-/* Star field background */
-.starfield {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: -2;
-  opacity: 0;
   transition: opacity 1s ease;
 }
 
-.starfield.active {
-  opacity: 1;
+.soft-glow.active {
+  opacity: 0.15;
 }
 
-.star {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: white;
-  border-radius: 50%;
+.soft-glow:nth-child(1) {
+  top: -200px;
+  left: -200px;
+  background: #a78bfa;
+  animation: glowPulse 6s ease-in-out infinite;
 }
 
-.star:nth-child(1) { top: 10%; left: 20%; animation: twinkle 1s ease-in-out infinite; }
-.star:nth-child(2) { top: 20%; left: 40%; animation: twinkle 1.5s ease-in-out infinite 0.2s; }
-.star:nth-child(3) { top: 15%; left: 60%; animation: twinkle 1.2s ease-in-out infinite 0.4s; }
-.star:nth-child(4) { top: 30%; left: 80%; animation: twinkle 1.8s ease-in-out infinite 0.6s; }
-.star:nth-child(5) { top: 40%; left: 10%; animation: twinkle 1.3s ease-in-out infinite 0.8s; }
-.star:nth-child(6) { top: 50%; left: 30%; animation: twinkle 1.6s ease-in-out infinite 1s; }
-.star:nth-child(7) { top: 45%; left: 70%; animation: twinkle 1.1s ease-in-out infinite 0.3s; }
-.star:nth-child(8) { top: 60%; left: 90%; animation: twinkle 1.4s ease-in-out infinite 0.5s; }
-.star:nth-child(9) { top: 70%; left: 15%; animation: twinkle 1.7s ease-in-out infinite 0.7s; }
-.star:nth-child(10) { top: 80%; left: 50%; animation: twinkle 1.2s ease-in-out infinite 0.9s; }
-.star:nth-child(11) { top: 75%; left: 85%; animation: twinkle 1.5s ease-in-out infinite 0.1s; }
-.star:nth-child(12) { top: 90%; left: 25%; animation: twinkle 1.3s ease-in-out infinite 0.35s; }
-.star:nth-child(13) { top: 5%; left: 75%; animation: twinkle 1.8s ease-in-out infinite 0.55s; }
-.star:nth-child(14) { top: 35%; left: 5%; animation: twinkle 1.1s ease-in-out infinite 0.75s; }
-.star:nth-child(15) { top: 65%; left: 45%; animation: twinkle 1.4s ease-in-out infinite 0.95s; }
-
-@keyframes twinkle {
-  0%, 100% { opacity: 0.3; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.5); }
+.soft-glow:nth-child(2) {
+  bottom: -200px;
+  right: -200px;
+  background: #8b5cf6;
+  animation: glowPulse 6s ease-in-out infinite 3s;
 }
 
-/* Waveform visualizer bars */
-.visualizer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 4px;
-  pointer-events: none;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.visualizer.active {
-  opacity: 1;
-}
-
-.viz-bar {
-  width: 8px;
-  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-soft) 100%);
-  border-radius: 4px 4px 0 0;
-  box-shadow: 0 0 10px var(--accent);
-}
-
-.viz-bar:nth-child(1) { animation: vizPulse 0.4s ease-in-out infinite; height: 20px; }
-.viz-bar:nth-child(2) { animation: vizPulse 0.35s ease-in-out infinite 0.05s; height: 40px; }
-.viz-bar:nth-child(3) { animation: vizPulse 0.45s ease-in-out infinite 0.1s; height: 60px; }
-.viz-bar:nth-child(4) { animation: vizPulse 0.3s ease-in-out infinite 0.15s; height: 80px; }
-.viz-bar:nth-child(5) { animation: vizPulse 0.5s ease-in-out infinite 0.2s; height: 100px; }
-.viz-bar:nth-child(6) { animation: vizPulse 0.38s ease-in-out infinite 0.25s; height: 120px; }
-.viz-bar:nth-child(7) { animation: vizPulse 0.42s ease-in-out infinite 0.3s; height: 100px; }
-.viz-bar:nth-child(8) { animation: vizPulse 0.33s ease-in-out infinite 0.35s; height: 80px; }
-.viz-bar:nth-child(9) { animation: vizPulse 0.47s ease-in-out infinite 0.4s; height: 60px; }
-.viz-bar:nth-child(10) { animation: vizPulse 0.36s ease-in-out infinite 0.45s; height: 40px; }
-.viz-bar:nth-child(11) { animation: vizPulse 0.44s ease-in-out infinite 0.5s; height: 30px; }
-.viz-bar:nth-child(12) { animation: vizPulse 0.32s ease-in-out infinite 0.55s; height: 50px; }
-.viz-bar:nth-child(13) { animation: vizPulse 0.48s ease-in-out infinite 0.6s; height: 70px; }
-.viz-bar:nth-child(14) { animation: vizPulse 0.37s ease-in-out infinite 0.65s; height: 90px; }
-.viz-bar:nth-child(15) { animation: vizPulse 0.43s ease-in-out infinite 0.7s; height: 110px; }
-.viz-bar:nth-child(16) { animation: vizPulse 0.34s ease-in-out infinite 0.75s; height: 90px; }
-.viz-bar:nth-child(17) { animation: vizPulse 0.46s ease-in-out infinite 0.8s; height: 70px; }
-.viz-bar:nth-child(18) { animation: vizPulse 0.39s ease-in-out infinite 0.85s; height: 50px; }
-.viz-bar:nth-child(19) { animation: vizPulse 0.41s ease-in-out infinite 0.9s; height: 35px; }
-.viz-bar:nth-child(20) { animation: vizPulse 0.35s ease-in-out infinite 0.95s; height: 20px; }
-
-@keyframes vizPulse {
-  0%, 100% { transform: scaleY(0.3); }
-  50% { transform: scaleY(1); }
-}
-
-/* Rainbow border on profile pic */
-.hero-image.playing {
-  border-color: transparent;
-  background: linear-gradient(var(--surface), var(--surface)) padding-box,
-              linear-gradient(45deg, #a78bfa, #8b5cf6, #7c3aed, #c4b5fd, #a78bfa) border-box;
-  animation: pulse 1.5s ease-in-out infinite, rainbowBorder 2s linear infinite;
-}
-
-@keyframes rainbowBorder {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
-}
-
-/* Background color shift - more dramatic */
-body.lightshow-active {
-  animation: bgColorShift 4s ease-in-out infinite;
-}
-
-@keyframes bgColorShift {
-  0%, 100% { background-color: #0a0a0a; }
-  25% { background-color: #0d0815; }
-  50% { background-color: #10081a; }
-  75% { background-color: #0a0510; }
-}
-
-/* Vignette effect */
-.vignette {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  background: radial-gradient(ellipse at center, transparent 0%, transparent 50%, rgba(0,0,0,0.5) 100%);
-}
-
-.vignette.active {
-  opacity: 1;
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 0.2; transform: scale(1.1); }
 }
 
 .hero-greeting {
@@ -849,116 +467,24 @@ body.lightshow-active {
 
 <div class="home-container">
 
-<!-- ========================================
-     EPIC LIGHTSHOW ELEMENTS
-======================================== -->
+<!-- Chill Ambient Elements -->
+<div class="soft-glow" id="glow1"></div>
+<div class="soft-glow" id="glow2"></div>
 
-<!-- Strobe effect -->
-<div class="strobe-layer"></div>
-
-<!-- Vignette -->
-<div class="vignette" id="vignette"></div>
-
-<!-- Star field -->
-<div class="starfield" id="starfield">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-</div>
-
-<!-- Spinning light beams -->
-<div class="lightshow-container" id="lightshow">
-  <div class="light-beam"></div>
-  <div class="light-beam"></div>
-  <div class="light-beam"></div>
-  <div class="light-beam"></div>
-  <div class="light-beam"></div>
-  <div class="light-beam"></div>
-</div>
-
-<!-- Laser grid -->
-<div class="laser-grid" id="laserGrid"></div>
-
-<!-- Corner spotlights -->
-<div class="spotlight" id="spotlight1"></div>
-<div class="spotlight" id="spotlight2"></div>
-<div class="spotlight" id="spotlight3"></div>
-<div class="spotlight" id="spotlight4"></div>
-
-<!-- Floating particles - 20 of them -->
-<div class="particles-container" id="particles">
+<div class="ambient-container" id="ambient">
   <div class="particle"></div>
   <div class="particle"></div>
   <div class="particle"></div>
   <div class="particle"></div>
   <div class="particle"></div>
   <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-</div>
-
-<!-- Pulse rings -->
-<div class="pulse-ring"></div>
-<div class="pulse-ring"></div>
-<div class="pulse-ring"></div>
-<div class="pulse-ring"></div>
-
-<!-- Scanner line -->
-<div class="scanner-line"></div>
-
-<!-- Audio visualizer bars -->
-<div class="visualizer" id="visualizer">
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
-  <div class="viz-bar"></div>
 </div>
 
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-top">
     <div class="profile-container">
-      <span class="music-caption">Click for epic music! 🎵</span>
+      <span class="music-caption">Click for chill vibes 🎵</span>
       <img 
         src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
         alt="Kyle Shiroma"
@@ -999,19 +525,9 @@ body.lightshow-active {
     let player;
     const profilePic = document.getElementById('profilePic');
     const nowPlaying = document.getElementById('nowPlaying');
-    const lightshow = document.getElementById('lightshow');
-    const particles = document.getElementById('particles');
-    const laserGrid = document.getElementById('laserGrid');
-    const starfield = document.getElementById('starfield');
-    const visualizer = document.getElementById('visualizer');
-    const vignette = document.getElementById('vignette');
-    const spotlights = [
-      document.getElementById('spotlight1'),
-      document.getElementById('spotlight2'),
-      document.getElementById('spotlight3'),
-      document.getElementById('spotlight4')
-    ];
-    const body = document.body;
+    const ambient = document.getElementById('ambient');
+    const glow1 = document.getElementById('glow1');
+    const glow2 = document.getElementById('glow2');
     
     // Load YouTube API
     var tag = document.createElement('script');
@@ -1035,31 +551,19 @@ body.lightshow-active {
       if (!player) return;
       
       if (isPlaying) {
-        // Stop everything
         player.pauseVideo();
         profilePic.classList.remove('playing');
         nowPlaying.classList.remove('visible');
-        lightshow.classList.remove('active');
-        particles.classList.remove('active');
-        laserGrid.classList.remove('active');
-        starfield.classList.remove('active');
-        visualizer.classList.remove('active');
-        vignette.classList.remove('active');
-        spotlights.forEach(s => s.classList.remove('active'));
-        body.classList.remove('lightshow-active');
+        ambient.classList.remove('active');
+        glow1.classList.remove('active');
+        glow2.classList.remove('active');
       } else {
-        // Start the show!
         player.playVideo();
         profilePic.classList.add('playing');
         nowPlaying.classList.add('visible');
-        lightshow.classList.add('active');
-        particles.classList.add('active');
-        laserGrid.classList.add('active');
-        starfield.classList.add('active');
-        visualizer.classList.add('active');
-        vignette.classList.add('active');
-        spotlights.forEach(s => s.classList.add('active'));
-        body.classList.add('lightshow-active');
+        ambient.classList.add('active');
+        glow1.classList.add('active');
+        glow2.classList.add('active');
       }
       isPlaying = !isPlaying;
     }
