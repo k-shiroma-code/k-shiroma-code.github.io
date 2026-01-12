@@ -72,10 +72,15 @@ permalink: /projects/
 }
 
 .project-description {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 1.05rem;
   margin-bottom: 28px;
   max-width: 720px;
+}
+
+.project-description strong {
+  color: var(--text-primary);
+  font-weight: 400;
 }
 
 .tech-stack {
@@ -186,7 +191,7 @@ permalink: /projects/
 .model-table td {
   padding: 14px 16px;
   border-bottom: 1px solid var(--surface-border);
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .model-table tr:hover td {
@@ -311,7 +316,7 @@ permalink: /projects/
 }
 
 .service-list li {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 0.9rem;
   padding: 8px 0;
   border-bottom: 1px solid var(--surface-border);
@@ -319,6 +324,7 @@ permalink: /projects/
 
 .service-list li strong {
   color: var(--accent-soft);
+  font-weight: 400;
 }
 
 @media (max-width: 480px) {
@@ -343,7 +349,7 @@ permalink: /projects/
 
 /* Contribution Note */
 .contribution-note {
-  color: var(--text-muted);
+  color: var(--text-primary);
   font-size: 0.9rem;
   margin-top: 20px;
   font-style: italic;
