@@ -110,7 +110,7 @@ description: A showcase of active development projects!
 
 /* Project Content */
 .project-description {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 1.05rem;
   margin-bottom: 24px;
   max-width: 720px;
@@ -118,7 +118,7 @@ description: A showcase of active development projects!
 
 .project-description strong {
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Features List */
@@ -175,14 +175,14 @@ description: A showcase of active development projects!
 }
 
 .feature-text {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
 .feature-text strong {
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Tech Stack */
