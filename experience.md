@@ -243,6 +243,30 @@ permalink: /experience/
   <p>Research, teaching & professional development</p>
 </div>
 
+<!-- Edison SCE Intern -->
+<article class="experience-card">
+  <div class="experience-layout">
+    <div>
+      <div class="experience-header">
+        <h2 class="experience-title">Southern California Edison (SCE)</h2>
+        <div class="experience-meta">
+          <span class="experience-role">Incoming Intern – SP&E</span>
+          <span class="experience-date">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Summer 2026
+          </span>
+        </div>
+      </div>
+      
+      <div class="experience-content">
+        <p>
+          Incoming summer intern in the System Planning & Engineering (SP&E) division at Southern California Edison, one of the largest electric utilities in the United States.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
 <!-- HDSI Research Fellow -->
 <article class="experience-card">
   <div class="experience-layout">
