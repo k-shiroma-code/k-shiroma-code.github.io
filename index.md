@@ -484,7 +484,7 @@ permalink: /
 <section class="hero-section">
   <div class="hero-top">
     <div class="profile-container">
-      <span class="music-caption">Click for chill vibes 🎵</span>
+      <span class="music-caption">Click for surprise 🎵</span>
       <img 
         src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
         alt="Kyle Shiroma"
