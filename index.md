@@ -271,12 +271,12 @@ permalink: /
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-bottom: 24px;
 }
 
 .hero-description {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 1.05rem;
   margin-bottom: 32px;
   max-width: 540px;
@@ -284,7 +284,7 @@ permalink: /
 
 .hero-description strong {
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* CTA Buttons */
@@ -372,7 +372,7 @@ permalink: /
 }
 
 .info-card-text {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 0.95rem;
   margin: 0;
   line-height: 1.6;
