@@ -570,9 +570,6 @@ permalink: /
   </script>
   
   <div class="hero-content">
-    <p class="hero-description">
-      Transfer student from <strong>Norco College</strong> pursuing a <strong>B.S. in Data Science</strong> with a planned <strong>minor in Mathematics</strong>. Currently a fellow with <strong>HDSI Lab 3.0</strong> and an active member of the <strong>Data Science Student Society (DS3)</strong>.
-    </p>
     <div class="hero-buttons">
       <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
