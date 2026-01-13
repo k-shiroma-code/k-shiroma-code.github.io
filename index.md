@@ -484,7 +484,7 @@ permalink: /
 <section class="hero-section">
   <div class="hero-top">
     <div class="profile-container">
-      <span class="music-caption">Click for surprise 🎵</span>
+      <span class="music-caption">Click for a surprise 🎵</span>
       <img 
         src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
         alt="Kyle Shiroma"
@@ -606,7 +606,10 @@ permalink: /
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
     </div>
     <h3 class="info-card-title">Involvement</h3>
-    <p class="info-card-text">HDSI Lab 3.0 Fellow DS3 - Board Member & Consultant</p>
+    <p class="info-card-text">
+      • HDSI Lab 3.0 Fellow<br>
+      • DS3 - Board Member & Consultant
+    </p>
   </div>
 </section>
 
