@@ -608,7 +608,7 @@ permalink: /
     <h3 class="info-card-title">Involvement</h3>
     <p class="info-card-text">
       • HDSI Lab 3.0 Fellow<br>
-      • DS3 - Board Member & Consultant
+      • DS3 - Former Board Member & Current Consultant
     </p>
   </div>
 </section>
