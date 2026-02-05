@@ -330,6 +330,117 @@ permalink: /
   color: #0a0a0a;
 }
 
+  <!-- Journey Timeline -->
+<section class="timeline-section">
+  <h2 class="section-header">My Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Aug 2022</span>
+        <h3 class="timeline-title">Started at Norco College</h3>
+        <p class="timeline-text">Began my path in data science at community college.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Summer 2025</span>
+        <h3 class="timeline-title">Won Hackathon 🏆</h3>
+        <p class="timeline-text">First major competition win.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Fall 2025</span>
+        <h3 class="timeline-title">Transferred to UC San Diego</h3>
+        <p class="timeline-text">Pursuing B.S. in Data Science with a minor in Mathematics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  /* Timeline */
+.timeline-section {
+  margin: 48px 0 64px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--surface-border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 32px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: var(--surface);
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item:hover .timeline-marker {
+  background: var(--accent);
+}
+
+.timeline-content {
+  background: var(--surface-elevated);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 6px 0 8px;
+}
+
+.timeline-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+
 /* Info Cards */
 .info-section {
   display: grid;
