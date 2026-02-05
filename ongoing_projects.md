@@ -411,9 +411,9 @@ permalink: /
 
 /* Section Header */
 .section-header {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 24px;
@@ -585,7 +585,15 @@ permalink: /
       <div class="timeline-content">
         <span class="timeline-date">Aug 2022</span>
         <h3 class="timeline-title">Started at Norco College</h3>
-        <p class="timeline-text">Studied Mathematics and Computer Science. Worked as a peer tutor for Math and Computer Science.</p>
+        <p class="timeline-text">Studied Mathematics and Computer Science.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Feb 2023 – June 2025</span>
+        <h3 class="timeline-title">Peer Tutor</h3>
+        <p class="timeline-text">Tutored Math and Computer Science at Norco College.</p>
       </div>
     </div>
     <div class="timeline-item">
