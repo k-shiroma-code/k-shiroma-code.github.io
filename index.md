@@ -411,9 +411,9 @@ permalink: /
 
 /* Section Header */
 .section-header {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 24px;
@@ -477,7 +477,7 @@ permalink: /
 <section class="hero-section">
   <div class="hero-top">
     <div class="profile-container">
-      <span class="music-caption">Click for a surprise 🎵</span>
+      <span class="music-caption">Click for a surprise</span>
       <img 
         src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
         alt="Kyle Shiroma"
@@ -585,23 +585,87 @@ permalink: /
       <div class="timeline-content">
         <span class="timeline-date">Aug 2022</span>
         <h3 class="timeline-title">Started at Norco College</h3>
-        <p class="timeline-text">Began my path in data science at community college.</p>
+        <p class="timeline-text">Associate of Science in Mathematics.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Feb 2023 – Jun 2025</span>
+        <h3 class="timeline-title">Math & Computer Science Tutor</h3>
+        <p class="timeline-text">Tutored students in Calculus, Statistics, and Computer Science at Norco College.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2023–2024</span>
+        <h3 class="timeline-title">CCCAA Soccer</h3>
+        <p class="timeline-text">Played soccer with Norco College.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">May 2024 – Jul 2024</span>
+        <h3 class="timeline-title">Data Science Research Intern</h3>
+        <p class="timeline-text">California State University, Fullerton. Developed a UEFA Euro prediction model using Random Forests and ELO rating systems.</p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-marker"></div>
       <div class="timeline-content">
         <span class="timeline-date">Summer 2025</span>
-        <h3 class="timeline-title">Won Hackathon 🏆</h3>
-        <p class="timeline-text">First major competition win.</p>
+        <h3 class="timeline-title">Won Healthcare Hackathon</h3>
+        <p class="timeline-text">ASA NYC x AI4Purpose.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Sep 2025</span>
+        <h3 class="timeline-title">Transferred to UC San Diego</h3>
+        <p class="timeline-text">Pursuing B.S. in Data Science with a minor in Mathematics.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Oct 2025 – Present</span>
+        <h3 class="timeline-title">HDSI Lab 3.0 Fellow</h3>
+        <p class="timeline-text">Developing interdisciplinary AI and robotics projects for K–12 education, including interactive hardware prototypes and sports-focused LLM applications.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Oct 2025 – Dec 2025</span>
+        <h3 class="timeline-title">DS3 Project Member – EvoCharge</h3>
+        <p class="timeline-text">Built a machine learning dashboard using Lasso Regression to predict EV charging costs and availability.</p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-marker"></div>
       <div class="timeline-content">
         <span class="timeline-date">Fall 2025</span>
-        <h3 class="timeline-title">Transferred to UC San Diego</h3>
-        <p class="timeline-text">Pursuing B.S. in Data Science with a minor in Mathematics.</p>
+        <h3 class="timeline-title">Dino Cage Competition</h3>
+        <p class="timeline-text">Shark Tank-style pitch competition.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Jan 2026 – Present</span>
+        <h3 class="timeline-title">DS3 Consultant – CER Energy Dashboard</h3>
+        <p class="timeline-text">Developing a real-time energy analytics dashboard for the UCSD Center for Energy Research.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Jan 2026 – Present</span>
+        <h3 class="timeline-title">Data Science Intern – Southern California Edison</h3>
+        <p class="timeline-text">SP&E team. Incoming Summer 2026 Intern.</p>
       </div>
     </div>
   </div>
