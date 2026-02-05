@@ -1,12 +1,11 @@
 ---
-title: Ongoing Projects
+title: Home
 layout: default
-permalink: /ongoing-projects/
-description: A showcase of active development projects!
+permalink: /
 ---
 
 <style>
-.ongoing-container {
+.home-container {
   --accent: #a78bfa;
   --accent-soft: #c4b5fd;
   --surface: #0a0a0a;
@@ -20,291 +19,634 @@ description: A showcase of active development projects!
   line-height: 1.7;
 }
 
-.ongoing-container h1,
-.ongoing-container h2,
-.ongoing-container h3 {
+.home-container h1,
+.home-container h2,
+.home-container h3 {
   font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
-/* Page Header */
-.page-header {
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0 64px;
+}
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+.hero-intro {
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 700px;
   text-align: center;
-  padding: 48px 0 32px;
-  margin-bottom: 20px;
 }
 
-.page-header h1 {
-  font-size: 2.75rem;
-  font-weight: 700;
-  margin: 0;
-  color: var(--text-primary);
-}
-
-.page-header p {
-  color: var(--text-muted);
-  font-size: 1.1rem;
-  margin-top: 12px;
-}
-
-/* Project Card */
-.project-card {
-  background: var(--surface-elevated);
-  border: 1px solid var(--surface-border);
-  border-radius: 16px;
-  padding: 40px;
-  margin: 32px 0;
-  transition: border-color 0.3s ease, transform 0.3s ease;
+/* Profile Photo with Music */
+.profile-container {
   position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.project-card:hover {
+.music-caption {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.music-caption::after {
+  content: '↓';
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2px;
+  animation: arrowBounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-5px); }
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+.hero-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--surface-border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-image:hover {
   border-color: var(--accent);
-  transform: translateY(-2px);
+  transform: scale(1.03);
 }
 
-/* Status Badge */
-.status-badge {
-  display: inline-flex;
+.hero-image.playing {
+  border-color: var(--accent);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 0 rgba(167, 139, 250, 0.4); }
+  50% { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(167, 139, 250, 0); }
+}
+
+.now-playing {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.75rem;
+}
+
+.now-playing.visible {
+  opacity: 1;
+}
+
+.now-playing .bars {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  height: 12px;
+}
+
+.now-playing .bar {
+  width: 3px;
+  background: var(--accent);
+  animation: soundBar 0.5s ease-in-out infinite alternate;
+}
+
+.now-playing .bar:nth-child(1) { height: 4px; animation-delay: 0s; }
+.now-playing .bar:nth-child(2) { height: 8px; animation-delay: 0.1s; }
+.now-playing .bar:nth-child(3) { height: 6px; animation-delay: 0.2s; }
+.now-playing .bar:nth-child(4) { height: 10px; animation-delay: 0.3s; }
+
+@keyframes soundBar {
+  0% { transform: scaleY(0.5); }
+  100% { transform: scaleY(1); }
+}
+
+/* Chill Ambient Effects */
+.ambient-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.ambient-container.active {
+  opacity: 1;
+}
+
+/* Soft floating particles */
+.particle {
+  position: absolute;
+  background: var(--accent);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.particle:nth-child(odd) {
+  width: 4px;
+  height: 4px;
+}
+
+.particle:nth-child(even) {
+  width: 6px;
+  height: 6px;
+}
+
+.particle:nth-child(1) { left: 10%; animation: floatSlow 8s ease-in-out infinite; }
+.particle:nth-child(2) { left: 25%; animation: floatSlow 10s ease-in-out infinite 1s; }
+.particle:nth-child(3) { left: 40%; animation: floatSlow 9s ease-in-out infinite 2s; }
+.particle:nth-child(4) { left: 55%; animation: floatSlow 11s ease-in-out infinite 0.5s; }
+.particle:nth-child(5) { left: 70%; animation: floatSlow 8.5s ease-in-out infinite 1.5s; }
+.particle:nth-child(6) { left: 85%; animation: floatSlow 10s ease-in-out infinite 2.5s; }
+
+@keyframes floatSlow {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
+
+/* Soft corner glows */
+.soft-glow {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity 1s ease;
+}
+
+.soft-glow.active {
+  opacity: 0.15;
+}
+
+.soft-glow:nth-child(1) {
+  top: -200px;
+  left: -200px;
+  background: #a78bfa;
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+.soft-glow:nth-child(2) {
+  bottom: -200px;
+  right: -200px;
+  background: #8b5cf6;
+  animation: glowPulse 6s ease-in-out infinite 3s;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 0.2; transform: scale(1.1); }
+}
+
+.hero-greeting {
+  color: var(--accent);
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 6px 14px;
-  border-radius: 20px;
-  margin-bottom: 16px;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
 }
 
-.status-badge.upcoming {
-  background: rgba(59, 130, 246, 0.15);
-  border: 1px solid rgba(59, 130, 246, 0.4);
-  color: #60a5fa;
-}
-
-.status-badge.in-progress {
-  background: rgba(34, 197, 94, 0.15);
-  border: 1px solid rgba(34, 197, 94, 0.4);
-  color: #4ade80;
-}
-
-.status-badge svg {
-  width: 14px;
-  height: 14px;
-}
-
-/* Project Header */
-.project-header {
-  margin-bottom: 20px;
-}
-
-.project-title {
-  font-size: 1.5rem;
+.hero-title {
+  font-size: 2.75rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin: 0;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
 }
 
-/* Project Content */
-.project-description {
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.hero-description {
   color: var(--text-primary);
   font-size: 1.05rem;
-  margin-bottom: 24px;
-  max-width: 720px;
+  margin-bottom: 32px;
+  max-width: 540px;
 }
 
-.project-description strong {
+.hero-description strong {
   color: var(--text-primary);
   font-weight: 400;
 }
 
-/* Features List */
-.features-section {
-  margin: 24px 0;
+/* CTA Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.features-label {
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #0a0a0a;
+  border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--surface-border);
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #0a0a0a;
+}
+
+/* Timeline */
+.timeline-section {
+  margin: 48px 0 64px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--surface-border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 32px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: var(--surface);
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item:hover .timeline-marker {
+  background: var(--accent);
+}
+
+.timeline-content {
+  background: var(--surface-elevated);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 6px 0 8px;
+}
+
+.timeline-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Section Header */
+.section-header {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 16px;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 12px;
-}
-
-.feature-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--surface-border);
-  border-radius: 10px;
-  transition: border-color 0.2s ease;
-}
-
-.feature-item:hover {
-  border-color: rgba(167, 139, 250, 0.4);
-}
-
-.feature-icon {
-  width: 32px;
-  height: 32px;
-  background: rgba(167, 139, 250, 0.1);
-  border: 1px solid rgba(167, 139, 250, 0.3);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: var(--accent);
-}
-
-.feature-icon svg {
-  width: 16px;
-  height: 16px;
-}
-
-.feature-text {
-  color: var(--text-primary);
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.feature-text strong {
-  color: var(--text-primary);
-  font-weight: 400;
-}
-
-/* Tech Stack */
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 24px;
-}
-
-.tech-tag {
-  background: rgba(167, 139, 250, 0.1);
-  border: 1px solid rgba(167, 139, 250, 0.3);
-  color: var(--accent-soft);
-  font-size: 0.8rem;
-  font-weight: 500;
-  padding: 6px 12px;
-  border-radius: 6px;
-}
-
-/* Timeline Indicator */
-.timeline-indicator {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 24px;
-  padding-top: 24px;
-  border-top: 1px solid var(--surface-border);
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.timeline-indicator svg {
-  width: 16px;
-  height: 16px;
-  color: var(--accent);
+  margin-bottom: 24px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .project-card {
-    padding: 24px;
-    margin: 24px 0;
+  .hero-section {
+    padding: 32px 0 48px;
   }
   
-  .project-title {
-    font-size: 1.25rem;
+  .hero-top {
+    flex-direction: column;
+    gap: 24px;
   }
   
-  .features-grid {
-    grid-template-columns: 1fr;
+  .hero-intro {
+    text-align: center;
   }
   
-  .page-header h1 {
+  .hero-title {
     font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-image {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .music-caption {
+    top: -40px;
+    font-size: 0.75rem;
+  }
+  
+  .info-section {
+    grid-template-columns: 1fr;
   }
 }
 </style>
 
-<div class="ongoing-container">
+<div class="home-container">
 
-<div class="page-header">
-  <h1>Ongoing & Upcoming</h1>
-  <p>Active development and future projects</p>
+<!-- Chill Ambient Elements -->
+<div class="soft-glow" id="glow1"></div>
+<div class="soft-glow" id="glow2"></div>
+
+<div class="ambient-container" id="ambient">
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
 </div>
 
-<!-- Image Classification -->
-<article class="project-card">
-  <span class="status-badge upcoming">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-    Upcoming
-  </span>
-  
-  <div class="project-header">
-    <h2 class="project-title">Image Classification with PyTorch</h2>
-  </div>
-  
-  <p class="project-description">
-    Building a <strong>deep learning image classification system</strong> using <strong>PyTorch</strong> and <strong>convolutional neural networks (CNNs)</strong>. The project will explore <strong>transfer learning techniques</strong>, <strong>model optimization</strong>, and <strong>deployment strategies</strong> for real-world computer vision applications.
-  </p>
-  
-  <div class="features-section">
-    <p class="features-label">Planned Features</p>
-    <div class="features-grid">
-      <div class="feature-item">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-top">
+    <div class="profile-container">
+      <span class="music-caption">Click for a surprise</span>
+      <img 
+        src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
+        alt="Kyle Shiroma"
+        class="hero-image"
+        id="profilePic"
+        onclick="toggleMusic()"
+      >
+      <div class="now-playing" id="nowPlaying">
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-        <span class="feature-text"><strong>Custom CNN architecture</strong> with transfer learning from pre-trained models</span>
+        <span>Now Playing</span>
       </div>
-      <div class="feature-item">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-        </div>
-        <span class="feature-text"><strong>Data augmentation pipeline</strong> for robust training</span>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        </div>
-        <span class="feature-text"><strong>Model evaluation</strong> and performance metrics</span>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-        <span class="feature-text"><strong>Web-based inference interface</strong> for real-time predictions</span>
-      </div>
+    </div>
+    <div class="hero-intro">
+      <p class="hero-greeting">Welcome</p>
+      <h1 class="hero-title">Kyle Shiroma</h1>
+      <p class="hero-subtitle">Data Science @ UC San Diego</p>
     </div>
   </div>
   
-  <div class="tech-stack">
-    <span class="tech-tag">Python</span>
-    <span class="tech-tag">PyTorch</span>
-    <span class="tech-tag">TorchVision</span>
-    <span class="tech-tag">OpenCV</span>
-    <span class="tech-tag">FastAPI</span>
-  </div>
+  <!-- Hidden YouTube Player -->
+  <iframe 
+    id="bgMusic" 
+    width="0" 
+    height="0" 
+    src="https://www.youtube.com/embed/PL7AvEObPAM?enablejsapi=1&autoplay=0&loop=1&playlist=PL7AvEObPAM" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    style="position: absolute; visibility: hidden;"
+  ></iframe>
   
-  <div class="timeline-indicator">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-    Starting Soon
+  <script>
+    let isPlaying = false;
+    let player;
+    const profilePic = document.getElementById('profilePic');
+    const nowPlaying = document.getElementById('nowPlaying');
+    const ambient = document.getElementById('ambient');
+    const glow1 = document.getElementById('glow1');
+    const glow2 = document.getElementById('glow2');
+    
+    // Load YouTube API
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('bgMusic', {
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+    
+    function onPlayerReady(event) {
+      // Player is ready
+    }
+    
+    function toggleMusic() {
+      if (!player) return;
+      
+      if (isPlaying) {
+        player.pauseVideo();
+        profilePic.classList.remove('playing');
+        nowPlaying.classList.remove('visible');
+        ambient.classList.remove('active');
+        glow1.classList.remove('active');
+        glow2.classList.remove('active');
+      } else {
+        player.playVideo();
+        profilePic.classList.add('playing');
+        nowPlaying.classList.add('visible');
+        ambient.classList.add('active');
+        glow1.classList.add('active');
+        glow2.classList.add('active');
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+  
+  <div class="hero-content">
+    <div class="hero-buttons">
+      <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        View Projects
+      </a>
+      <a href="{{ '/assets/pdf/Kyle_Shiroma_Resume_PW.pdf' | relative_url }}" target="_blank" rel="noopener" class="btn btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        Resume
+      </a>
+    </div>
   </div>
-</article>
+</section>
 
+<!-- Journey Timeline -->
+<section class="timeline-section">
+  <h2 class="section-header">My Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Aug 2022</span>
+        <h3 class="timeline-title">Started at Norco College</h3>
+        <p class="timeline-text">Studied Mathematics and Computer Science.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2023–2024</span>
+        <h3 class="timeline-title">CCCAA Soccer</h3>
+        <p class="timeline-text">Played soccer with Norco College.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Summer 2024</span>
+        <h3 class="timeline-title">Research Internship at CSUF</h3>
+        <p class="timeline-text">Gained hands-on research experience.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Summer 2025</span>
+        <h3 class="timeline-title">Won Healthcare Hackathon</h3>
+        <p class="timeline-text">ASA NYC x AI4Purpose</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Fall 2025</span>
+        <h3 class="timeline-title">Transferred to UC San Diego</h3>
+        <p class="timeline-text">Pursuing B.S. in Data Science with a minor in Mathematics.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Fall 2025</span>
+        <h3 class="timeline-title">HDSI Lab 3.0 Fellow</h3>
+        <p class="timeline-text">Quarterly projects: EvoCharge and Dino Cage (Shark Tank-style pitch).</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Fall 2025</span>
+        <h3 class="timeline-title">Joined DS3 & DataHacks Board</h3>
+        <p class="timeline-text">Helped plan and host a hackathon as a board member.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Winter 2026 – Present</span>
+        <h3 class="timeline-title">DS3 Consultant</h3>
+        <p class="timeline-text">Working with the Center for Energy Research.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</div>
