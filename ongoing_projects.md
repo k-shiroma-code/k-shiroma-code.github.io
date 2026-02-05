@@ -585,7 +585,7 @@ permalink: /
       <div class="timeline-content">
         <span class="timeline-date">Aug 2022</span>
         <h3 class="timeline-title">Started at Norco College</h3>
-        <p class="timeline-text">Studied Mathematics and Computer Science.</p>
+        <p class="timeline-text">Studied Mathematics and Computer Science. Worked as a peer tutor for Math and Computer Science.</p>
       </div>
     </div>
     <div class="timeline-item">
