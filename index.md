@@ -409,54 +409,6 @@ permalink: /
   margin: 0;
 }
 
-/* Info Cards */
-.info-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin: 48px 0;
-}
-
-.info-card {
-  background: var(--surface-elevated);
-  border: 1px solid var(--surface-border);
-  border-radius: 16px;
-  padding: 32px;
-  transition: border-color 0.3s ease, transform 0.3s ease;
-}
-
-.info-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-
-.info-card-icon {
-  width: 48px;
-  height: 48px;
-  background: rgba(167, 139, 250, 0.1);
-  border: 1px solid rgba(167, 139, 250, 0.3);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  color: var(--accent);
-}
-
-.info-card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin: 0 0 12px 0;
-}
-
-.info-card-text {
-  color: var(--text-primary);
-  font-size: 0.95rem;
-  margin: 0;
-  line-height: 1.6;
-}
-
 /* Section Header */
 .section-header {
   font-size: 0.85rem;
@@ -655,34 +607,6 @@ permalink: /
   </div>
 </section>
 
-<!-- Info Cards -->
-<section class="info-section">
-  <div class="info-card">
-    <div class="info-card-icon">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-    </div>
-    <h3 class="info-card-title">Education</h3>
-    <p class="info-card-text">B.S. Data Science at UC San Diego with a planned minor in Mathematics. Transferred from Norco College.</p>
-  </div>
-  
-  <div class="info-card">
-    <div class="info-card-icon">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-    </div>
-    <h3 class="info-card-title">Current Focus</h3>
-    <p class="info-card-text">Working on building dashboards while earning good grades.</p>
-  </div>
-  
-  <div class="info-card">
-    <div class="info-card-icon">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-    </div>
-    <h3 class="info-card-title">Involvement</h3>
-    <p class="info-card-text">
-      • HDSI Lab 3.0 Fellow<br>
-      • DS3 - Former Board Member & Current Consultant
-    </p>
-  </div>
-</section>
+
 
 </div>
