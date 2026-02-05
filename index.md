@@ -613,27 +613,3 @@ permalink: /
   </div>
 </section>
 
-<!-- Highlights -->
-<section class="highlights-section">
-  <h2 class="section-header">Highlights</h2>
-  <div class="highlights-grid">
-    <div class="highlight-item">
-      <span class="highlight-value">🏆</span>
-      <span class="highlight-label">Hackathon Winner</span>
-    </div>
-    <div class="highlight-item">
-      <span class="highlight-value">6+</span>
-      <span class="highlight-label">Projects</span>
-    </div>
-    <div class="highlight-item">
-      <span class="highlight-value">ML</span>
-      <span class="highlight-label">Specialization</span>
-    </div>
-    <div class="highlight-item">
-      <span class="highlight-value">UCSD</span>
-      <span class="highlight-label">Data Science</span>
-    </div>
-  </div>
-</section>
-
-</div>
