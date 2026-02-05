@@ -330,38 +330,7 @@ permalink: /
   color: #0a0a0a;
 }
 
-  <!-- Journey Timeline -->
-<section class="timeline-section">
-  <h2 class="section-header">My Journey</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <span class="timeline-date">Aug 2022</span>
-        <h3 class="timeline-title">Started at Norco College</h3>
-        <p class="timeline-text">Began my path in data science at community college.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <span class="timeline-date">Summer 2025</span>
-        <h3 class="timeline-title">Won Hackathon 🏆</h3>
-        <p class="timeline-text">First major competition win.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <span class="timeline-date">Fall 2025</span>
-        <h3 class="timeline-title">Transferred to UC San Diego</h3>
-        <p class="timeline-text">Pursuing B.S. in Data Science with a minor in Mathematics.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  /* Timeline */
+/* Timeline */
 .timeline-section {
   margin: 48px 0 64px;
 }
@@ -440,7 +409,6 @@ permalink: /
   margin: 0;
 }
 
-
 /* Info Cards */
 .info-section {
   display: grid;
@@ -489,11 +457,7 @@ permalink: /
   line-height: 1.6;
 }
 
-/* Highlights */
-.highlights-section {
-  margin: 64px 0;
-}
-
+/* Section Header */
 .section-header {
   font-size: 0.85rem;
   font-weight: 600;
@@ -501,40 +465,6 @@ permalink: /
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 24px;
-}
-
-.highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-}
-
-.highlight-item {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--surface-border);
-  border-radius: 12px;
-  padding: 24px;
-  text-align: center;
-  transition: border-color 0.3s ease;
-}
-
-.highlight-item:hover {
-  border-color: var(--accent);
-}
-
-.highlight-value {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--accent);
-  display: block;
-}
-
-.highlight-label {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 6px;
 }
 
 /* Responsive */
@@ -694,6 +624,37 @@ permalink: /
   </div>
 </section>
 
+<!-- Journey Timeline -->
+<section class="timeline-section">
+  <h2 class="section-header">My Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Aug 2022</span>
+        <h3 class="timeline-title">Started at Norco College</h3>
+        <p class="timeline-text">Began my path in data science at community college.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Summer 2025</span>
+        <h3 class="timeline-title">Won Hackathon 🏆</h3>
+        <p class="timeline-text">First major competition win.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Fall 2025</span>
+        <h3 class="timeline-title">Transferred to UC San Diego</h3>
+        <p class="timeline-text">Pursuing B.S. in Data Science with a minor in Mathematics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Info Cards -->
 <section class="info-section">
   <div class="info-card">
@@ -709,7 +670,7 @@ permalink: /
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
     </div>
     <h3 class="info-card-title">Current Focus</h3>
-    <p class="info-card-text">Working on building dashboards while earning good grades. </p>
+    <p class="info-card-text">Working on building dashboards while earning good grades.</p>
   </div>
   
   <div class="info-card">
@@ -724,3 +685,4 @@ permalink: /
   </div>
 </section>
 
+</div>
