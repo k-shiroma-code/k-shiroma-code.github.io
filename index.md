@@ -5,42 +5,51 @@ permalink: /
 ---
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 .home-container {
   --accent: #a78bfa;
   --accent-soft: #c4b5fd;
+  --accent-dim: rgba(167, 139, 250, 0.12);
   --surface: #0a0a0a;
-  --surface-elevated: #141414;
-  --surface-border: #222;
-  --text-primary: #f5f5f5;
-  --text-secondary: #a0a0a0;
-  --text-muted: #666;
-  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --surface-elevated: #111111;
+  --surface-border: #1e1e1e;
+  --surface-border-hover: #2a2a2a;
+  --text-primary: #ececec;
+  --text-secondary: #b0b0b0;
+  --text-muted: #707070;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-primary);
-  line-height: 1.7;
+  line-height: 1.75;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .home-container h1,
 .home-container h2,
 .home-container h3 {
-  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+  line-height: 1.3;
 }
 
-/* Hero Section */
+/* ─── Hero Section ─── */
 .hero-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px 0 64px;
+  padding: 56px 0 72px;
 }
 
 .hero-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 48px;
-  margin-bottom: 32px;
+  gap: 44px;
+  margin-bottom: 36px;
+  width: 100%;
 }
 
 .hero-intro {
@@ -52,7 +61,7 @@ permalink: /
   text-align: center;
 }
 
-/* Profile Photo with Music */
+/* ─── Profile Photo + Music ─── */
 .profile-container {
   position: relative;
   display: flex;
@@ -62,13 +71,14 @@ permalink: /
 
 .music-caption {
   position: absolute;
-  top: -45px;
+  top: -42px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: var(--accent);
   font-weight: 500;
+  letter-spacing: 0.02em;
   animation: bounce 2s ease-in-out infinite;
 }
 
@@ -76,7 +86,7 @@ permalink: /
   content: '↓';
   display: block;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 2px;
   animation: arrowBounce 1s ease-in-out infinite;
 }
@@ -92,12 +102,12 @@ permalink: /
 }
 
 .hero-image {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid var(--surface-border);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 3px solid var(--surface-border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   flex-shrink: 0;
   transition: border-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
@@ -120,18 +130,17 @@ permalink: /
 
 .now-playing {
   margin-top: 12px;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--accent);
   opacity: 0;
   transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
   gap: 6px;
+  font-weight: 500;
 }
 
-.now-playing.visible {
-  opacity: 1;
-}
+.now-playing.visible { opacity: 1; }
 
 .now-playing .bars {
   display: flex;
@@ -156,7 +165,7 @@ permalink: /
   100% { transform: scaleY(1); }
 }
 
-/* Chill Ambient Effects */
+/* ─── Ambient Effects ─── */
 .ambient-container {
   position: fixed;
   top: 0;
@@ -170,11 +179,8 @@ permalink: /
   transition: opacity 1s ease;
 }
 
-.ambient-container.active {
-  opacity: 1;
-}
+.ambient-container.active { opacity: 1; }
 
-/* Soft floating particles */
 .particle {
   position: absolute;
   background: var(--accent);
@@ -182,15 +188,8 @@ permalink: /
   opacity: 0;
 }
 
-.particle:nth-child(odd) {
-  width: 4px;
-  height: 4px;
-}
-
-.particle:nth-child(even) {
-  width: 6px;
-  height: 6px;
-}
+.particle:nth-child(odd) { width: 4px; height: 4px; }
+.particle:nth-child(even) { width: 6px; height: 6px; }
 
 .particle:nth-child(1) { left: 10%; animation: floatSlow 8s ease-in-out infinite; }
 .particle:nth-child(2) { left: 25%; animation: floatSlow 10s ease-in-out infinite 1s; }
@@ -200,23 +199,12 @@ permalink: /
 .particle:nth-child(6) { left: 85%; animation: floatSlow 10s ease-in-out infinite 2.5s; }
 
 @keyframes floatSlow {
-  0% {
-    transform: translateY(100vh);
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.5;
-  }
-  90% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(-10vh);
-    opacity: 0;
-  }
+  0% { transform: translateY(100vh); opacity: 0; }
+  10% { opacity: 0.5; }
+  90% { opacity: 0.5; }
+  100% { transform: translateY(-10vh); opacity: 0; }
 }
 
-/* Soft corner glows */
 .soft-glow {
   position: fixed;
   width: 400px;
@@ -229,9 +217,7 @@ permalink: /
   transition: opacity 1s ease;
 }
 
-.soft-glow.active {
-  opacity: 0.15;
-}
+.soft-glow.active { opacity: 0.15; }
 
 .soft-glow:nth-child(1) {
   top: -200px;
@@ -252,46 +238,37 @@ permalink: /
   50% { opacity: 0.2; transform: scale(1.1); }
 }
 
+/* ─── Hero Text ─── */
 .hero-greeting {
   color: var(--accent);
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 12px;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
 }
 
 .hero-title {
-  font-size: 2.75rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  color: var(--text-primary);
-  margin: 0 0 8px 0;
-  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  line-height: 1.15;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  color: var(--text-primary);
-  margin-bottom: 24px;
-}
-
-.hero-description {
-  color: var(--text-primary);
-  font-size: 1.05rem;
-  margin-bottom: 32px;
-  max-width: 540px;
-}
-
-.hero-description strong {
-  color: var(--text-primary);
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
   font-weight: 400;
 }
 
-/* CTA Buttons */
+/* ─── CTA Buttons ─── */
 .hero-buttons {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn {
@@ -299,11 +276,13 @@ permalink: /
   align-items: center;
   gap: 8px;
   font-weight: 500;
-  font-size: 0.95rem;
-  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-family: 'DM Sans', sans-serif;
+  padding: 11px 22px;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.2s ease;
+  letter-spacing: 0.01em;
 }
 
 .btn-primary {
@@ -321,7 +300,7 @@ permalink: /
 .btn-secondary {
   background: transparent;
   color: var(--text-primary);
-  border: 1px solid var(--surface-border);
+  border: 1px solid var(--surface-border-hover);
 }
 
 .btn-secondary:hover {
@@ -330,137 +309,153 @@ permalink: /
   color: #0a0a0a;
 }
 
-/* Timeline */
+/* ─── Timeline Section ─── */
 .timeline-section {
-  margin: 48px 0 64px;
+  margin: 16px 0 80px;
+}
+
+.section-header {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--surface-border);
 }
 
 .timeline {
   position: relative;
-  padding-left: 32px;
+  padding-left: 28px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 7px;
+  left: 6px;
   top: 8px;
   bottom: 8px;
-  width: 2px;
+  width: 1.5px;
   background: var(--surface-border);
 }
 
 .timeline-item {
   position: relative;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
 }
 
-.timeline-item:last-child {
-  padding-bottom: 0;
-}
+.timeline-item:last-child { padding-bottom: 0; }
 
 .timeline-marker {
   position: absolute;
-  left: -32px;
-  top: 6px;
-  width: 16px;
-  height: 16px;
+  left: -28px;
+  top: 8px;
+  width: 13px;
+  height: 13px;
   background: var(--surface);
-  border: 3px solid var(--accent);
+  border: 2.5px solid var(--surface-border-hover);
   border-radius: 50%;
   z-index: 1;
+  transition: all 0.25s ease;
 }
 
 .timeline-item:hover .timeline-marker {
+  border-color: var(--accent);
   background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-dim);
 }
 
 .timeline-content {
   background: var(--surface-elevated);
   border: 1px solid var(--surface-border);
-  border-radius: 12px;
-  padding: 20px 24px;
-  transition: border-color 0.3s ease, transform 0.3s ease;
+  border-radius: 10px;
+  padding: 18px 22px;
+  transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
 .timeline-content:hover {
-  border-color: var(--accent);
-  transform: translateX(4px);
+  border-color: var(--surface-border-hover);
+  transform: translateX(3px);
 }
 
 .timeline-date {
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
   color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
 }
 
 .timeline-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--text-primary);
-  margin: 6px 0 8px;
+  color: #ffffff;
+  margin: 5px 0 6px;
+  line-height: 1.35;
 }
 
 .timeline-text {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
   margin: 0;
+  line-height: 1.6;
 }
 
-/* Section Header */
-.section-header {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 24px;
-}
-
-/* Responsive */
+/* ─── Responsive ─── */
 @media (max-width: 768px) {
-  .hero-section {
-    padding: 32px 0 48px;
+  .home-container {
+    padding: 0 20px;
   }
-  
+
+  .hero-section {
+    padding: 36px 0 48px;
+  }
+
   .hero-top {
     flex-direction: column;
     gap: 24px;
   }
-  
+
   .hero-intro {
     text-align: center;
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
-  
+
   .hero-image {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
   }
-  
+
   .music-caption {
-    top: -40px;
-    font-size: 0.75rem;
+    top: -38px;
+    font-size: 0.72rem;
   }
-  
-  .info-section {
-    grid-template-columns: 1fr;
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .timeline-marker {
+    left: -24px;
+  }
+
+  .timeline-content {
+    padding: 16px 18px;
   }
 }
 </style>
 
 <div class="home-container">
 
-<!-- Chill Ambient Elements -->
+<!-- Ambient Elements -->
 <div class="soft-glow" id="glow1"></div>
 <div class="soft-glow" id="glow2"></div>
 
@@ -473,13 +468,13 @@ permalink: /
   <div class="particle"></div>
 </div>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="hero-section">
   <div class="hero-top">
     <div class="profile-container">
       <span class="music-caption">Click for a surprise</span>
-      <img 
-        src="{{ site.baseurl }}/assets/img/IMG_9510.jpg" 
+      <img
+        src="{{ site.baseurl }}/assets/img/IMG_9510.jpg"
         alt="Kyle Shiroma"
         class="hero-image"
         id="profilePic"
@@ -501,18 +496,18 @@ permalink: /
       <p class="hero-subtitle">Data Science @ UC San Diego</p>
     </div>
   </div>
-  
+
   <!-- Hidden YouTube Player -->
-  <iframe 
-    id="bgMusic" 
-    width="0" 
-    height="0" 
-    src="https://www.youtube.com/embed/PL7AvEObPAM?enablejsapi=1&autoplay=0&loop=1&playlist=PL7AvEObPAM" 
-    frameborder="0" 
-    allow="autoplay; encrypted-media" 
+  <iframe
+    id="bgMusic"
+    width="0"
+    height="0"
+    src="https://www.youtube.com/embed/PL7AvEObPAM?enablejsapi=1&autoplay=0&loop=1&playlist=PL7AvEObPAM"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
     style="position: absolute; visibility: hidden;"
   ></iframe>
-  
+
   <script>
     let isPlaying = false;
     let player;
@@ -521,28 +516,22 @@ permalink: /
     const ambient = document.getElementById('ambient');
     const glow1 = document.getElementById('glow1');
     const glow2 = document.getElementById('glow2');
-    
-    // Load YouTube API
+
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    
+
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('bgMusic', {
-        events: {
-          'onReady': onPlayerReady
-        }
+        events: { 'onReady': onPlayerReady }
       });
     }
-    
-    function onPlayerReady(event) {
-      // Player is ready
-    }
-    
+
+    function onPlayerReady(event) {}
+
     function toggleMusic() {
       if (!player) return;
-      
       if (isPlaying) {
         player.pauseVideo();
         profilePic.classList.remove('playing');
@@ -561,15 +550,15 @@ permalink: /
       isPlaying = !isPlaying;
     }
   </script>
-  
+
   <div class="hero-content">
     <div class="hero-buttons">
       <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
         View Projects
       </a>
       <a href="{{ '/assets/pdf/Kyle_Shiroma_Resume_PW.pdf' | relative_url }}" target="_blank" rel="noopener" class="btn btn-secondary">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         Resume
       </a>
     </div>
@@ -670,7 +659,5 @@ permalink: /
     </div>
   </div>
 </section>
-
-
 
 </div>
