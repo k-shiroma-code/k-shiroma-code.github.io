@@ -21,7 +21,7 @@ permalink: /
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-primary);
   line-height: 1.6;
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -53,7 +53,7 @@ permalink: /
 .hero-intro { text-align: left; }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 900px;
   text-align: center;
 }
 
@@ -402,10 +402,136 @@ permalink: /
   border-color: rgba(167, 139, 250, 0.3);
 }
 
+/* ═══ FLOATING DECORATIVE SHAPES ═══ */
+.deco-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.deco-shape {
+  position: absolute;
+  border: 1.5px solid rgba(167, 139, 250, 0.12);
+  opacity: 0.6;
+  animation: decoFloat 20s ease-in-out infinite;
+}
+
+.deco-shape:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  top: 12%;
+  left: 5%;
+  transform: rotate(25deg);
+  animation-duration: 18s;
+}
+
+.deco-shape:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 35%;
+  right: 6%;
+  animation-duration: 22s;
+  animation-delay: -4s;
+}
+
+.deco-shape:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  bottom: 30%;
+  left: 4%;
+  transform: rotate(-15deg);
+  animation-duration: 25s;
+  animation-delay: -8s;
+  border-color: rgba(139, 92, 246, 0.1);
+}
+
+.deco-shape:nth-child(4) {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 60%;
+  right: 8%;
+  animation-duration: 16s;
+  animation-delay: -2s;
+}
+
+.deco-shape:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  top: 80%;
+  left: 7%;
+  transform: rotate(40deg);
+  animation-duration: 21s;
+  animation-delay: -6s;
+  border-color: rgba(196, 181, 253, 0.1);
+}
+
+.deco-shape:nth-child(6) {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  top: 18%;
+  right: 4%;
+  transform: rotate(-30deg);
+  animation-duration: 19s;
+  animation-delay: -10s;
+}
+
+.deco-shape:nth-child(7) {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  bottom: 15%;
+  right: 5%;
+  animation-duration: 14s;
+  animation-delay: -3s;
+  border-color: rgba(167, 139, 250, 0.18);
+}
+
+.deco-shape:nth-child(8) {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  bottom: 55%;
+  left: 3%;
+  animation-duration: 24s;
+  animation-delay: -12s;
+  border-color: rgba(139, 92, 246, 0.08);
+}
+
+@keyframes decoFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(var(--base-rotate, 0deg));
+    opacity: 0.5;
+  }
+  25% {
+    transform: translateY(-18px) rotate(calc(var(--base-rotate, 0deg) + 8deg));
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-8px) rotate(calc(var(--base-rotate, 0deg) + 3deg));
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(-22px) rotate(calc(var(--base-rotate, 0deg) - 5deg));
+    opacity: 0.65;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .home-container { padding: 0 20px; }
   .hero-section { padding: 36px 0 28px; }
+  .deco-shapes { display: none; }
   .hero-top { flex-direction: column; gap: 24px; }
   .hero-intro { text-align: center; }
   .hero-title { font-size: 2rem; }
@@ -429,6 +555,17 @@ permalink: /
   <div class="particle"></div>
   <div class="particle"></div>
   <div class="particle"></div>
+</div>
+
+<div class="deco-shapes">
+  <div class="deco-shape"></div>
+  <div class="deco-shape"></div>
+  <div class="deco-shape"></div>
+  <div class="deco-shape"></div>
+  <div class="deco-shape"></div>
+  <div class="deco-shape"></div>
+  <div class="deco-shape"></div>
+  <div class="deco-shape"></div>
 </div>
 
 <section class="hero-section">
