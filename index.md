@@ -728,7 +728,7 @@ permalink: /
     <div class="narrative-block">
       <span class="narrative-tag">The turning point</span>
       <p class="narrative-text">
-        A volunteer research internship at <strong>CSU Fullerton</strong> changed everything. Working under Dr. Doina Bein, I built a <span class="highlight">UEFA Euro prediction model</span> using Random Forests and ELO rating systems. Combining my love for sports with real data science work made the path forward clear&mdash;I knew data science was where I belonged.
+        During a volunteer research internship at <strong>CSU Fullerton</strong>, I built a <span class="highlight">UEFA Euro prediction model</span> using Random Forests and ELO rating systems. Combining my love for sports with real data science work made the path forward clear. 
       </p>
     </div>
 
