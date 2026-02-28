@@ -402,8 +402,8 @@ permalink: /
   border-color: rgba(167, 139, 250, 0.3);
 }
 
-/* ═══ FLOATING DECORATIVE SHAPES ═══ */
-.deco-shapes {
+/* ═══ ELECTRICITY GRID BACKGROUND ═══ */
+.grid-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -414,124 +414,128 @@ permalink: /
   overflow: hidden;
 }
 
-.deco-shape {
-  position: absolute;
-  border: 1.5px solid rgba(167, 139, 250, 0.12);
-  opacity: 0.6;
-  animation: decoFloat 20s ease-in-out infinite;
+.grid-bg canvas {
+  width: 100%;
+  height: 100%;
 }
 
-.deco-shape:nth-child(1) {
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
-  top: 12%;
-  left: 5%;
-  transform: rotate(25deg);
-  animation-duration: 18s;
+/* Static dot grid via CSS as base layer */
+.grid-dots {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -2;
+  background-image: radial-gradient(circle, rgba(167, 139, 250, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
-.deco-shape:nth-child(2) {
-  width: 40px;
-  height: 40px;
+/* Grid lines - very faint */
+.grid-lines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(167, 139, 250, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Electric pulse lines */
+.pulse-h, .pulse-v {
+  position: fixed;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+}
+
+.pulse-h {
+  height: 1px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(167, 139, 250, 0.25) 45%,
+    rgba(196, 181, 253, 0.5) 50%,
+    rgba(167, 139, 250, 0.25) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+}
+
+.pulse-v {
+  width: 1px;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(167, 139, 250, 0.25) 45%,
+    rgba(196, 181, 253, 0.5) 50%,
+    rgba(167, 139, 250, 0.25) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+  background-size: 100% 200%;
+}
+
+.pulse-h.fire {
+  opacity: 1;
+  animation: pulseSlideH 1.8s ease-out forwards;
+}
+
+.pulse-v.fire {
+  opacity: 1;
+  animation: pulseSlideV 1.8s ease-out forwards;
+}
+
+@keyframes pulseSlideH {
+  0% { background-position: -100% 0; opacity: 0.8; }
+  80% { opacity: 0.3; }
+  100% { background-position: 200% 0; opacity: 0; }
+}
+
+@keyframes pulseSlideV {
+  0% { background-position: 0 -100%; opacity: 0.8; }
+  80% { opacity: 0.3; }
+  100% { background-position: 0 200%; opacity: 0; }
+}
+
+/* Node flashes at intersections */
+.grid-node {
+  position: fixed;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
-  top: 35%;
-  right: 6%;
-  animation-duration: 22s;
-  animation-delay: -4s;
+  background: var(--accent);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
 }
 
-.deco-shape:nth-child(3) {
-  width: 80px;
-  height: 80px;
-  border-radius: 16px;
-  bottom: 30%;
-  left: 4%;
-  transform: rotate(-15deg);
-  animation-duration: 25s;
-  animation-delay: -8s;
-  border-color: rgba(139, 92, 246, 0.1);
+.grid-node.flash {
+  animation: nodeFlash 1.2s ease-out forwards;
 }
 
-.deco-shape:nth-child(4) {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  top: 60%;
-  right: 8%;
-  animation-duration: 16s;
-  animation-delay: -2s;
-}
-
-.deco-shape:nth-child(5) {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-  top: 80%;
-  left: 7%;
-  transform: rotate(40deg);
-  animation-duration: 21s;
-  animation-delay: -6s;
-  border-color: rgba(196, 181, 253, 0.1);
-}
-
-.deco-shape:nth-child(6) {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  top: 18%;
-  right: 4%;
-  transform: rotate(-30deg);
-  animation-duration: 19s;
-  animation-delay: -10s;
-}
-
-.deco-shape:nth-child(7) {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  bottom: 15%;
-  right: 5%;
-  animation-duration: 14s;
-  animation-delay: -3s;
-  border-color: rgba(167, 139, 250, 0.18);
-}
-
-.deco-shape:nth-child(8) {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  bottom: 55%;
-  left: 3%;
-  animation-duration: 24s;
-  animation-delay: -12s;
-  border-color: rgba(139, 92, 246, 0.08);
-}
-
-@keyframes decoFloat {
-  0%, 100% {
-    transform: translateY(0) rotate(var(--base-rotate, 0deg));
-    opacity: 0.5;
-  }
-  25% {
-    transform: translateY(-18px) rotate(calc(var(--base-rotate, 0deg) + 8deg));
-    opacity: 0.7;
-  }
-  50% {
-    transform: translateY(-8px) rotate(calc(var(--base-rotate, 0deg) + 3deg));
-    opacity: 0.5;
-  }
-  75% {
-    transform: translateY(-22px) rotate(calc(var(--base-rotate, 0deg) - 5deg));
-    opacity: 0.65;
-  }
+@keyframes nodeFlash {
+  0% { opacity: 0; transform: scale(0.5); box-shadow: 0 0 0 0 rgba(167, 139, 250, 0); }
+  20% { opacity: 0.8; transform: scale(1.5); box-shadow: 0 0 12px 4px rgba(167, 139, 250, 0.3); }
+  100% { opacity: 0; transform: scale(0.5); box-shadow: 0 0 0 0 rgba(167, 139, 250, 0); }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .home-container { padding: 0 20px; }
   .hero-section { padding: 36px 0 28px; }
-  .deco-shapes { display: none; }
+  .grid-dots, .grid-lines, .grid-bg { display: none; }
   .hero-top { flex-direction: column; gap: 24px; }
   .hero-intro { text-align: center; }
   .hero-title { font-size: 2rem; }
@@ -557,16 +561,77 @@ permalink: /
   <div class="particle"></div>
 </div>
 
-<div class="deco-shapes">
-  <div class="deco-shape"></div>
-  <div class="deco-shape"></div>
-  <div class="deco-shape"></div>
-  <div class="deco-shape"></div>
-  <div class="deco-shape"></div>
-  <div class="deco-shape"></div>
-  <div class="deco-shape"></div>
-  <div class="deco-shape"></div>
-</div>
+<div class="grid-dots"></div>
+<div class="grid-lines"></div>
+<div class="grid-bg" id="gridBg"></div>
+
+<script>
+(function() {
+  var gridBg = document.getElementById('gridBg');
+  var GRID = 48;
+
+  function firePulse() {
+    var isHorizontal = Math.random() > 0.5;
+    var el = document.createElement('div');
+
+    if (isHorizontal) {
+      el.className = 'pulse-h';
+      var row = Math.floor(Math.random() * (window.innerHeight / GRID)) * GRID;
+      el.style.top = row + 'px';
+    } else {
+      el.className = 'pulse-v';
+      var col = Math.floor(Math.random() * (window.innerWidth / GRID)) * GRID;
+      el.style.left = col + 'px';
+    }
+
+    gridBg.appendChild(el);
+
+    requestAnimationFrame(function() {
+      el.classList.add('fire');
+    });
+
+    // Spawn 1-2 node flashes along the pulse
+    var nodeCount = Math.random() > 0.5 ? 2 : 1;
+    for (var i = 0; i < nodeCount; i++) {
+      (function(idx) {
+        setTimeout(function() {
+          var node = document.createElement('div');
+          node.className = 'grid-node';
+          if (isHorizontal) {
+            node.style.top = (parseInt(el.style.top) - 2) + 'px';
+            var randCol = Math.floor(Math.random() * (window.innerWidth / GRID)) * GRID;
+            node.style.left = (randCol - 2) + 'px';
+          } else {
+            node.style.left = (parseInt(el.style.left) - 2) + 'px';
+            var randRow = Math.floor(Math.random() * (window.innerHeight / GRID)) * GRID;
+            node.style.top = (randRow - 2) + 'px';
+          }
+          gridBg.appendChild(node);
+          requestAnimationFrame(function() { node.classList.add('flash'); });
+          setTimeout(function() { node.remove(); }, 1400);
+        }, 300 + idx * 400);
+      })(i);
+    }
+
+    setTimeout(function() { el.remove(); }, 2000);
+  }
+
+  // Fire pulses at random intervals
+  function scheduleNext() {
+    var delay = 2000 + Math.random() * 4000;
+    setTimeout(function() {
+      firePulse();
+      scheduleNext();
+    }, delay);
+  }
+
+  // Start after a short delay
+  setTimeout(function() {
+    firePulse();
+    scheduleNext();
+  }, 800);
+})();
+</script>
 
 <section class="hero-section">
   <div class="hero-top">
