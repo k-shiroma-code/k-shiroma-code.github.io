@@ -17,6 +17,8 @@ permalink: /projects/
   font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-primary);
   line-height: 1.7;
+  position: relative;
+  z-index: 1;
 }
 
 .projects-container h1,
@@ -25,6 +27,126 @@ permalink: /projects/
   font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   letter-spacing: -0.02em;
+}
+
+/* ═══ ELECTRICITY GRID BACKGROUND ═══ */
+.grid-dots {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background-image: radial-gradient(circle, rgba(167, 139, 250, 0.15) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.grid-lines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(167, 139, 250, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.grid-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.pulse-h, .pulse-v {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+}
+
+.pulse-h {
+  height: 2px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(167, 139, 250, 0.4) 45%,
+    rgba(196, 181, 253, 0.7) 50%,
+    rgba(167, 139, 250, 0.4) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+}
+
+.pulse-v {
+  width: 2px;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(167, 139, 250, 0.4) 45%,
+    rgba(196, 181, 253, 0.7) 50%,
+    rgba(167, 139, 250, 0.4) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+  background-size: 100% 200%;
+}
+
+.pulse-h.fire {
+  opacity: 1;
+  animation: pulseSlideH 1.8s ease-out forwards;
+}
+
+.pulse-v.fire {
+  opacity: 1;
+  animation: pulseSlideV 1.8s ease-out forwards;
+}
+
+@keyframes pulseSlideH {
+  0% { background-position: -100% 0; opacity: 1; }
+  80% { opacity: 0.4; }
+  100% { background-position: 200% 0; opacity: 0; }
+}
+
+@keyframes pulseSlideV {
+  0% { background-position: 0 -100%; opacity: 1; }
+  80% { opacity: 0.4; }
+  100% { background-position: 0 200%; opacity: 0; }
+}
+
+.grid-node {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+}
+
+.grid-node.flash {
+  animation: nodeFlash 1.2s ease-out forwards;
+}
+
+@keyframes nodeFlash {
+  0% { opacity: 0; transform: scale(0.5); box-shadow: 0 0 0 0 rgba(167, 139, 250, 0); }
+  20% { opacity: 1; transform: scale(2); box-shadow: 0 0 16px 6px rgba(167, 139, 250, 0.4); }
+  100% { opacity: 0; transform: scale(0.5); box-shadow: 0 0 0 0 rgba(167, 139, 250, 0); }
 }
 
 .project-card {
@@ -252,29 +374,6 @@ permalink: /projects/
   align-items: start;
 }
 
-@media (max-width: 768px) {
-  .project-layout-split {
-    grid-template-columns: 1fr;
-  }
-  
-  .project-card {
-    padding: 24px;
-    margin: 32px 0;
-  }
-  
-  .project-title {
-    font-size: 1.35rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .media-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Page Header */
 .page-header {
   text-align: center;
@@ -327,12 +426,6 @@ permalink: /projects/
   font-weight: 400;
 }
 
-@media (max-width: 480px) {
-  .service-list {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Tableau Embed */
 .tableau-container {
   border-radius: 12px;
@@ -354,7 +447,110 @@ permalink: /projects/
   margin-top: 20px;
   font-style: italic;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-dots, .grid-lines, .grid-bg { display: none; }
+
+  .project-layout-split {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-card {
+    padding: 24px;
+    margin: 32px 0;
+  }
+  
+  .project-title {
+    font-size: 1.35rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
+
+<div class="grid-dots"></div>
+<div class="grid-lines"></div>
+<div class="grid-bg" id="gridBg"></div>
+
+<script>
+(function() {
+  var gridBg = document.getElementById('gridBg');
+  var GRID = 48;
+
+  function firePulse() {
+    var isHorizontal = Math.random() > 0.5;
+    var el = document.createElement('div');
+
+    if (isHorizontal) {
+      el.className = 'pulse-h';
+      var row = Math.floor(Math.random() * (window.innerHeight / GRID)) * GRID;
+      el.style.top = row + 'px';
+    } else {
+      el.className = 'pulse-v';
+      var col = Math.floor(Math.random() * (window.innerWidth / GRID)) * GRID;
+      el.style.left = col + 'px';
+    }
+
+    gridBg.appendChild(el);
+
+    requestAnimationFrame(function() {
+      el.classList.add('fire');
+    });
+
+    var nodeCount = Math.random() > 0.5 ? 2 : 1;
+    for (var i = 0; i < nodeCount; i++) {
+      (function(idx) {
+        setTimeout(function() {
+          var node = document.createElement('div');
+          node.className = 'grid-node';
+          if (isHorizontal) {
+            node.style.top = (parseInt(el.style.top) - 3) + 'px';
+            var randCol = Math.floor(Math.random() * (window.innerWidth / GRID)) * GRID;
+            node.style.left = (randCol - 3) + 'px';
+          } else {
+            node.style.left = (parseInt(el.style.left) - 3) + 'px';
+            var randRow = Math.floor(Math.random() * (window.innerHeight / GRID)) * GRID;
+            node.style.top = (randRow - 3) + 'px';
+          }
+          gridBg.appendChild(node);
+          requestAnimationFrame(function() { node.classList.add('flash'); });
+          setTimeout(function() { node.remove(); }, 1400);
+        }, 300 + idx * 400);
+      })(i);
+    }
+
+    setTimeout(function() { el.remove(); }, 2000);
+  }
+
+  function scheduleNext() {
+    var delay = 2000 + Math.random() * 4000;
+    setTimeout(function() {
+      firePulse();
+      scheduleNext();
+    }, delay);
+  }
+
+  setTimeout(function() {
+    firePulse();
+    scheduleNext();
+  }, 800);
+})();
+</script>
 
 <div class="projects-container">
 
