@@ -517,7 +517,7 @@ permalink: /
     <div class="narrative-block">
       <span class="narrative-tag">Key Projects</span>
       <p class="narrative-text">
-        Winner of the <strong>ASA NYC x AI4Purpose</strong> hackathon with <strong>Pulsepanion</strong>, an AI healthcare tool. Other work includes healthcare disease prediction modeling and customer segmentation analytics using unsupervised learning.
+        Winner of the <strong>ASA NYC x AI4Purpose</strong> hackathon with <strong>Pulsepanion</strong>, an AI healthcare tool. Other work includes healthcare disease prediction modeling and customer segmentation analytics using supervised learning.
       </p>
     </div>
 
