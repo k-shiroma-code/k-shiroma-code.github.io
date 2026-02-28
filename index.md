@@ -40,7 +40,7 @@ permalink: /
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 56px 0 40px;
+  padding: 56px 0 16px;
 }
 
 .hero-top {
