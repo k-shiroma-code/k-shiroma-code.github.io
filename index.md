@@ -26,9 +26,7 @@ permalink: /
   padding: 0 24px;
 }
 
-.home-container h1,
-.home-container h2,
-.home-container h3 {
+.home-container h1, .home-container h2, .home-container h3 {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   letter-spacing: -0.025em;
@@ -302,7 +300,7 @@ permalink: /
   color: #0a0a0a;
 }
 
-/* ═══ ACCORDION ═══ */
+/* ═══ NARRATIVE JOURNEY ═══ */
 .journey-section {
   margin: 16px 0 80px;
 }
@@ -313,158 +311,108 @@ permalink: /
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
-.accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.narrative {
+  position: relative;
+  padding-left: 28px;
 }
 
-.accordion-item {
-  border: 1px solid var(--surface-border);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: border-color 0.3s ease;
+.narrative::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--accent) 0%,
+    var(--surface-border-hover) 40%,
+    var(--surface-border-hover) 60%,
+    var(--accent) 100%
+  );
+  border-radius: 2px;
 }
 
-.accordion-item:hover,
-.accordion-item.open {
-  border-color: var(--surface-border-hover);
+.narrative-block {
+  position: relative;
+  margin-bottom: 36px;
 }
 
-.accordion-trigger {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 22px;
-  background: var(--surface-elevated);
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  font-family: 'DM Sans', sans-serif;
-  transition: background 0.2s ease;
+.narrative-block:last-child {
+  margin-bottom: 0;
 }
 
-.accordion-trigger:hover {
-  background: #151515;
-}
-
-.accordion-trigger-left {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.accordion-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: var(--accent-dim);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+.narrative-block::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--accent);
   transition: background 0.3s ease;
 }
 
-.accordion-item.open .accordion-icon {
+.narrative-block:hover::before {
   background: var(--accent);
 }
 
-.accordion-icon svg {
-  width: 18px;
-  height: 18px;
-  stroke: var(--accent);
-  stroke-width: 1.8;
-  fill: none;
-  transition: stroke 0.3s ease;
-}
-
-.accordion-item.open .accordion-icon svg {
-  stroke: #0a0a0a;
-}
-
-.accordion-label {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  line-height: 1.3;
-}
-
-.accordion-count {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  margin-left: 2px;
-  font-weight: 400;
-}
-
-.accordion-chevron {
-  width: 20px;
-  height: 20px;
-  stroke: var(--text-muted);
-  stroke-width: 2;
-  fill: none;
-  flex-shrink: 0;
-  transition: transform 0.3s ease, stroke 0.3s ease;
-}
-
-.accordion-item.open .accordion-chevron {
-  transform: rotate(180deg);
-  stroke: var(--accent);
-}
-
-.accordion-panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-}
-
-.accordion-panel-inner {
-  padding: 4px 22px 20px;
-  background: var(--surface-elevated);
-}
-
-.journey-entry {
-  padding: 14px 0;
-  border-bottom: 1px solid var(--surface-border);
-}
-
-.journey-entry:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.journey-entry:first-child {
-  padding-top: 8px;
-}
-
-.journey-date {
+.narrative-tag {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.7rem;
   font-weight: 500;
   color: var(--accent);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
   display: block;
-  margin-bottom: 4px;
 }
 
-.journey-title {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin: 0 0 3px 0;
-  line-height: 1.35;
-}
-
-.journey-desc {
-  font-size: 0.84rem;
+.narrative-text {
+  font-size: 0.95rem;
   color: var(--text-secondary);
+  line-height: 1.75;
   margin: 0;
-  line-height: 1.55;
+}
+
+.narrative-text strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.narrative-text .highlight {
+  color: var(--accent-soft);
+  font-weight: 500;
+}
+
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.interest-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  padding: 5px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.interest-tag:hover {
+  background: rgba(167, 139, 250, 0.14);
+  border-color: rgba(167, 139, 250, 0.3);
 }
 
 /* Responsive */
@@ -477,8 +425,8 @@ permalink: /
   .hero-subtitle { font-size: 1.05rem; }
   .hero-image { width: 160px; height: 160px; }
   .music-caption { top: -38px; font-size: 0.72rem; }
-  .accordion-trigger { padding: 16px 18px; }
-  .accordion-panel-inner { padding: 4px 18px 18px; }
+  .narrative { padding-left: 24px; }
+  .narrative-block::before { left: -28px; }
 }
 </style>
 
@@ -588,141 +536,42 @@ permalink: /
 
 <section class="journey-section">
   <h2 class="section-header">My Journey</h2>
-  <div class="accordion">
+  <div class="narrative">
 
-    <div class="accordion-item">
-      <button class="accordion-trigger" onclick="toggleAccordion(this)">
-        <span class="accordion-trigger-left">
-          <span class="accordion-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
-          </span>
-          <span class="accordion-label">Education <span class="accordion-count">&middot; 2</span></span>
-        </span>
-        <svg class="accordion-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="accordion-panel">
-        <div class="accordion-panel-inner">
-          <div class="journey-entry">
-            <span class="journey-date">Sep 2025 &ndash; Present</span>
-            <h3 class="journey-title">UC San Diego</h3>
-            <p class="journey-desc">B.S. in Data Science, Minor in Mathematics.</p>
-          </div>
-          <div class="journey-entry">
-            <span class="journey-date">Aug 2022 &ndash; Jun 2025</span>
-            <h3 class="journey-title">Norco College</h3>
-            <p class="journey-desc">Associate of Science in Mathematics.</p>
-          </div>
-        </div>
-      </div>
+    <div class="narrative-block">
+      <span class="narrative-tag">Where it started</span>
+      <p class="narrative-text">
+        It all began at <strong>Norco College</strong>, where I studied math and computer science while playing <span class="highlight">JUCO soccer</span> for the CCCAA. Between practices and games, I worked as a tutor at the Learning Resources Center&mdash;breaking down tough concepts for other students and sharpening my own understanding in the process.
+      </p>
     </div>
 
-    <div class="accordion-item">
-      <button class="accordion-trigger" onclick="toggleAccordion(this)">
-        <span class="accordion-trigger-left">
-          <span class="accordion-icon">
-            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-          </span>
-          <span class="accordion-label">Experience <span class="accordion-count">&middot; 3</span></span>
-        </span>
-        <svg class="accordion-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="accordion-panel">
-        <div class="accordion-panel-inner">
-          <div class="journey-entry">
-            <span class="journey-date">Jan 2026 &ndash; Present</span>
-            <h3 class="journey-title">Data Analytics Intern &middot; Southern California Edison</h3>
-            <p class="journey-desc">SP&amp;E team. Incoming Summer 2026 Intern.</p>
-          </div>
-          <div class="journey-entry">
-            <span class="journey-date">Oct 2025 &ndash; Present</span>
-            <h3 class="journey-title">HDSI Lab 3.0 Fellow &middot; UC San Diego</h3>
-            <p class="journey-desc">Developing AI and robotics projects for K&ndash;12 education, including interactive hardware prototypes and sports-focused LLM applications.</p>
-          </div>
-          <div class="journey-entry">
-            <span class="journey-date">May 2024 &ndash; Jul 2024</span>
-            <h3 class="journey-title">Data Science Research Intern &middot; CSU Fullerton</h3>
-            <p class="journey-desc">Built a UEFA Euro prediction model using Random Forests and ELO rating systems under Dr. Doina Bein.</p>
-          </div>
-        </div>
-      </div>
+    <div class="narrative-block">
+      <span class="narrative-tag">The turning point</span>
+      <p class="narrative-text">
+        A volunteer research internship at <strong>CSU Fullerton</strong> changed everything. Working under Dr. Doina Bein, I built a <span class="highlight">UEFA Euro prediction model</span> using Random Forests and ELO rating systems. Combining my love for sports with real data science work made the path forward clear&mdash;I knew data science was where I belonged.
+      </p>
     </div>
 
-    <div class="accordion-item">
-      <button class="accordion-trigger" onclick="toggleAccordion(this)">
-        <span class="accordion-trigger-left">
-          <span class="accordion-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </span>
-          <span class="accordion-label">Projects <span class="accordion-count">&middot; 2</span></span>
-        </span>
-        <svg class="accordion-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="accordion-panel">
-        <div class="accordion-panel-inner">
-          <div class="journey-entry">
-            <span class="journey-date">Jan 2026 &ndash; Present</span>
-            <h3 class="journey-title">CER Energy Dashboard &middot; DS3 Consultant</h3>
-            <p class="journey-desc">Building a real-time energy analytics dashboard for the UCSD Center for Energy Research to visualize international oil import dependencies.</p>
-          </div>
-          <div class="journey-entry">
-            <span class="journey-date">Oct 2025 &ndash; Dec 2025</span>
-            <h3 class="journey-title">EvoCharge &middot; DS3 Project Member</h3>
-            <p class="journey-desc">Built a machine learning dashboard using Lasso Regression to predict EV charging costs and station availability.</p>
-          </div>
-        </div>
-      </div>
+    <div class="narrative-block">
+      <span class="narrative-tag">Building momentum</span>
+      <p class="narrative-text">
+        From there, I dove headfirst into projects: a solo <span class="highlight">healthcare disease prediction</span> model, <span class="highlight">customer segmentation analytics</span>, and an AI healthcare hackathon where my team built <strong>Pulsepanion</strong> and took home the win at <strong>ASA NYC x AI4Purpose</strong>.
+      </p>
     </div>
 
-    <div class="accordion-item">
-      <button class="accordion-trigger" onclick="toggleAccordion(this)">
-        <span class="accordion-trigger-left">
-          <span class="accordion-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-          </span>
-          <span class="accordion-label">Highlights <span class="accordion-count">&middot; 3</span></span>
-        </span>
-        <svg class="accordion-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="accordion-panel">
-        <div class="accordion-panel-inner">
-          <div class="journey-entry">
-            <span class="journey-date">Summer 2025</span>
-            <h3 class="journey-title">Won Healthcare Hackathon</h3>
-            <p class="journey-desc">ASA NYC x AI4Purpose.</p>
-          </div>
-          <div class="journey-entry">
-            <span class="journey-date">Fall 2025</span>
-            <h3 class="journey-title">Dino Cage Competition</h3>
-            <p class="journey-desc">Shark Tank-style pitch competition.</p>
-          </div>
-          <div class="journey-entry">
-            <span class="journey-date">2023&ndash;2024</span>
-            <h3 class="journey-title">CCCAA Soccer &middot; Norco College</h3>
-            <p class="journey-desc">Played competitive college soccer.</p>
-          </div>
-        </div>
+    <div class="narrative-block">
+      <span class="narrative-tag">Now</span>
+      <p class="narrative-text">
+        I transferred to <strong>UC San Diego</strong> as a Data Science major with a Math minor. I joined the <strong>Data Science Student Society (DS3)</strong>, where I work on energy-focused projects&mdash;most recently building analytics dashboards for the UCSD Center for Energy Research. I&rsquo;m also an <strong>HDSI Lab 3.0 Fellow</strong> developing AI and robotics tools for K&ndash;12 education, and an incoming <strong>Data Analytics Intern at Southern California Edison</strong>.
+      </p>
+      <div class="interest-tags">
+        <span class="interest-tag">Sports Analytics</span>
+        <span class="interest-tag">Healthcare</span>
+        <span class="interest-tag">Energy &amp; Sustainability</span>
       </div>
     </div>
 
   </div>
 </section>
-
-<script>
-function toggleAccordion(trigger) {
-  var item = trigger.parentElement;
-  var panel = trigger.nextElementSibling;
-  var isOpen = item.classList.contains('open');
-
-  document.querySelectorAll('.accordion-item').forEach(function(el) {
-    el.classList.remove('open');
-    el.querySelector('.accordion-panel').style.maxHeight = null;
-  });
-
-  if (!isOpen) {
-    item.classList.add('open');
-    panel.style.maxHeight = panel.scrollHeight + 'px';
-  }
-}
-</script>
 
 </div>
