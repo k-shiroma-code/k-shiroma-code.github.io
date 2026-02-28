@@ -24,6 +24,8 @@ permalink: /
   max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .home-container h1, .home-container h2, .home-container h3 {
@@ -410,7 +412,7 @@ permalink: /
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -427,8 +429,8 @@ permalink: /
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: -2;
-  background-image: radial-gradient(circle, rgba(167, 139, 250, 0.08) 1px, transparent 1px);
+  z-index: 0;
+  background-image: radial-gradient(circle, rgba(167, 139, 250, 0.15) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
@@ -440,10 +442,10 @@ permalink: /
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: -2;
+  z-index: 0;
   background-image:
-    linear-gradient(rgba(167, 139, 250, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(167, 139, 250, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(167, 139, 250, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.06) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
@@ -451,20 +453,20 @@ permalink: /
 .pulse-h, .pulse-v {
   position: fixed;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
   opacity: 0;
 }
 
 .pulse-h {
-  height: 1px;
+  height: 2px;
   left: 0;
   width: 100%;
   background: linear-gradient(90deg,
     transparent 0%,
     transparent 30%,
-    rgba(167, 139, 250, 0.25) 45%,
-    rgba(196, 181, 253, 0.5) 50%,
-    rgba(167, 139, 250, 0.25) 55%,
+    rgba(167, 139, 250, 0.4) 45%,
+    rgba(196, 181, 253, 0.7) 50%,
+    rgba(167, 139, 250, 0.4) 55%,
     transparent 70%,
     transparent 100%
   );
@@ -472,15 +474,15 @@ permalink: /
 }
 
 .pulse-v {
-  width: 1px;
+  width: 2px;
   top: 0;
   height: 100%;
   background: linear-gradient(180deg,
     transparent 0%,
     transparent 30%,
-    rgba(167, 139, 250, 0.25) 45%,
-    rgba(196, 181, 253, 0.5) 50%,
-    rgba(167, 139, 250, 0.25) 55%,
+    rgba(167, 139, 250, 0.4) 45%,
+    rgba(196, 181, 253, 0.7) 50%,
+    rgba(167, 139, 250, 0.4) 55%,
     transparent 70%,
     transparent 100%
   );
@@ -498,26 +500,26 @@ permalink: /
 }
 
 @keyframes pulseSlideH {
-  0% { background-position: -100% 0; opacity: 0.8; }
-  80% { opacity: 0.3; }
+  0% { background-position: -100% 0; opacity: 1; }
+  80% { opacity: 0.4; }
   100% { background-position: 200% 0; opacity: 0; }
 }
 
 @keyframes pulseSlideV {
-  0% { background-position: 0 -100%; opacity: 0.8; }
-  80% { opacity: 0.3; }
+  0% { background-position: 0 -100%; opacity: 1; }
+  80% { opacity: 0.4; }
   100% { background-position: 0 200%; opacity: 0; }
 }
 
 /* Node flashes at intersections */
 .grid-node {
   position: fixed;
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: var(--accent);
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
   opacity: 0;
 }
 
@@ -527,7 +529,7 @@ permalink: /
 
 @keyframes nodeFlash {
   0% { opacity: 0; transform: scale(0.5); box-shadow: 0 0 0 0 rgba(167, 139, 250, 0); }
-  20% { opacity: 0.8; transform: scale(1.5); box-shadow: 0 0 12px 4px rgba(167, 139, 250, 0.3); }
+  20% { opacity: 1; transform: scale(2); box-shadow: 0 0 16px 6px rgba(167, 139, 250, 0.4); }
   100% { opacity: 0; transform: scale(0.5); box-shadow: 0 0 0 0 rgba(167, 139, 250, 0); }
 }
 
@@ -546,20 +548,6 @@ permalink: /
   .narrative-block::before { left: -28px; }
 }
 </style>
-
-<div class="home-container">
-
-<div class="soft-glow" id="glow1"></div>
-<div class="soft-glow" id="glow2"></div>
-
-<div class="ambient-container" id="ambient">
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-  <div class="particle"></div>
-</div>
 
 <div class="grid-dots"></div>
 <div class="grid-lines"></div>
@@ -632,6 +620,20 @@ permalink: /
   }, 800);
 })();
 </script>
+
+<div class="home-container">
+
+<div class="soft-glow" id="glow1"></div>
+<div class="soft-glow" id="glow2"></div>
+
+<div class="ambient-container" id="ambient">
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+</div>
 
 <section class="hero-section">
   <div class="hero-top">
