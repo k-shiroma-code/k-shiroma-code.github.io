@@ -254,52 +254,6 @@ permalink: /
   font-weight: 400;
 }
 
-/* CTA Buttons */
-.hero-buttons {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 500;
-  font-size: 0.9rem;
-  font-family: 'DM Sans', sans-serif;
-  padding: 11px 22px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  letter-spacing: 0.01em;
-}
-
-.btn-primary {
-  background: var(--accent);
-  color: #0a0a0a;
-  border: 1px solid var(--accent);
-}
-
-.btn-primary:hover {
-  background: var(--accent-soft);
-  border-color: var(--accent-soft);
-  transform: translateY(-1px);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--text-primary);
-  border: 1px solid var(--surface-border-hover);
-}
-
-.btn-secondary:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #0a0a0a;
-}
-
 /* ═══ NARRATIVE JOURNEY ═══ */
 .journey-section {
   margin: 16px 0 80px;
@@ -334,12 +288,31 @@ permalink: /
     var(--accent) 100%
   );
   border-radius: 2px;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.8s ease;
+}
+
+.narrative.line-visible::before {
+  transform: scaleY(1);
 }
 
 .narrative-block {
   position: relative;
   margin-bottom: 36px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+.narrative-block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.narrative-block:nth-child(2) { transition-delay: 0.1s; }
+.narrative-block:nth-child(3) { transition-delay: 0.2s; }
+.narrative-block:nth-child(4) { transition-delay: 0.3s; }
 
 .narrative-block:last-child {
   margin-bottom: 0;
@@ -355,11 +328,17 @@ permalink: /
   border-radius: 50%;
   background: var(--surface);
   border: 2px solid var(--accent);
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.4s ease, box-shadow 0.3s ease;
+  transform: scale(0);
+}
+
+.narrative-block.visible::before {
+  transform: scale(1);
 }
 
 .narrative-block:hover::before {
   background: var(--accent);
+  box-shadow: 0 0 12px rgba(167, 139, 250, 0.4);
 }
 
 .narrative-tag {
@@ -395,6 +374,14 @@ permalink: /
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease 0.4s, transform 0.5s ease 0.4s;
+}
+
+.narrative-block.visible .interest-tags {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .interest-tag {
@@ -520,18 +507,7 @@ permalink: /
     }
   </script>
 
-  <div class="hero-content">
-    <div class="hero-buttons">
-      <a href="{{ '/projects/' | relative_url }}" class="btn btn-primary">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-        View Projects
-      </a>
-      <a href="{{ '/assets/pdf/Kyle_Shiroma_Resume_PW.pdf' | relative_url }}" target="_blank" rel="noopener" class="btn btn-secondary">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        Resume
-      </a>
-    </div>
-  </div>
+
 </section>
 
 <section class="journey-section">
@@ -573,5 +549,28 @@ permalink: /
 
   </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var narrative = document.querySelector('.narrative');
+  var blocks = document.querySelectorAll('.narrative-block');
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        if (entry.target.classList.contains('narrative')) {
+          entry.target.classList.add('line-visible');
+        }
+        if (entry.target.classList.contains('narrative-block')) {
+          entry.target.classList.add('visible');
+        }
+      }
+    });
+  }, { threshold: 0.15 });
+
+  if (narrative) observer.observe(narrative);
+  blocks.forEach(function(block) { observer.observe(block); });
+});
+</script>
 
 </div>
