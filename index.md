@@ -262,12 +262,13 @@ permalink: /
 }
 
 .section-header {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  margin-bottom: 18px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: none;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 .narrative {
