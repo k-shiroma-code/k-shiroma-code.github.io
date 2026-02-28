@@ -20,7 +20,7 @@ permalink: /
   --text-muted: #707070;
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-primary);
-  line-height: 1.75;
+  line-height: 1.6;
   max-width: 720px;
   margin: 0 auto;
   padding: 0 24px;
@@ -38,15 +38,15 @@ permalink: /
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 56px 0 72px;
+  padding: 56px 0 40px;
 }
 
 .hero-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 44px;
-  margin-bottom: 36px;
+  gap: 36px;
+  margin-bottom: 0;
   width: 100%;
 }
 
@@ -256,7 +256,7 @@ permalink: /
 
 /* ═══ NARRATIVE JOURNEY ═══ */
 .journey-section {
-  margin: 16px 0 80px;
+  margin: 0 0 60px;
 }
 
 .section-header {
@@ -265,7 +265,7 @@ permalink: /
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 .narrative {
@@ -299,7 +299,7 @@ permalink: /
 
 .narrative-block {
   position: relative;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -348,14 +348,14 @@ permalink: /
   color: var(--accent);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   display: block;
 }
 
 .narrative-text {
   font-size: 0.95rem;
   color: var(--text-secondary);
-  line-height: 1.75;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -373,7 +373,7 @@ permalink: /
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 14px;
+  margin-top: 10px;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.5s ease 0.4s, transform 0.5s ease 0.4s;
@@ -405,7 +405,7 @@ permalink: /
 /* Responsive */
 @media (max-width: 768px) {
   .home-container { padding: 0 20px; }
-  .hero-section { padding: 36px 0 48px; }
+  .hero-section { padding: 36px 0 28px; }
   .hero-top { flex-direction: column; gap: 24px; }
   .hero-intro { text-align: center; }
   .hero-title { font-size: 2rem; }
