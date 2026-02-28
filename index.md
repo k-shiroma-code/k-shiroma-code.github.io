@@ -494,43 +494,42 @@ permalink: /
     </div>
   </div>
 
-
 </section>
 
 <section class="journey-section">
-  <h2 class="section-header">My Journey</h2>
+  <h2 class="section-header">Technical Background</h2>
   <div class="narrative">
 
     <div class="narrative-block">
-      <span class="narrative-tag">Where it started</span>
+      <span class="narrative-tag">Foundations</span>
       <p class="narrative-text">
-        It all began at <strong>Norco College</strong>, where I studied math and computer science while playing <span class="highlight">JUCO soccer</span> for the CCCAA. Between practices and games, I worked as a tutor at the Learning Resources Center&mdash;breaking down tough concepts for other students and sharpening my own understanding in the process.
+        Began at <strong>Norco College</strong>, balancing Computer Science coursework with <span class="highlight">CCCAA JUCO soccer</span>. Served as a Mathematics Tutor at the Learning Resources Center, developing a knack for translating complex quantitative concepts for diverse audiences.
       </p>
     </div>
 
     <div class="narrative-block">
-      <span class="narrative-tag">The turning point</span>
+      <span class="narrative-tag">Research & Analytics</span>
       <p class="narrative-text">
-        A volunteer research internship at <strong>CSU Fullerton</strong> changed everything. Working under Dr. Doina Bein, I built a <span class="highlight">UEFA Euro prediction model</span> using Random Forests and ELO rating systems. Combining my love for sports with real data science work made the path forward clear&mdash;I knew data science was where I belonged.
+        Conducted research under Dr. Doina Bein at <strong>CSU Fullerton</strong>, where I developed a <span class="highlight">UEFA Euro prediction engine</span>. By implementing Random Forests and ELO rating systems, I successfully bridged the gap between sports domain knowledge and predictive modeling.
       </p>
     </div>
 
     <div class="narrative-block">
-      <span class="narrative-tag">Building momentum</span>
+      <span class="narrative-tag">Key Projects</span>
       <p class="narrative-text">
-        From there, I dove headfirst into projects: a solo <span class="highlight">healthcare disease prediction</span> model, <span class="highlight">customer segmentation analytics</span>, and an AI healthcare hackathon where my team built <strong>Pulsepanion</strong> and took home the win at <strong>ASA NYC x AI4Purpose</strong>.
+        Winner of the <strong>ASA NYC x AI4Purpose</strong> hackathon with <strong>Pulsepanion</strong>, an AI healthcare tool. Other work includes healthcare disease prediction modeling and customer segmentation analytics using unsupervised learning.
       </p>
     </div>
 
     <div class="narrative-block">
-      <span class="narrative-tag">Now</span>
+      <span class="narrative-tag">Current Focus</span>
       <p class="narrative-text">
-        I transferred to <strong>UC San Diego</strong> as a Data Science major with a Math minor. I joined the <strong>Data Science Student Society (DS3)</strong>, where I work on energy-focused projects&mdash;most recently building analytics dashboards for the UCSD Center for Energy Research. I&rsquo;m also an <strong>HDSI Lab 3.0 Fellow</strong> developing AI and robotics tools for K&ndash;12 education, and an incoming <strong>Data Analytics Intern at Southern California Edison</strong>.
+        Now at <strong>UC San Diego</strong> (Data Science / Math). As an <strong>HDSI Lab 3.0 Fellow</strong>, I build AI-driven tools for K–12 education. I also lead analytics dashboarding for the UCSD Center for Energy Research via <strong>DS3</strong> and am an incoming <strong>Data Analytics Intern at Southern California Edison</strong>.
       </p>
       <div class="interest-tags">
         <span class="interest-tag">Sports Analytics</span>
-        <span class="interest-tag">Healthcare</span>
-        <span class="interest-tag">Energy &amp; Sustainability</span>
+        <span class="interest-tag">Healthcare AI</span>
+        <span class="interest-tag">Energy Systems</span>
       </div>
     </div>
 
