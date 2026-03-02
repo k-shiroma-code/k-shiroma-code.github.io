@@ -562,7 +562,7 @@ permalink: /projects/
 <!-- Weather & Energy Dashboard -->
 <article class="project-card">
   <div class="project-header">
-    <h2 class="project-title">Weather & Energy Dashboard</h2>
+    <h2 class="project-title">Grid Load Forecasting Dashboard</h2>
   </div>
   
   <p class="project-description">
