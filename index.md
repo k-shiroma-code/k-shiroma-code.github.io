@@ -503,7 +503,7 @@ permalink: /
     <div class="narrative-block">
       <span class="narrative-tag">Foundations</span>
       <p class="narrative-text">
-        Began at <strong>Norco College</strong>, balancing Computer Science coursework with <span class="highlight">CCCAA JUCO soccer</span>. Served as a Mathematics Tutor at the Learning Resources Center
+        Began at <strong>Norco College</strong>, balancing Computer Science coursework with <span class="highlight">CCCAA JUCO soccer</span>. Served as a Mathematics Tutor at the Learning Resources Center.
       </p>
     </div>
 
