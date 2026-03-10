@@ -510,7 +510,7 @@ permalink: /
     <div class="narrative-block">
       <span class="narrative-tag">Research & Analytics</span>
       <p class="narrative-text">
-        Conducted research under Dr. Doina Bein at <strong>CSU Fullerton</strong>, where I developed a <span class="highlight">UEFA Euro prediction engine</span>. By implementing Random Forests and ELO rating systems, I successfully bridged the gap between sports domain knowledge and predictive modeling.
+        Conducted research under Dr. Doina Bein at <strong>CSU Fullerton</strong>, where I developed a <span class="highlight">UEFA Euro prediction model</span>. By implementing Random Forests and ELO rating systems, I successfully bridged the gap between sports domain knowledge and predictive modeling.
       </p>
     </div>
 
