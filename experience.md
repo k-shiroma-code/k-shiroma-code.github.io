@@ -498,9 +498,6 @@ permalink: /experience/
           Working at the intersection of AI, engineering, and art to build K–12 educational engagement projects at the Halıcıoğlu Data Science Institute (HDSI) 3.0 Lab. The fellowship combines data science, robotics, and creative technologies with hands-on experience across multiple domains.
         </p>
         <p>
-          Currently developing a full AI robotic flower using OpenCV for computer vision, which will serve as the foundation for a baseball card builder project. The system will capture photos of students and use LLMs to generate fun, personalized stats for their cards. Also helping build a curriculum to teach kids the basics of OpenAI and OpenCV through hands-on activities.
-        </p>
-        <p>
           Also contributing to a 3D fiber-optic installation with Arduino-controlled LEDs and 3D-printed linear actuators, presented through an interactive visual exhibit emphasizing hands-on learning. Supporting the development of a machine learning–assisted self-alignment system that automatically corrects fiber-optic misalignment—demonstrating hardware–software integration and applied ML in physical systems.
         </p>
       </div>
