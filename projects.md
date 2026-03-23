@@ -712,13 +712,6 @@ permalink: /projects/
     </div>
   </div>
 
-  <div class="video-container">
-    <video controls poster="{{ site.baseurl }}/assets/img/evocharge_screenshot.jpg">
-      <source src="{{ site.baseurl }}/assets/img/EvoChargeDemo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
   <p class="contribution-note">
     My contributions: Website design in Figma, model testing and validation
   </p>
