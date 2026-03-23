@@ -497,7 +497,7 @@ permalink: /
 </section>
 
 <section class="journey-section">
-  <h2 class="section-header">Technical Background</h2>
+  <h2 class="section-header">Background</h2>
   <div class="narrative">
 
     <div class="narrative-block">
