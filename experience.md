@@ -456,28 +456,9 @@ permalink: /experience/
           Incoming summer intern in the System Planning & Engineering (SP&E) division at Southern California Edison, one of the largest electric utilities in the United States serving approximately 15 million people across 50,000 square miles.
         </p>
         <p>
-          SCE has been powering Southern California for almost 140 years, with roots tracing back to 1886. The company was an early pioneer in renewable energy—in 1980 they began generating wind power at San Gorgonio Pass near Palm Springs, and in 2006 they planned a wind farm triple the size of any existing U.S. wind farm at the time. They also run the only gas and water utilities on Catalina Island!
         </p>
       </div>
       
-      <div class="experience-stats">
-        <div class="stat">
-          <span class="stat-value">140</span>
-          <span class="stat-label">Years of Service</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value">15M</span>
-          <span class="stat-label">People Served</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value">50K</span>
-          <span class="stat-label">Square Miles</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-
 <!-- HDSI Research Fellow -->
 <article class="experience-card">
   <div class="experience-layout">
