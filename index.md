@@ -503,7 +503,7 @@ permalink: /
     <div class="narrative-block">
       <span class="narrative-tag">Foundations</span>
       <p class="narrative-text">
-        Began at <strong>Norco College</strong>, balancing Computer Science coursework with <span class="highlight">CCCAA JUCO soccer</span>. Served as a Mathematics Tutor at the Learning Resources Center.
+        Began at <strong>Norco College</strong>, balancing CIS and Math transfer coursework with <span class="highlight">CCCAA JUCO soccer</span>. Served as a Mathematics and Computer Science Tutor at the Learning Resources Center.
       </p>
     </div>
 
@@ -517,11 +517,10 @@ permalink: /
     <div class="narrative-block">
       <span class="narrative-tag">Current Focus</span>
       <p class="narrative-text">
-        Now at <strong>UC San Diego</strong> (Data Science / Math). As an <strong>HDSI Lab 3.0 Fellow</strong>, I build AI-driven tools for K–12 education. I also lead analytics dashboarding for the UCSD Center for Energy Research via <strong>DS3</strong> and am an incoming <strong>Data Analytics Intern at Southern California Edison</strong>.
+        Now at <strong>UC San Diego</strong> (Data Science / Math). As an <strong>HDSI Lab 3.0 Fellow</strong>, I build AI-driven tools for K–12 education. I also lead analytics dashboarding for the UCSD Center for Energy Research via <strong>DS3</strong> and am an incoming <strong>Data Science Intern at Southern California Edison</strong>.
       </p>
       <div class="interest-tags">
         <span class="interest-tag">Sports Analytics</span>
-        <span class="interest-tag">Healthcare AI</span>
         <span class="interest-tag">Energy Systems</span>
       </div>
     </div>
