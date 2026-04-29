@@ -450,15 +450,29 @@ permalink: /experience/
           </span>
         </div>
       </div>
-      
+
       <div class="experience-content">
         <p>
-          Incoming summer intern in the System Planning & Engineering (SP&E) division at Southern California Edison, one of the largest electric utilities in the United States serving approximately 15 million people across 50,000 square miles.
+          Incoming summer intern in the System Planning & Engineering (SP&E) division at Southern California Edison, one of the largest electric utilities in the United States serving approximately 15 million people across 50,000 square miles. The role focuses on supporting grid planning and engineering analysis efforts that help maintain reliable, safe, and modern electric service across Southern California.
         </p>
         <p>
+          Will contribute to data-driven studies of transmission and distribution systems, working alongside engineers on load forecasting, system modeling, and infrastructure planning initiatives that support California's clean energy transition. The experience bridges power systems engineering with applied data analysis—translating large-scale operational data into actionable insights for long-term grid reliability and resilience.
         </p>
       </div>
-      
+
+      <div class="tech-stack">
+        <span class="tech-tag">Power Systems</span>
+        <span class="tech-tag">Grid Planning</span>
+        <span class="tech-tag">Load Forecasting</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Data Analysis</span>
+        <span class="tech-tag">System Modeling</span>
+        <span class="tech-tag">GIS</span>
+        <span class="tech-tag">Energy Transition</span>
+      </div>
+    </div>
+  </div>
+</article>
 <!-- HDSI Research Fellow -->
 <article class="experience-card">
   <div class="experience-layout">
