@@ -515,13 +515,6 @@ permalink: /
     </div>
 
     <div class="narrative-block">
-      <span class="narrative-tag">Key Projects</span>
-      <p class="narrative-text">
-        Winner of the <strong>ASA NYC x AI4Purpose</strong> hackathon with <strong>Pulsepanion</strong>, an AI healthcare tool. Other work includes healthcare disease prediction modeling and customer segmentation analytics using supervised learning.
-      </p>
-    </div>
-
-    <div class="narrative-block">
       <span class="narrative-tag">Current Focus</span>
       <p class="narrative-text">
         Now at <strong>UC San Diego</strong> (Data Science / Math). As an <strong>HDSI Lab 3.0 Fellow</strong>, I build AI-driven tools for K–12 education. I also lead analytics dashboarding for the UCSD Center for Energy Research via <strong>DS3</strong> and am an incoming <strong>Data Analytics Intern at Southern California Edison</strong>.
