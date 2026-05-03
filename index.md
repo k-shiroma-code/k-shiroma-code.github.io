@@ -503,7 +503,7 @@ permalink: /
     <div class="narrative-block">
       <span class="narrative-tag">Foundations</span>
       <p class="narrative-text">
-        Began at <strong>Norco College</strong>, balancing CIS and Math transfer coursework with <span class="highlight">CCCAA JUCO soccer</span>. Served as a Mathematics and Computer Science Tutor at the Learning Resources Center.
+        Began at <strong>Norco College</strong>, balancing CIS and Math transfer coursework with <span class="highlight">CCCAA JUCO soccer</span>. Served as a Mathematics and Computer Science Tutor at the Learning Resources Center. I was also briefly involved in ASNC, student body at Norco College. 
       </p>
     </div>
 
