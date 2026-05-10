@@ -510,7 +510,7 @@ permalink: /
     <div class="narrative-block">
       <span class="narrative-tag">Research & Analytics</span>
       <p class="narrative-text">
-        Conducted research under Dr. Doina Bein at <strong>CSU Fullerton</strong>, where I developed a <span class="highlight">UEFA Euro prediction model</span>. By implementing Random Forests and ELO rating systems, I successfully bridged the gap between sports domain knowledge and predictive modeling. Other projects I have worked on involved Healthcare (ASA Hackathon winner), and Energy Dashboards. 
+        Conducted research under Dr. Doina Bein at <strong>CSU Fullerton</strong>, where I developed a <span class="highlight">UEFA Euro prediction model</span>. By implementing Random Forests and ELO rating systems, I successfully bridged the gap between sports domain knowledge and predictive modeling. Other projects I have worked on involved Healthcare such as a hackathon project that creates a simple healthcare sumary for non-technical caregivers. 
       </p>
     </div>
 
