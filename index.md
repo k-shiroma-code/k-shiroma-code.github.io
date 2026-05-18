@@ -500,30 +500,31 @@ permalink: /
   <h2 class="section-header">Background</h2>
   <div class="narrative">
 
-    <div class="narrative-block">
-      <span class="narrative-tag">Foundations</span>
-      <p class="narrative-text">
-        Began at <strong>Norco College</strong>, balancing CIS and Math transfer coursework with <span class="highlight">CCCAA JUCO soccer</span>. Served as a Mathematics and Computer Science Tutor at the Learning Resources Center. I was also briefly involved in ASNC, student body at Norco College. 
-      </p>
-    </div>
+<div class="narrative-block">
+  <span class="narrative-tag">Foundations</span>
+  <p class="narrative-text">
+    Began at <strong>Norco College</strong>, balancing rigorous CIS and Math transfer coursework with the demands of <span class="highlight">CCCAA JUCO soccer</span>. Elevated student success as a Mathematics and Computer Science Tutor at the Learning Resources Center and contributed to campus leadership via the Associated Students of Norco College (ASNC).
+  </p>
+</div>
 
-    <div class="narrative-block">
-      <span class="narrative-tag">Research & Analytics</span>
-      <p class="narrative-text">
-        Conducted research under Dr. Doina Bein at <strong>CSU Fullerton</strong>, where I developed a <span class="highlight">UEFA Euro prediction model</span>. By implementing Random Forests and ELO rating systems, I successfully bridged the gap between sports domain knowledge and predictive modeling. Other projects I have worked on involved Healthcare such as a hackathon project that creates a simple healthcare summary for non-technical caregivers. 
-      </p>
-    </div>
+<div class="narrative-block">
+  <span class="narrative-tag">Research & Analytics</span>
+  <p class="narrative-text">
+    Conducted data science research at <strong>CSU Fullerton</strong> under Dr. Doina Bein, engineering a predictive <span class="highlight">UEFA Euro model</span> using Elo ratings and Random Forests to bridge sports domain knowledge with machine learning. Beyond sports analytics, I developed a collaborative healthcare hackathon platform designed to synthesize complex patient data into intuitive summaries for non-technical caregivers.
+  </p>
+</div>
 
-    <div class="narrative-block">
-      <span class="narrative-tag">Current Focus</span>
-      <p class="narrative-text">
-        Now at <strong>UC San Diego</strong> (Data Science / Math). As an <strong>HDSI Lab 3.0 Fellow</strong>, I build AI-driven tools for K–12 education. I also lead analytics dashboarding for the UCSD Center for Energy Research via <strong>DS3</strong> and am an incoming <strong>Data Science Intern at Southern California Edison</strong>.
-      </p>
-      <div class="interest-tags">
-        <span class="interest-tag">Sports Analytics</span>
-        <span class="interest-tag">Energy Systems</span>
-      </div>
-    </div>
+<div class="narrative-block">
+  <span class="narrative-tag">Current Focus</span>
+  <p class="narrative-text">
+    Now at <strong>UC San Diego</strong> pursuing Data Science and Mathematics. As an <strong>HDSI Lab 3.0 Fellow</strong>, I build AI-driven, hands-on educational tools for K–12 outreach. Concurrently, I mentor a student consulting cohort directing global energy dashboarding for the UCSD Center for Energy Research via <strong>DS3</strong>, ahead of joining <strong>Southern California Edison</strong> as a Summer Data Science Intern.
+  </p>
+  <div class="interest-tags">
+    <span class="interest-tag">Sports Analytics</span>
+    <span class="interest-tag">Energy Systems</span>
+  </div>
+</div>
+
 
   </div>
 </section>
