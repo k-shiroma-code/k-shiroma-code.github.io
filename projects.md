@@ -32,10 +32,8 @@ permalink: /projects/
 /* ═══ ELECTRICITY GRID BACKGROUND ═══ */
 .grid-dots {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   pointer-events: none;
   z-index: 0;
   background-image: radial-gradient(circle, rgba(167, 139, 250, 0.15) 1px, transparent 1px);
@@ -44,10 +42,8 @@ permalink: /projects/
 
 .grid-lines {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   pointer-events: none;
   z-index: 0;
   background-image:
@@ -58,10 +54,8 @@ permalink: /projects/
 
 .grid-bg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
@@ -79,13 +73,11 @@ permalink: /projects/
   left: 0;
   width: 100%;
   background: linear-gradient(90deg,
-    transparent 0%,
-    transparent 30%,
+    transparent 0%, transparent 30%,
     rgba(167, 139, 250, 0.4) 45%,
     rgba(196, 181, 253, 0.7) 50%,
     rgba(167, 139, 250, 0.4) 55%,
-    transparent 70%,
-    transparent 100%
+    transparent 70%, transparent 100%
   );
   background-size: 200% 100%;
 }
@@ -95,26 +87,17 @@ permalink: /projects/
   top: 0;
   height: 100%;
   background: linear-gradient(180deg,
-    transparent 0%,
-    transparent 30%,
+    transparent 0%, transparent 30%,
     rgba(167, 139, 250, 0.4) 45%,
     rgba(196, 181, 253, 0.7) 50%,
     rgba(167, 139, 250, 0.4) 55%,
-    transparent 70%,
-    transparent 100%
+    transparent 70%, transparent 100%
   );
   background-size: 100% 200%;
 }
 
-.pulse-h.fire {
-  opacity: 1;
-  animation: pulseSlideH 1.8s ease-out forwards;
-}
-
-.pulse-v.fire {
-  opacity: 1;
-  animation: pulseSlideV 1.8s ease-out forwards;
-}
+.pulse-h.fire { opacity: 1; animation: pulseSlideH 1.8s ease-out forwards; }
+.pulse-v.fire { opacity: 1; animation: pulseSlideV 1.8s ease-out forwards; }
 
 @keyframes pulseSlideH {
   0% { background-position: -100% 0; opacity: 1; }
@@ -130,8 +113,7 @@ permalink: /projects/
 
 .grid-node {
   position: fixed;
-  width: 6px;
-  height: 6px;
+  width: 6px; height: 6px;
   border-radius: 50%;
   background: var(--accent);
   pointer-events: none;
@@ -139,9 +121,7 @@ permalink: /projects/
   opacity: 0;
 }
 
-.grid-node.flash {
-  animation: nodeFlash 1.2s ease-out forwards;
-}
+.grid-node.flash { animation: nodeFlash 1.2s ease-out forwards; }
 
 @keyframes nodeFlash {
   0% { opacity: 0; transform: scale(0.5); box-shadow: 0 0 0 0 rgba(167, 139, 250, 0); }
@@ -149,18 +129,212 @@ permalink: /projects/
   100% { opacity: 0; transform: scale(0.5); box-shadow: 0 0 0 0 rgba(167, 139, 250, 0); }
 }
 
+/* ═══ PAGE HEADER ═══ */
+.page-header {
+  text-align: center;
+  padding: 48px 0 24px;
+  margin-bottom: 12px;
+}
+
+.page-header h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.page-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-top: 12px;
+}
+
+/* ═══ TIMELINE NAVIGATION ═══ */
+.timeline-wrap {
+  position: relative;
+  margin: 32px 0 16px;
+}
+
+.timeline-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 0 4px;
+}
+
+.timeline-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.timeline-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.tl-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--surface-border);
+  background: var(--surface-elevated);
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.tl-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tl-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.timeline-track {
+  position: relative;
+  padding: 24px 0 16px;
+}
+
+/* horizontal time spine */
+.timeline-track::before {
+  content: '';
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(167, 139, 250, 0.3) 8%,
+    rgba(167, 139, 250, 0.3) 92%,
+    transparent 100%
+  );
+}
+
+.timeline-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 4px 16px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+.timeline-scroll::-webkit-scrollbar { height: 6px; }
+.timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+.timeline-scroll::-webkit-scrollbar-thumb {
+  background: var(--surface-border);
+  border-radius: 3px;
+}
+.timeline-scroll::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+.tl-card {
+  flex: 0 0 200px;
+  background: var(--surface-elevated);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 140px;
+}
+
+.tl-card:hover {
+  border-color: var(--accent-soft);
+  transform: translateY(-3px);
+}
+
+.tl-card.active {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.08), rgba(167, 139, 250, 0.02));
+  box-shadow: 0 0 0 1px var(--accent), 0 8px 24px rgba(167, 139, 250, 0.15);
+}
+
+.tl-card.active::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 12px 4px rgba(167, 139, 250, 0.5);
+}
+
+.tl-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.tl-date {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-soft);
+  font-weight: 600;
+}
+
+.tl-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.tl-blurb {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ═══ DETAIL PANELS ═══ */
 .project-card {
   background: var(--surface-elevated);
   border: 1px solid var(--surface-border);
   border-radius: 16px;
   padding: 40px;
-  margin: 48px 0;
-  transition: border-color 0.3s ease, transform 0.3s ease;
+  margin: 32px 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: none;
 }
 
-.project-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
+.project-card.is-visible {
+  display: block;
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .project-header {
@@ -198,11 +372,6 @@ permalink: /projects/
   font-size: 1.05rem;
   margin-bottom: 28px;
   max-width: 720px;
-}
-
-.project-description strong {
-  color: var(--text-primary);
-  font-weight: 400;
 }
 
 .tech-stack {
@@ -260,7 +429,6 @@ permalink: /projects/
   border-color: var(--accent-soft);
 }
 
-/* Stats Grid */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -291,7 +459,6 @@ permalink: /projects/
   margin-top: 4px;
 }
 
-/* Model Table */
 .model-table {
   width: 100%;
   border-collapse: collapse;
@@ -316,16 +483,13 @@ permalink: /projects/
   color: var(--text-primary);
 }
 
-.model-table tr:hover td {
-  background: rgba(255,255,255,0.02);
-}
+.model-table tr:hover td { background: rgba(255,255,255,0.02); }
 
 .highlight-value {
   color: #22c55e;
   font-weight: 600;
 }
 
-/* Media Grid */
 .media-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -346,11 +510,8 @@ permalink: /projects/
   transition: transform 0.4s ease;
 }
 
-.media-item:hover img {
-  transform: scale(1.02);
-}
+.media-item:hover img { transform: scale(1.02); }
 
-/* Video Container */
 .video-container {
   aspect-ratio: 16/9;
   border-radius: 12px;
@@ -366,7 +527,6 @@ permalink: /projects/
   object-fit: cover;
 }
 
-/* Layout Variants */
 .project-layout-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -374,27 +534,6 @@ permalink: /projects/
   align-items: start;
 }
 
-/* Page Header */
-.page-header {
-  text-align: center;
-  padding: 48px 0 32px;
-  margin-bottom: 20px;
-}
-
-.page-header h1 {
-  font-size: 2.75rem;
-  font-weight: 700;
-  margin: 0;
-  color: var(--text-primary);
-}
-
-.page-header p {
-  color: var(--text-muted);
-  font-size: 1.1rem;
-  margin-top: 12px;
-}
-
-/* Section Headers */
 .section-header {
   font-size: 0.85rem;
   font-weight: 600;
@@ -404,7 +543,6 @@ permalink: /projects/
   letter-spacing: 0.1em;
 }
 
-/* Service Area List */
 .service-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -426,7 +564,6 @@ permalink: /projects/
   font-weight: 400;
 }
 
-/* Tableau Embed */
 .tableau-container {
   border-radius: 12px;
   overflow: hidden;
@@ -440,7 +577,6 @@ permalink: /projects/
   border: none;
 }
 
-/* Contribution Note */
 .contribution-note {
   color: var(--text-primary);
   font-size: 0.9rem;
@@ -448,38 +584,46 @@ permalink: /projects/
   font-style: italic;
 }
 
+/* Keyboard hint */
+.kbd-hint {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+  letter-spacing: 0.05em;
+}
+
+.kbd-hint kbd {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--surface-elevated);
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  margin: 0 2px;
+  color: var(--accent-soft);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .grid-dots, .grid-lines, .grid-bg { display: none; }
 
-  .project-layout-split {
-    grid-template-columns: 1fr;
-  }
-  
+  .project-layout-split { grid-template-columns: 1fr; }
+
   .project-card {
     padding: 24px;
-    margin: 32px 0;
-  }
-  
-  .project-title {
-    font-size: 1.35rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .media-grid {
-    grid-template-columns: 1fr;
+    margin: 24px 0;
   }
 
-  .page-header h1 {
-    font-size: 2rem;
-  }
+  .project-title { font-size: 1.35rem; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .media-grid { grid-template-columns: 1fr; }
+  .page-header h1 { font-size: 2rem; }
+  .service-list { grid-template-columns: 1fr; }
 
-  .service-list {
-    grid-template-columns: 1fr;
-  }
+  .tl-card { flex: 0 0 170px; min-height: 130px; }
+  .kbd-hint { display: none; }
 }
 </style>
 
@@ -507,10 +651,7 @@ permalink: /projects/
     }
 
     gridBg.appendChild(el);
-
-    requestAnimationFrame(function() {
-      el.classList.add('fire');
-    });
+    requestAnimationFrame(function() { el.classList.add('fire'); });
 
     var nodeCount = Math.random() > 0.5 ? 2 : 1;
     for (var i = 0; i < nodeCount; i++) {
@@ -539,16 +680,10 @@ permalink: /projects/
 
   function scheduleNext() {
     var delay = 2000 + Math.random() * 4000;
-    setTimeout(function() {
-      firePulse();
-      scheduleNext();
-    }, delay);
+    setTimeout(function() { firePulse(); scheduleNext(); }, delay);
   }
 
-  setTimeout(function() {
-    firePulse();
-    scheduleNext();
-  }, 800);
+  setTimeout(function() { firePulse(); scheduleNext(); }, 800);
 })();
 </script>
 
@@ -559,8 +694,82 @@ permalink: /projects/
   <p>Machine learning, data analytics & full-stack development</p>
 </div>
 
-<!-- Global Energy Dashboard — DS3 x UCSD Center for Energy Research -->
-<article class="project-card">
+<!-- ═══ TIMELINE NAV ═══ -->
+<div class="timeline-wrap">
+  <div class="timeline-controls">
+    <span class="timeline-label">Timeline · Newest First</span>
+    <div class="timeline-buttons">
+      <button class="tl-btn" id="tlPrev" aria-label="Previous project">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="tl-btn" id="tlNext" aria-label="Next project">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="timeline-track">
+    <div class="timeline-scroll" id="tlScroll">
+      <button class="tl-card" data-target="proj-energy-ds3">
+        <div class="tl-icon">⚡</div>
+        <div class="tl-date">Jan 2026 — Present</div>
+        <div class="tl-title">Global Energy Dashboard</div>
+        <p class="tl-blurb">EV adoption vs. oil import dependencies across countries.</p>
+      </button>
+
+      <button class="tl-card" data-target="proj-grid-load">
+        <div class="tl-icon">🔌</div>
+        <div class="tl-date">2025</div>
+        <div class="tl-title">Grid Load Forecasting</div>
+        <p class="tl-blurb">14-day CA electricity demand prediction across 4 utilities.</p>
+      </button>
+
+      <button class="tl-card" data-target="proj-evocharge">
+        <div class="tl-icon">🔋</div>
+        <div class="tl-date">2025</div>
+        <div class="tl-title">EvoCharge</div>
+        <p class="tl-blurb">EV charging energy & cost predictor for California.</p>
+      </button>
+
+      <button class="tl-card" data-target="proj-pulsepanion">
+        <div class="tl-icon">🏆</div>
+        <div class="tl-date">2025 · Ai4Purpose</div>
+        <div class="tl-title">Pulsepanion</div>
+        <p class="tl-blurb">1st place AI healthcare tool analyzing 18 months of patient data.</p>
+      </button>
+
+      <button class="tl-card" data-target="proj-segmentation">
+        <div class="tl-icon">📊</div>
+        <div class="tl-date">2024</div>
+        <div class="tl-title">Customer Segmentation</div>
+        <p class="tl-blurb">RFM analysis on 500K+ retail transactions; 5 segments uncovered.</p>
+      </button>
+
+      <button class="tl-card" data-target="proj-heart">
+        <div class="tl-icon">❤️</div>
+        <div class="tl-date">2024</div>
+        <div class="tl-title">Heart Disease Prediction</div>
+        <p class="tl-blurb">ML pipeline with SMOTE for +20% minority-class recall.</p>
+      </button>
+
+      <button class="tl-card" data-target="proj-uefa">
+        <div class="tl-icon">⚽</div>
+        <div class="tl-date">2024 · CSUF REU</div>
+        <div class="tl-title">UEFA Euro 2024 Analytics</div>
+        <p class="tl-blurb">Match outcome prediction with ELO ratings + XGBoost.</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="kbd-hint">
+    Navigate with <kbd>←</kbd> <kbd>→</kbd> arrow keys
+  </div>
+</div>
+
+<!-- ═══ DETAIL PANELS ═══ -->
+
+<!-- 1. Global Energy Dashboard -->
+<article class="project-card" id="proj-energy-ds3">
   <div class="project-header">
     <h2 class="project-title">Global Energy Transitions Dashboard</h2>
     <span class="project-badge">📍 UCSD Center for Energy Research</span>
@@ -609,13 +818,12 @@ permalink: /projects/
   </div>
 </article>
 
-
-<!-- Weather & Energy Dashboard -->
-<article class="project-card">
+<!-- 2. Grid Load Forecasting -->
+<article class="project-card" id="proj-grid-load">
   <div class="project-header">
     <h2 class="project-title">Grid Load Forecasting Dashboard</h2>
   </div>
-  
+
   <p class="project-description">
     A full-stack web application featuring global weather data and California grid load forecasting using machine learning. The dashboard predicts 14-day electricity demand across 4 California service areas using ensemble models trained on 315,648 observations.
   </p>
@@ -679,12 +887,12 @@ permalink: /projects/
   </div>
 </article>
 
-<!-- EvoCharge -->
-<article class="project-card">
+<!-- 3. EvoCharge -->
+<article class="project-card" id="proj-evocharge">
   <div class="project-header">
     <h2 class="project-title">EvoCharge</h2>
   </div>
-  
+
   <p class="project-description">
     A machine-learning dashboard that predicts electric vehicle charging energy usage and cost across California. The system uses real-time Lasso regression powered by 3,500 charging sessions, 16,455 statewide stations, and county-level electricity rates.
   </p>
@@ -728,13 +936,13 @@ permalink: /projects/
   </div>
 </article>
 
-<!-- Pulsepanion -->
-<article class="project-card">
+<!-- 4. Pulsepanion -->
+<article class="project-card" id="proj-pulsepanion">
   <div class="project-header">
     <h2 class="project-title">Pulsepanion</h2>
     <span class="project-badge">🏆 1st Place — 2025 Ai4Purpose Hackathon</span>
   </div>
-  
+
   <p class="project-description">
     An award-winning AI healthcare tool that analyzes eighteen months of patient data to generate actionable insights for caregivers. It applies natural language processing with large language models via the OpenAI API and presents results in an interactive R Shiny dashboard with PDF export functionality.
   </p>
@@ -752,11 +960,11 @@ permalink: /projects/
       <img src="{{ site.baseurl }}/assets/img/Pulsepantion.jpg" alt="Pulsepanion Dashboard">
     </div>
     <div class="video-container">
-      <iframe 
-        src="https://www.youtube.com/embed/tEJoXKLzVH4" 
-        title="Pulsepanion Demo" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      <iframe
+        src="https://www.youtube.com/embed/tEJoXKLzVH4"
+        title="Pulsepanion Demo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
     </div>
@@ -770,12 +978,12 @@ permalink: /projects/
   </div>
 </article>
 
-<!-- Customer Segmentation -->
-<article class="project-card">
+<!-- 5. Customer Segmentation -->
+<article class="project-card" id="proj-segmentation">
   <div class="project-header">
     <h2 class="project-title">Customer Segmentation Analytics</h2>
   </div>
-  
+
   <p class="project-description">
     A comprehensive analysis of over 500,000 retail transactions to uncover behavioral patterns in customer activity. Using RFM (Recency, Frequency, Monetary) analysis, the study identified five distinct customer segments, revealed seasonal purchasing trends, and optimized marketing spend allocation by 25%.
   </p>
@@ -804,7 +1012,7 @@ permalink: /projects/
   </div>
 
   <div class="tableau-container">
-    <iframe 
+    <iframe
       src="https://public.tableau.com/views/Customer_Segmentation_Overview_Github/Dashboard1?:showVizHome=no&:embed=true">
     </iframe>
   </div>
@@ -817,12 +1025,12 @@ permalink: /projects/
   </div>
 </article>
 
-<!-- Heart Disease Prediction -->
-<article class="project-card">
+<!-- 6. Heart Disease -->
+<article class="project-card" id="proj-heart">
   <div class="project-header">
     <h2 class="project-title">Heart Disease Prediction Pipeline</h2>
   </div>
-  
+
   <p class="project-description">
     A machine learning pipeline that predicts cardiovascular risk using the UCI Heart Disease dataset. By addressing class imbalance with SMOTE and applying logistic regression, it achieved a 20% improvement in minority-class recall. The pipeline is designed for production deployment in healthcare analytics contexts.
   </p>
@@ -867,12 +1075,12 @@ permalink: /projects/
   </div>
 </article>
 
-<!-- UEFA Euro 2024 -->
-<article class="project-card">
+<!-- 7. UEFA Euro 2024 -->
+<article class="project-card" id="proj-uefa">
   <div class="project-header">
     <h2 class="project-title">UEFA Euro 2024 Sports Analytics</h2>
   </div>
-  
+
   <p class="project-description">
     A sports analytics project developing predictive models for UEFA Euro 2024 match outcomes by combining ELO-based ratings with traditional statistical features. Models such as Decision Trees, Random Forests, and XGBoost were trained and evaluated using precision, recall, and F1-score to identify the most effective approach.
   </p>
@@ -903,3 +1111,70 @@ permalink: /projects/
 </article>
 
 </div>
+
+<!-- ═══ TIMELINE NAV LOGIC ═══ -->
+<script>
+(function() {
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.tl-card'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.project-card'));
+  var scroller = document.getElementById('tlScroll');
+  var prevBtn = document.getElementById('tlPrev');
+  var nextBtn = document.getElementById('tlNext');
+  var current = 0;
+
+  function activate(idx) {
+    if (idx < 0) idx = 0;
+    if (idx >= cards.length) idx = cards.length - 1;
+    current = idx;
+
+    cards.forEach(function(c, i) {
+      c.classList.toggle('active', i === idx);
+    });
+
+    var targetId = cards[idx].getAttribute('data-target');
+    panels.forEach(function(p) {
+      p.classList.toggle('is-visible', p.id === targetId);
+    });
+
+    // scroll the active card into view within the strip
+    var card = cards[idx];
+    var cardLeft = card.offsetLeft;
+    var cardRight = cardLeft + card.offsetWidth;
+    var viewLeft = scroller.scrollLeft;
+    var viewRight = viewLeft + scroller.clientWidth;
+
+    if (cardLeft < viewLeft + 20) {
+      scroller.scrollTo({ left: cardLeft - 20, behavior: 'smooth' });
+    } else if (cardRight > viewRight - 20) {
+      scroller.scrollTo({ left: cardRight - scroller.clientWidth + 20, behavior: 'smooth' });
+    }
+
+    prevBtn.disabled = (idx === 0);
+    nextBtn.disabled = (idx === cards.length - 1);
+  }
+
+  cards.forEach(function(card, i) {
+    card.addEventListener('click', function() { activate(i); });
+  });
+
+  prevBtn.addEventListener('click', function() { activate(current - 1); });
+  nextBtn.addEventListener('click', function() { activate(current + 1); });
+
+  document.addEventListener('keydown', function(e) {
+    // ignore if typing in an input
+    var tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea') return;
+
+    if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      activate(current + 1);
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      activate(current - 1);
+    }
+  });
+
+  // initial state — show newest (index 0)
+  activate(0);
+})();
+</script>
